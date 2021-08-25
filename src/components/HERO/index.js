@@ -27,6 +27,7 @@ const Hero = () => {
     }  
   }
   const connectWallet = (e) => {
+    e.preventDefault()
     setloading(true)
     setTimeout(() =>{ 
       setloading(false) 
@@ -101,10 +102,11 @@ const Hero = () => {
                                     type="button" 
                                     onClick={() => setConnected(true)}
                                   >CONNECT WALLET!</div> 
-                                : <button 
-                                    onClick={() => connectWallet()} 
+                                : <div 
+                                    class="collect-btn" 
+                                    onClick={(e) => connectWallet(e)} 
                                     type="submit"  
-                                  >MINT MINERS!</button>
+                                  >MINT MINERS!</div>
                             } 
                                                          
                         </form>
