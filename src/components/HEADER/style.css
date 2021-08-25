@@ -11,8 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-} 
-
+}  
 .header .social-holder,
 #mobile-nav .social-holder{
     display: flex; 
@@ -71,7 +70,7 @@
     flex-direction: column;
 }
 #mobile-nav img{
-    width: 80px;
+    width: 40px;
 }
 .header ul li:nth-child(1){
     border-left: none;

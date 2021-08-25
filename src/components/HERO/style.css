@@ -5,6 +5,82 @@ section{
     align-items: center;
     justify-content: center;
 }
+#loader{
+    width: 100%;
+    height: 100vh; 
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99999999999999;
+    display: flex;
+    justify-content: center; 
+    background-color: rgba(0, 0, 0, 0.452);
+}
+#close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-weight: 600;
+    color: rgb(27, 23, 23);
+    font-size: 36px;
+}   
+#minted-popup{
+    position: absolute;
+    width: 100%;
+    height: 100vh; 
+    flex-direction: column;
+    background-color: #00000000;
+    align-items: center;
+    display: flex;
+    z-index: 9999999999999999999;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.452); 
+}
+.minted-popup{
+    width: 60%;
+    position: relative;
+    z-index: 9999999999999999999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*top: 50px;*/
+    min-height: 600px;
+    background-color: #872EB1;
+    border: 6px solid #FF06D7;
+    border-radius: 6px;
+    padding: 20px 50px;  
+}
+@media (max-width:  1280px){
+    .minted-popup{
+        min-height: 400px;
+    }
+    .minted-popup h1{
+        font-size: 40px !important;
+    }
+    .minted-popup p{
+        font-size: 24px !important;
+    }
+}
+.minted-popup img{
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+}
+.minted-popup h1{
+    color: #FF06D7;
+    font-size: 60px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.minted-popup p{
+    color: #FF06D7;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
 .section-bg{
     position: relative;
     width: 100%;
@@ -114,7 +190,7 @@ input[type=number] {
     margin: 20px;
     text-align: center;
 }
-.miners-box form button{
+.miners-box form button, .collect-btn{
     background-color: #872eb1a8 ;
     border: 6px solid #92FF07 !important;
     border-radius: 6px !important;
@@ -269,7 +345,7 @@ input[type=number] {
     .img-flex img{
         width: 100%;
     }
-    .miners-box form button{  
+    .miners-box form button, .collect-btn{  
         padding: 5px;
         font-size:0.75rem; 
     }
@@ -304,8 +380,19 @@ input[type=number] {
     .section-bg{
         display: none;
     }
-
-    /*.magic-dust{
-        position: ;
-    }*/ 
+    .minted-popup{
+        padding: 20px;
+        width: 90%;
+    }
+    .minted-popup h1{
+        font-size: 32px !important;
+        margin: 0;
+    }
+    .minted-popup p{
+        font-size: 16px !important;
+        margin: 0;
+    } 
+    .minted-popup img{
+        width: 100%;
+    }
 }
