@@ -43,19 +43,16 @@ body{
 }
 #right{
     right: -50px !important;
+        transform-origin: 100% 0%;
 }
 #left{
     left: -50px !important;
+        transform-origin: 0% 100%;
 } 
 @media (max-width:  1280px){
     #left, #right{
-    }
-    #left{
-        transform-origin: 0% 100%;
-    }
-    #right{
-        transform-origin: 100% 0%;
-    }
+    transform: scaleX(0.60) ;
+    } 
 }
 @media (max-width: 725px){
     .header, 
