@@ -5,6 +5,8 @@ section{
     align-items: center;
     background:  #2b1055; 
     justify-content: center;
+    width: 100%;
+    overflow: hidden !important;
 }
 #loader{
     width: 100%;
@@ -171,16 +173,24 @@ input[type=number] {
     justify-content: space-evenly;
     margin: 0 auto;
 }
-.miner-input-box span{
+.miner-input-box span i{
     font-weight: 900;
+    text-transform: none;
     font-size: 2.5rem;
+
 }
-.miner-input-box .minus{
-    color: red;
-}
-.miner-input-box .plus{
-    color: aqua;
-}
+.miner-input-box h3 span{
+    color: #17F16E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #17F16E;
+    border-radius: 100px;
+
+} 
 .miner-input-box input{
     width:60px; 
     background:white;
@@ -244,7 +254,7 @@ input[type=number] {
 }
 #explore-popup{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 20px; 
 }
 .info-box{
@@ -324,7 +334,7 @@ input[type=number] {
 
 @media (max-width: 1280px){
     .hero-flex{
-        width: 90%;
+        width: 55%;
     }
     .miner-input-box{
         margin-bottom: 0;

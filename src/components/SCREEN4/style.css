@@ -13,6 +13,10 @@
     -2px 2px 0 #000,
      2px 2px 0 #000;
 }
+#section-3{
+    width: 100%;
+    overflow: hidden !important;
+}
 .pink-box{
     background: #650C85;
     border: 6px solid #F36EFF;

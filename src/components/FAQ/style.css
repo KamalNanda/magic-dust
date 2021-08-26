@@ -16,6 +16,10 @@
 #faq .pink-box{
 	width: 60% !important;
 }
+#faq{
+    width: 100%;
+    overflow: hidden !important;
+    }
 .faq-box{
 	color: white;
 }
@@ -54,7 +58,7 @@
 	#faq .pink-box{
 		padding: 20px 40px;
 		width: 70% !important;
-	}
+	} 
 }
 @media (max-width:  786px){ 
 	#faq img{

@@ -68,7 +68,7 @@ const Hero = () => {
                 <img src={heroLogo}  alt={"heroLogo"}/>
             </div> 
             <div id="explore-popup"> 
-                <div class="info-box">
+                {/**<div class="info-box">
                   <h2>MAGIC DUST</h2>
                   <p>$DUST is “mined” by chatting in 
                     $DUST enabled chat rooms 
@@ -77,14 +77,14 @@ const Hero = () => {
                     in a $DUSTy chat room 
                     you earn 0.5 $DUST. 
                   </p> 
-                </div>
-                <div class="miners-box">
+                </div>**/}
+                                 <div class="miners-box">
                     <div class="miners-box-left">
                         <h3>MINT UP TO 20!</h3>
                         <form onSubmit={(e) => connectWallet(e)}>
                             <div class="miner-input-box">
                                 <h3>
-                                    <span onClick={minusFunction} class="minus">-</span>
+                                    <span onClick={minusFunction} class="minus"><i>-</i></span>
                                     <input 
                                         required 
                                         onChange={(e) => setMiners(e.target.value)}
@@ -92,7 +92,7 @@ const Hero = () => {
                                         value={miners} 
                                         max="20" 
                                     />
-                                    <span onClick={plusFunction} class="plus">+</span></h3>
+                                    <span onClick={plusFunction} class="plus"><i>+</i></span></h3>
                                 <div id="miners-container"></div>
                             </div>
                             {
@@ -115,7 +115,7 @@ const Hero = () => {
                         <img id="mario-img" alt="mario" src={mario} />
                     </div>
                 </div> 
-                <div class="info-box">
+                                 {/**<div class="info-box">
                   <h2>MAGIC DUST</h2>
                   <p>$DUST is “mined” by chatting in 
                     $DUST enabled chat rooms 
@@ -124,11 +124,11 @@ const Hero = () => {
                     in a $DUSTy chat room 
                     you earn 0.5 $DUST. 
                   </p> 
-                </div>
+                </div>**/}
 
             </div>
             <div class="img-flex"> 
-                <h1>10,000  MINERS</h1>
+                <h1>9,810 / 10,000  MINERS</h1>
                 <img src={shadow} alt="shadow" />
                 <p>Badass $Dust Miners ALGORITHMICALLY GENERATED from 25 RUGGED AF features. </p>
             </div> 

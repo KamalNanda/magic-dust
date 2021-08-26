@@ -1,6 +1,10 @@
 
 #roadmap {
   margin-top: 200px;
+    background: url(../../assets/images/CAVE BACKGROUND.png) ;
+    background-size: cover;  
+    width: 100%;
+    overflow: hidden !important;
 }
 #roadmap h1{
     font-size: 150px;

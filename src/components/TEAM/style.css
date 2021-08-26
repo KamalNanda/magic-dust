@@ -14,6 +14,8 @@
 }
 #team {
 	margin-top: 100px;
+    width: 100%;
+    overflow: hidden !important;
 }
 #team .pink-box{
 	padding-top: 40px;

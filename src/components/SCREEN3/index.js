@@ -4,8 +4,7 @@ import Man from '../../assets/images/screen3man.png'
 import Man2 from '../../assets/images/man22.png' 
 import sf from '../../assets/images/sf.png' 
 import aw from '../../assets/images/aw.png' 
-import gpk from '../../assets/images/gpk.png' 
-import BACKGROUND from '../../assets/images/CAVE BACKGROUND.png' 
+import gpk from '../../assets/images/gpk.png'  
 const Screen = () => { 
 
 	return(

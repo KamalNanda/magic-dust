@@ -4,6 +4,11 @@
 	justify-content: center;
 	flex-direction: column;
 	margin-top: 200px; 
+	background: url(../../assets/images/CAVE BACKGROUND.png) ;
+	background-size: contain;
+	background-position: top;
+    width: 100%;
+    overflow: hidden !important;
 	position: relative;
 } 
 #section-2 h1{

@@ -13,8 +13,7 @@
     src: url("./assets/fonts/Fontsphere - Pixeloza 01.otf");
 }
 html{
-    scroll-behavior: smooth; 
-    overflow-x: hidden !important;
+    scroll-behavior: smooth;  
 }
 *{
     margin: 0;
@@ -26,8 +25,10 @@ html{
 } 
 body{
     min-height: 100vh;
-    background: #8806C9; 
-    position: relative; 
+    overflow-x: hidden;
+    background: linear-gradient(#8806C9,#8806C9, #8806C9,#8806C9,#000,#000,#8806C9,#8806C9,#8806C9,#8806C9,#000,#000,#8806C9,#8806C9,#8806C9,#8806C9, #000);  
+    /*background: url('./assets/images/grandbg.png'); */
+    position: relative;  
 }
 
 @media (max-width: 725px){
