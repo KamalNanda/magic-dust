@@ -40,6 +40,9 @@
 	position: relative;
 	top: 100px;
 }
+.gemplatform img{
+	width: 100%;
+}
 @media (max-width:  1780px){ 
 	#faq h1{
 		font-size: 120px;

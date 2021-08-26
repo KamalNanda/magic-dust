@@ -65,22 +65,51 @@
 }
 .contact-wallpaper{
     width: 100%;
-    position: absolute;
+    position: relative;
     z-index:  -1;
-     top: 500px;  
-     height: auto;
+     top: -500px;  
 } 
+.contact-wallpaper img{
+    width: 100%;
+    transform: scaleY(1.2);
+}
 .message{ 
     top: 1800px;
     display: block;
     position: absolute;  
     width: 100%;
-    transform: scaleX(2) scaleY(1.5);
-
+    transform: scaleX(2) scaleY(1.5); 
 }
 .gem{
 	position: absolute;
-	top: 4000px;
+	bottom: -800px;
+}
+img.gem {
+    width: 100%x !important;
+    transform: scaleX(1.0) scaleY(0.75);
+}
+@media(max-width:  1660px){
+img.gem {
+    width: 100%x !important;
+    bottom: -1000px;
+    transform: scaleX(1) scaleY(0.6);
+}
+}
+
+@media(max-width:  1280px){
+img.gem {
+    width: 100%x !important;
+    bottom: -800px;
+    transform: scaleX(1) scaleY(0.4);
+} 
+.message{
+    top: 900px;
+}
+}
+@media(max-width:  1024px){
+.gem {
+    /*display: none;*/
+}
 }
 .message h1{
     color: #FF8BB6 !important;
@@ -124,7 +153,7 @@
 }
 @media (max-width: 1280px){
     #contact .man22{
-        width: 60% !important;
+        width: 30% !important;
     }
 
 }
@@ -134,7 +163,7 @@
     #roadmap h1,
     #faq h1,
     #team h1{
-        font-size: 100px !important;
+        font-size: 80px !important;
     transform: scale(1);
     }
     #contact img{

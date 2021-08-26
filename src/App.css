@@ -26,10 +26,11 @@ html{
 body{
     min-height: 100vh;
     overflow-x: hidden;
-    background: linear-gradient(#8806C9,#8806C9, #8806C9,#8806C9,#000,#000,#8806C9,#8806C9,#8806C9,#8806C9,#000,#000,#8806C9,#8806C9,#8806C9,#8806C9, #000);  
+    background: linear-gradient(#8806C9,#8806C9, #8806C9, #8806C9, #8806C9,#000,#000,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#000,#000,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9, #000);  
     /*background: url('./assets/images/grandbg.png'); */
     position: relative;  
 }
+ 
 #group-div{
     position: relative;
     width: 100%;
@@ -39,7 +40,7 @@ body{
     position: absolute;
     z-index: 9999999;
     height: 100%;
-    transform: scaleX(0.75) ;
+    transform: scaleX(0.5) ;
 }
 #right{
     right: -50px !important;
@@ -51,10 +52,16 @@ body{
 } 
 @media (max-width:  1280px){
     #left, #right{
-    transform: scaleX(0.60) ;
+    transform: scaleX(0.70)  ;
     } 
 }
 @media (max-width: 725px){
+#left, #right{
+    display: none;
+}
+.message{
+    top: 600px !important;
+} 
     .header, 
     .header ul{
         display: none;

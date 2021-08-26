@@ -1,5 +1,8 @@
 .Divider{
 	width: 100%;
-	display: grid;
-	grid-template-columns: repeat(10, 1fr);
+	/*display: grid;
+	grid-template-columns: repeat(10, 1fr); */
+}
+.Divider img{
+	width: 100%;
 }

@@ -15,11 +15,11 @@ const MobileHeader = () => {
 			{
 				isShown && <ul>
 			    <li><a href="#home" class="active">HOME</a></li>
-			    <li><a href="#miners-section">Miners</a></li>
-			    <li><a href="#screen-2">$Dust Token</a></li>
-			    <li><a href="#contact-screen">Community</a></li>
-			    <li><a href="#screen-4">Roadmap</a></li> 
-			    <li><a href="#screen-5">FAQ</a></li>
+			    <li><a href="#section-1">Miners</a></li>
+			    <li><a href="#section-2">$Dust Token</a></li>
+			    <li><a href="#section-3">Community</a></li>
+			    <li><a href="#roadmap">Roadmap</a></li> 
+			    <li><a href="#faq">FAQ</a></li>
 			    <li><a href="#contact">CONTACT</a></li>
 			    <li> 
 					<div class="social-holder">
@@ -40,11 +40,11 @@ const DesktopHeader = () => {
 			<img src={logo} alt="logo" />
 			<ul>
 			    <li><a href="#home" class="active">HOME</a></li>
-			    <li><a href="#miners-section">Miners</a></li>
-			    <li><a href="#screen-2">$Dust Token</a></li>
-			    <li><a href="#contact-screen">Community</a></li>
-			    <li><a href="#screen-4">Roadmap</a></li> 
-			    <li><a href="#screen-5">FAQ</a></li>
+			    <li><a href="#section-1">Miners</a></li>
+			    <li><a href="#section-2">$Dust Token</a></li>
+			    <li><a href="#section-3">Community</a></li>
+			    <li><a href="#roadmap">Roadmap</a></li> 
+			    <li><a href="#faq">FAQ</a></li>
 			    <li><a href="#contact">CONTACT</a></li>
 			</ul>
 			<div class="social-holder">

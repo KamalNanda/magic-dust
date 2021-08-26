@@ -23,8 +23,8 @@ window.addEventListener('scroll', function(){
     moon.style.top = value * 1.05 + 'px'
     mountains_behind.style.top = value * 0.5 + 'px' 
     mountains_front.style.top = value * 0 + 'px'    
-        left.style.top = document.getElementById('group-div').offsetTop  -value * 0.60 + 'px'
-        right.style.top =  document.getElementById('group-div').offsetTop   -value * 0.60 + 'px'
+        left.style.top = document.getElementById('group-div').offsetTop  -value * 0.80 + 'px'
+        right.style.top =  document.getElementById('group-div').offsetTop   -value * 0.80 + 'px'
          
     // stars.style.left = value * 0.25 + 'px'
    

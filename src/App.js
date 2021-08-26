@@ -8,6 +8,7 @@ import SCREEN4 from './components/SCREEN4'
 import TEAM from './components/TEAM'
 import ROADMAP from './components/ROADMAP'
 import FAQ from './components/FAQ'
+import DIVIDER from './components/DIVIDER'
 import CONTACT from './components/CONTACT'
 import left from './assets/images/left.png'
 import right from './assets/images/right.png'
@@ -16,6 +17,7 @@ function App() {
     <div className="App">
       <Header />
       <HERO />
+      <DIVIDER />
       <div id="group-div">
         <img src={left} id="left" />
         <img src={right} id="right" />
