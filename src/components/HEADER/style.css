@@ -1,7 +1,7 @@
 .header{
     position: fixed;
     top: 0;
-    z-index: 999999999;
+    z-index: 9999999999999999;
     background-color:#8706c8;
     box-shadow: 2px 0px 30px black;
     left: 0;

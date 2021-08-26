@@ -1,0 +1,5 @@
+.Divider{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+}

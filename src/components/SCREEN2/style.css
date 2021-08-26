@@ -60,9 +60,33 @@
         font-size: 60px;
     }
 }
+#group{
+    position: absolute; 
+    top: 650px;
+    right: 300px;
+}
+@media (max-width: 1880px){
+    #group{
+        position: absolute; 
+        top: 600px;
+        width: 375px;
+        right: 325px;
+    }
+
+}
+@media (max-width:  768px){
+    #group{
+        display: none;
+    }
+}
 @media (max-width : 1780px){
     #section-1{
         padding-top: 800px;
+    }
+    #group{
+        right: 200px;
+        width: 325px;
+        top: 650px;
     }
     #section-2 p, #section-2 p span{
         width: 90% !important;
@@ -87,6 +111,13 @@
     #section-1{
         padding-top: 500px;
     }
+#group{
+    position: absolute;
+    top: 300px;
+    right: 250px;
+    width: 250px;
+    height: auto;
+}
     #section-2 p, #section-2 p span{
         width: 90% !important;
         font-size: 60px !important;

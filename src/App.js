@@ -9,18 +9,24 @@ import TEAM from './components/TEAM'
 import ROADMAP from './components/ROADMAP'
 import FAQ from './components/FAQ'
 import CONTACT from './components/CONTACT'
+import left from './assets/images/left.png'
+import right from './assets/images/right.png'
 function App() {
   return (
     <div className="App">
       <Header />
       <HERO />
-      <SCREEN2 />
-      <SCREEN3 />
-      <SCREEN4 />
-      <TEAM />
-      <ROADMAP />
-      <FAQ />
+      <div id="group-div">
+        <img src={left} id="left" />
+        <img src={right} id="right" />
+        <SCREEN2 />
+        <SCREEN3 />
+        <SCREEN4 />
+        <TEAM />
+        <ROADMAP />
+        <FAQ />
       <CONTACT />
+      </div>
     </div>
   );
 }
