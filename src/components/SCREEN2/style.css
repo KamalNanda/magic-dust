@@ -13,7 +13,7 @@
     border: 6px solid #F36EFF;
     border-radius: 6px;
     padding: 40px 70px;
-    width: fit-content;
+    width: fit-content !important;
     margin: auto;
     margin-bottom: 40px;
 } 

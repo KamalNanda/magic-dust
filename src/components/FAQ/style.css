@@ -13,8 +13,8 @@
     -2px 2px 0 #FF06D7,
      2px 2px 0 #FF06D7;
 }
-.pink-box{
-	width: 70%;
+#faq .pink-box{
+	width: 60% !important;
 }
 .faq-box{
 	color: white;
@@ -36,7 +36,7 @@
 	position: relative;
 	top: -100px;
 }
-@media (max-width:  7866px){ 
+@media (max-width:  786px){ 
 	#faq img{
 		width: 100%;
 	}

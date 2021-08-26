@@ -14,7 +14,7 @@
 }
 html{
     scroll-behavior: smooth; 
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 *{
     margin: 0;
@@ -27,6 +27,7 @@ html{
 body{
     min-height: 100vh;
     background: #8806C9;
+    overflow-x: hidden !important;
     position: relative; 
 }
 

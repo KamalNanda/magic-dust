@@ -50,7 +50,7 @@
     font-weight: 800;
     background: #EC12DB;
 }
-@media (max-width:  7866px){ 
+@media (max-width:  786px){ 
     #roadmap img, #section-3 > img{
         width: 100%;
     }
