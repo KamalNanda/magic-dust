@@ -1,0 +1,60 @@
+#section-1{
+    position: relative;
+    padding-top: 900px ;
+}
+.cieling{
+    position: absolute;
+    width: 100%; 
+    top: 0; 
+    z-index: -1;
+}
+.pink-box{
+    background: #650C85;
+    border: 6px solid #F36EFF;
+    border-radius: 6px;
+    padding: 40px 70px;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 40px;
+} 
+.row{
+    display: flex; 
+    align-items: center;
+    margin-bottom: 25px;
+}
+.pink-box .row p{  
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 35px;
+    letter-spacing: 0.1em; 
+    color: #FF13ED;
+}
+.pink-box .row img{
+    margin-right: 20px ;
+}
+.pink-box h2{ 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 100px;
+    letter-spacing: 0.1em; 
+    color: #FF13ED;  
+}
+@media (max-width : 768px){
+    #section-2 p, #section-2 p span{
+        width: 90% !important;
+        font-size: 60px !important;
+        line-height:  80px !important;
+    }
+    #section-2 h1,
+    #section-2 h1 span{
+        font-size: 100px !important;
+    }
+    .pink-box .row img{
+        width: 60px;
+    }
+    .pink-box h2{
+        font-size: 60px;
+    }
+}

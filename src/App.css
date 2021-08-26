@@ -13,24 +13,21 @@
     src: url("./assets/fonts/Fontsphere - Pixeloza 01.otf");
 }
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
     overflow-x: hidden;
 }
 *{
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Emtype Foundry', sans-serif; 
-    scroll-behavior: smooth;
+    font-family: 'Emtype Foundry', sans-serif;  
     font-size: 24px;
     cursor: url(./assets/images/shovel.png),auto ;
 } 
 body{
     min-height: 100vh;
-    background: linear-gradient(#2b1055, #302323,#302323); 
-    overflow-x: hidden;
-    position: relative;
-    scroll-behavior: smooth;
+    background: #8806C9;
+    position: relative; 
 }
 
 @media (max-width: 725px){

@@ -3,6 +3,7 @@ section{
     height: 100vh; 
     display: flex;
     align-items: center;
+    background:  #2b1055; 
     justify-content: center;
 }
 #loader{

@@ -1,0 +1,112 @@
+#contact h1{
+	font-style: normal;
+	font-weight: 900;
+	font-size: 200px;
+    transform: scaleX(2) scaleY(1.5);
+	line-height: 150%; 
+	text-align: center; 
+	color: #92FF07; 
+    text-shadow:
+   -2px -2px 0 #FF06D7,  
+    2px -2px 0 #FF06D7,
+    -2px 2px 0 #FF06D7,
+     2px 2px 0 #FF06D7;  
+} 
+#contact{
+	position: relative;
+	height: fit-content;
+}
+#contact  form{ 
+	width: 70%;
+    margin: auto;   
+} 
+.form-cont div, 
+#contact  input, 
+#contact  textarea{
+    width: 100%;
+     color: #F36EFF;
+     border: 6px solid #F36EFF;
+     border-radius: 6px;
+     margin-bottom: 40px;
+     padding: 30px 60px;
+     background-color: #650C85;
+     font-size: 1.5rem;
+}
+#contact  form h1{
+    color: #92FF07; 
+    font-size: 200px;
+    transform: scaleX(2) scaleY(1.5);
+    text-align: center;
+    text-shadow:
+        -2px -2px 0 #F36EFF,  
+        2px -2px 0 #F36EFF,
+        -2px 2px 0 #F36EFF,
+        2px 2px 0 #F36EFF;
+    margin-bottom: 40px;
+}
+#contact  
+::placeholder {
+  color: #F36EFF;
+}
+#contact  form button{
+    background-color: #92FF07;
+    color: #F36EFF;
+    border: 6px solid #F36EFF;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 30px;
+}
+#contact  textarea{
+    height: 300px;
+}
+.contact-wallpaper{
+    width: 100%;
+    position: absolute;
+    z-index:  -1;
+     top: 500px;  
+     height: auto;
+} 
+.message{ 
+    top: 1800px;
+    display: block;
+    position: absolute;  
+    width: 100%;
+    transform: scaleX(2) scaleY(1.5);
+
+}
+.gem{
+	position: absolute;
+	top: 4000px;
+}
+.message h1{
+    color: #FF8BB6 !important;
+    line-height: 400px;
+    margin: auto;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 10px;
+    text-shadow:
+        -2px -2px 0 #FF06D7,  
+        2px -2px 0 #FF06D7,
+        -2px 2px 0 #FF06D7,
+        2px 2px 0 #FF06D7;
+    font-size: 200px;
+}
+@media (max-width:  786px){
+    #contact h1,
+    .message h1,
+    #roadmap h1,
+    #faq h1,
+    #team h1{
+        font-size: 100px !important;
+    transform: scale(1);
+    }
+    #contact img{
+        width: 100%;
+    }
+    .gem, .message{
+        display: none;
+    }
+}

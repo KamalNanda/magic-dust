@@ -1,0 +1,43 @@
+ 
+#faq h1{
+
+    font-size: 150px;
+    text-align: center;
+    transform: scaleX(2) scaleY(1.5);
+    width: 100%;
+    margin: 100px auto;
+    color: #fff;
+      text-shadow:
+   -2px -2px 0 #FF06D7,  
+    2px -2px 0 #FF06D7,
+    -2px 2px 0 #FF06D7,
+     2px 2px 0 #FF06D7;
+}
+.pink-box{
+	width: 70%;
+}
+.faq-box{
+	color: white;
+}
+.faq-box strong{
+	font-size: 40px;
+}
+.faq-box li, .faq-box p{
+	font-size: 1rem;
+	margin-left: 40px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.faq-box li strong{
+	font-weight: 900;
+	font-size: 1.25rem;
+}
+.gemplatform{
+	position: relative;
+	top: -100px;
+}
+@media (max-width:  7866px){ 
+	#faq img{
+		width: 100%;
+	}
+}
