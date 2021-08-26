@@ -11,6 +11,12 @@
     overflow: hidden !important;
 	position: relative;
 } 
+@media (max-width:  1360px){ 
+#section-2{
+	background-size: cover;
+	background-position: center;
+}
+}
 #section-2 h1{
 	color: #480960;
 	text-align: center; 

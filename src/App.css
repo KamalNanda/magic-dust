@@ -30,7 +30,6 @@ body{
     /*background: url('./assets/images/grandbg.png'); */
     position: relative;  
 }
-
 @media (max-width: 725px){
     .header, 
     .header ul{
