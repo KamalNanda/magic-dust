@@ -37,7 +37,7 @@
     font-style: normal;
     font-weight: 900;
     font-size: 100px;
-    line-height: 100px;
+    /*line-height: 100px;*/
     letter-spacing: 0.1em; 
     color: #FF13ED;  
 }
@@ -56,5 +56,57 @@
     }
     .pink-box h2{
         font-size: 60px;
+    }
+}
+@media (max-width : 1780px){
+    #section-1{
+        padding-top: 800px;
+    }
+    #section-2 p, #section-2 p span{
+        width: 90% !important;
+        font-size: 60px !important;
+        line-height:  80px !important;
+    }
+    #section-2 h1,
+    #section-2 h1 span{
+        font-size: 100px !important;
+    }
+    .pink-box .row img{
+        width: 100px;
+    }
+    .pink-box h2{
+        font-size: 60px;
+    } 
+    .pink-box h2{
+        font-size: 80px !important;
+    } 
+}
+@media (max-width : 1280px){
+    #section-1{
+        padding-top: 500px;
+    }
+    #section-2 p, #section-2 p span{
+        width: 90% !important;
+        font-size: 60px !important;
+        line-height:  80px !important;
+    }
+    #section-2 h1,
+    #section-2 h1 span{
+        font-size: 100px !important;
+    }
+    .pink-box .row img{
+        width: 60px !important;
+    }
+    .pink-box h2{
+        font-size: 60px;
+    }
+    .pink-box .row p{
+        font-size: 28px;
+    }
+    .pink-box h2{
+        font-size: 60px !important;
+    }
+    #section-1 .pink-box{
+        padding: 20px 40px!important;
     }
 }

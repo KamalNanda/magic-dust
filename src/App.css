@@ -26,8 +26,7 @@ html{
 } 
 body{
     min-height: 100vh;
-    background: #8806C9;
-    overflow-x: hidden !important;
+    background: #8806C9; 
     position: relative; 
 }
 

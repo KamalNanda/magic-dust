@@ -50,6 +50,28 @@
     font-weight: 800;
     background: #EC12DB;
 }
+@media (max-width:  1760px){ 
+    #roadmap img, #section-3 > img{
+        width: 50%;
+    }
+    .map-phase{
+        width: 60%;
+    }
+    #roadmap h1{
+        font-size: 120px;
+    }
+}
+@media (max-width:  1280px){ 
+    #roadmap img, #section-3 > img{
+        width: 50%;
+    }
+    .map-phase{
+        width: 70%;
+    }
+    #roadmap h1{
+        font-size: 100px;
+    }
+}
 @media (max-width:  786px){ 
     #roadmap img, #section-3 > img{
         width: 100%;

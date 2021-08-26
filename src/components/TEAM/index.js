@@ -14,14 +14,14 @@ const Team = () => {
 	            <div class="team-grid">
 	            	{
 	            		teamLi.map((t, i) => {
-	            			return <div>
+	            			return <div class="member">
 	            				<img src={Man} />
 	            			</div>
 	            		})
 	            	}
 	            </div>
             </div>
-			<img style={{display:'block', margin:'auto'}} src={Man2} />
+			<img class="man22" style={{display:'block', margin:'auto'}} src={Man2} />
 		</div>	
 	)  
 }

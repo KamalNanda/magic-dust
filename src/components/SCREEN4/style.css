@@ -82,3 +82,33 @@
     font-size:53px;
     color: #ECE000; 
 } 
+@media (max-width : 1760px){ 
+    #section-3 h1{
+        font-size: 120px;
+    }
+    #section-3 p,
+    #section-3 p span{ 
+        line-height: 40px; 
+        font-size:36px; 
+    }
+    .green-box{ 
+        font-size: 36px; 
+        padding: 10px 30px; 
+        width: fit-content; 
+        margin-bottom: 40px;
+    }
+    .green-box img{
+        width: 50px;
+        margin-right: 20px;
+    }
+    #section-3 button{
+        font-size: 50px;  
+        padding: 20px 30px; 
+        margin: 20px auto 0 auto;
+    }
+}
+@media (max-width : 1280px){ 
+    #section-3 h1{
+        font-size: 100px;
+    }
+}

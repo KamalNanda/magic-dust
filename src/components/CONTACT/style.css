@@ -94,6 +94,32 @@
         2px 2px 0 #FF06D7;
     font-size: 200px;
 }
+@media (max-width:  1760px){
+    #contact h1{
+        font-size: 120px !important;
+        transform: scale(1);
+    }
+    #contact .man22{
+        width: 60%;
+    }
+    .gem, .message{
+        display: none;
+    }
+    #contact  form button{ 
+        font-size: 1.25rem; 
+        padding: 10px;
+    }
+    #contact  textarea{
+        height: 150px;
+    }
+    .form-cont div, 
+    #contact  input, 
+    #contact  textarea{  
+         margin-bottom: 40px;
+         padding: 10px 30px; 
+         font-size: 1rem;
+    }
+}
 @media (max-width:  786px){
     #contact h1,
     .message h1,

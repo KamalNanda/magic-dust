@@ -17,7 +17,7 @@ const Contact = () => {
                     <button>SUBMIT; RESISTANCE IS FUTILE.</button>
                 </form>
             </div>
-			<img src={Man2} style={{display:'block', margin:'auto'}}/>
+			<img src={Man2} class="man22" style={{display:'block', margin:'auto'}}/>
 			<div class="contact-wallpaper">
                 <img class="wallpaper" src={wallpaper}  />
                 <div class="message">

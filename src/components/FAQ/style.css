@@ -36,6 +36,26 @@
 	position: relative;
 	top: -100px;
 }
+@media (max-width:  1780px){ 
+	#faq h1{
+		font-size: 120px;
+	}
+	#faq img{
+		width: 100%;
+	}
+	#faq .pink-box{
+		width: 60% !important;
+	}
+}
+@media (max-width:  1280px){ 
+	#faq h1{
+		font-size: 100px;
+	} 
+	#faq .pink-box{
+		padding: 20px 40px;
+		width: 70% !important;
+	}
+}
 @media (max-width:  786px){ 
 	#faq img{
 		width: 100%;
