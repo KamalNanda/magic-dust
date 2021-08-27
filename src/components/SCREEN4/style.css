@@ -121,4 +121,19 @@
     #section-3 h1{
         font-size: 100px;
     }
+    .green-box{ 
+        font-size: 24px; 
+        padding: 10px ; 
+        width: fit-content; 
+        margin-bottom: 40px;
+    }
+    #section-3 button{
+        font-size: 34px;  
+        padding: 10px; 
+        margin: 20px auto 0 auto;
+    }
+    .green-box img{
+        width: 40px;
+        margin-right: 20px;
+    }
 }
