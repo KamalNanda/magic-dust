@@ -17,6 +17,11 @@
     width: 100%;
     overflow: hidden !important;
 }
+#section-3 > img{
+    margin: 80px auto;
+    width: 40%;
+}
+
 .pink-box{
     background: #650C85;
     border: 6px solid #F36EFF;

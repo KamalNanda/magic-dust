@@ -4,7 +4,7 @@ import discord from '../../assets/images/discord.png'
 import twitter from '../../assets/images/twitter.png' 
 import telegram from '../../assets/images/telegram.png' 
 import linkedin from '../../assets/images/linkedin.png' 
-import Man2 from '../../assets/images/man22-wide.png'  
+import Man2 from '../../assets/images/man22.png'  
 const Screen = () => {
 
 	return(
