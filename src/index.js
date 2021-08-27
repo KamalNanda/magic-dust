@@ -33,17 +33,23 @@ window.addEventListener('scroll', function(){
     // } else{
     //   document.querySelector('a[href^="#home"]').classList.remove('active') 
     // }
-    // if(value > document.getElementById('section-1').offsetTop 
+    // if(value > document.getElementById('section-2').offsetTop 
     //     && value < document.getElementById('section-2').offsetHeight){
     //   document.querySelector('a[href^="#section-1"]').classList.add('active')
     // } else{
     //   document.querySelector('a[href^="#section-1"]').classList.remove('active') 
     // }
-    // if(value > document.getElementById('section-3').offsetTop 
-    //     && value < document.getElementById('section-4').offsetTop){
+    // if(value > document.getElementById('section-2').offsetTop 
+    //     && value < document.getElementById('section-3').offsetTop){
     //   document.querySelector('a[href^="#section-2"]').classList.add('active')
     // } else{
     //   document.querySelector('a[href^="#section-2"]').classList.remove('active') 
+    // }
+    // if(value > document.getElementById('roadmap').offsetTop 
+    //     && value < document.getElementById('faq').offsetTop){
+    //   document.querySelector('a[href^="#section-3"]').classList.add('active')
+    // } else{
+    //   document.querySelector('a[href^="#section-3"]').classList.remove('active') 
     // }
     // stars.style.left = value * 0.25 + 'px'
    

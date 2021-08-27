@@ -1,6 +1,6 @@
 section{  
     width: 100%;
-    height: calc(100vh + 140px);
+    height: calc(100vh + 180px);
     display: flex;
     align-items: center;
     background: #2b1055;
@@ -267,6 +267,12 @@ input[type=number] {
     font-size: 140px; 
     text-align: center;
     letter-spacing: 0.1em;   
+    color: #F9F900; 
+    text-shadow:
+        -4px -4px 0 #FF13ED,  
+        4px -4px 0 #FF13ED,
+        -4px 4px 0 #FF13ED,
+        4px 4px 0 #FF13ED;
 }
 #explore-popup{
     display: grid;
@@ -369,6 +375,11 @@ input[type=number] {
         transform: scaleX(1.5);
         top: 30px;
     }
+.animation-box img{
+    width: 100%;
+    max-width: 200px;
+    position: relative !important;
+}
     .img-flex h1{
         font-size: 60px;
     }
@@ -402,7 +413,7 @@ input[type=number] {
         font-size: 1.5rem;
     }
     .animation-box img{
-        width: 180px;
+        width: 150px;
     }
     .magic-dust{
         /*width:90%;*/

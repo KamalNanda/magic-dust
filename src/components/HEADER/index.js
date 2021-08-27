@@ -6,6 +6,7 @@ import telegram from "../../assets/images/telegram.svg"
 import logo from "../../assets/images/header-logo.png"
 const MobileHeader = () => {
 	const [isShown, setShown] = React.useState(false)
+	const [active, setActive] = React.useState('home')
 	const toggleDropDown = () => {
 		setShown(!isShown)
 	}

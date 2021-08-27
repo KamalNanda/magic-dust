@@ -131,7 +131,7 @@ const Hero = () => {
             </div>
             <div class="img-flex"> 
                 <h1>9,810 / 10,000  MINERS</h1>
-                <img src={shadow} alt="shadow" />
+                {/**<img src={shadow} alt="shadow" />**/}
                 <p>Badass $Dust Miners ALGORITHMICALLY GENERATED from 25 RUGGED AF features. </p>
             </div> 
         </div>
