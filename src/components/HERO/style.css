@@ -325,8 +325,12 @@ input[type=number] {
     justify-content: center;
 }
 @media (max-width: 1860px){
-    #explore-popup, .magic-dust{
-        width: 60%;
+    #explore-popup{
+        width: 50%;
+    }
+    .magic-dust{
+
+        left: -50px;
     }
     .miner-input-box{
         margin-bottom: 0;
@@ -337,7 +341,7 @@ input[type=number] {
 }
 @media (max-width: 1660px){
     #explore-popup, .magic-dust{
-        width: 60%;
+        width: 50%;
     }
     .miner-input-box{
         margin-bottom: 0;
@@ -345,8 +349,12 @@ input[type=number] {
     .miners-box{
         padding: 30px ;
     }
+    .animation-box img{
+        width: 180px;
+    }
     .magic-dust {
         width: 70%;
+        left: -50px;
     }
     .img-flex h1{
         font-size: 100px;
@@ -355,10 +363,26 @@ input[type=number] {
         width: 120%;
     }
 } 
-
+@media(max-width:  996px){
+    #explore-popup, .magic-dust{
+        width: 55% !important;
+    }
+.animation-box img{
+    width: 100%;
+    max-width: 150px !important;
+    position: relative !important;
+}
+    .miners-box-left h3{
+        font-size: 1rem !important;
+    }
+    .miners-box-left .collect-btn{
+        font-size: 0.75rem !important;
+        padding: 5px;
+    }
+}
 @media (max-width: 1280px){
     #explore-popup, .magic-dust{
-        width: 60%;
+        width: 55%;
     }
     .miner-input-box{
         margin-bottom: 0;
@@ -372,8 +396,9 @@ input[type=number] {
     }
     .magic-dust{
         /*width:90%;*/
-        transform: scaleX(1.5);
+        transform: scaleX(1.4);
         top: 30px;
+        left: -50px;
     }
 .animation-box img{
     width: 100%;
@@ -381,7 +406,7 @@ input[type=number] {
     position: relative !important;
 }
     .img-flex h1{
-        font-size: 60px;
+        font-size: 80px;
     }
     .img-flex img{
         width: 100%;

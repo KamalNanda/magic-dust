@@ -18,6 +18,9 @@ html{
 button{
     cursor: pointer;
 }
+ul{
+    margin-bottom: 0 !important;
+}
 *{
     margin: 0;
     padding:0;
@@ -53,9 +56,21 @@ body{
     left: -50px !important;
         transform-origin: 0% 100%;
 } 
+@media (max-width:  1440px){
+    #left, #right{
+    transform: scaleX(0.40) !imp  ;
+    } 
+#right{
+    right: -80px !important; 
+}
+#left{
+    left: -80px !important;
+     
+}
+}
 @media (max-width:  1280px){
     #left, #right{
-    transform: scaleX(0.70)  ;
+    transform: scaleX(0.40) !imp  ;
     } 
 }
 @media (max-width: 725px){
@@ -210,3 +225,16 @@ body{
     }
 } 
  
+ #arrow{
+    position: fixed;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    transform: scaleY(-1);
+    right: 20px;
+    z-index: 9999999999999999999999999999;
+ }
+ #arrow img{
+    width: 60px;
+    height: 60px;
+ }

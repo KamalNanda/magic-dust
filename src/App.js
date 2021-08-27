@@ -8,6 +8,7 @@ import SCREEN4 from './components/SCREEN4'
 import TEAM from './components/TEAM'
 import ROADMAP from './components/ROADMAP'
 import FAQ from './components/FAQ' 
+import arrow from './assets/images/arrow.png'
 import CONTACT from './components/CONTACT'
 import left from './assets/images/left.png'
 import right from './assets/images/right.png'
@@ -27,6 +28,7 @@ function App() {
         <FAQ />
       <CONTACT />
       </div>
+      <a id="arrow"  href="#home"><img src={arrow}/></a>
     </div>
   );
 }
