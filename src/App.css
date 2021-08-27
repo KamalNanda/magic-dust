@@ -15,14 +15,17 @@
 html{
     scroll-behavior: smooth;  
 }
+button{
+    cursor: pointer;
+}
 *{
     margin: 0;
     padding:0;
     box-sizing: border-box;
     font-family: 'Emtype Foundry', sans-serif;  
     font-size: 24px;
-    cursor: url(./assets/images/shovel.png),auto ;
-} 
+    /*cursor: url(./assets/images/shovel.png),auto ;
+*/} 
 body{
     min-height: 100vh;
     overflow-x: hidden;

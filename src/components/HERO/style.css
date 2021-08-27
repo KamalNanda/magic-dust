@@ -1,9 +1,9 @@
-section{
+section{  
     width: 100%;
-    min-height: calc(100vh + 320px); 
+    height: calc(100vh + 140px);
     display: flex;
     align-items: center;
-    background:  #2b1055; 
+    background: #2b1055;
     justify-content: center;
     position: relative;
     z-index: 2222;
@@ -12,7 +12,7 @@ section{
 }
 @media(max-width:  1360px){
     section{
-    min-height: calc(100vh + 200px); 
+    /*min-height: calc(100vh + 200px); */
     }
 }
 #loader{
@@ -92,7 +92,8 @@ section{
     margin: auto;
 }
 .section-bg{
-    position: relative;
+    position: absolute;
+    top: 0;
     width: 100%;
     height: 100vh;
     padding: 100px;
@@ -134,7 +135,7 @@ section{
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px; 
     align-items: center;
-    padding: 60px 20px;   
+    padding: 40px 40px;   
     border: 6px solid #FF06D7; 
     border-radius: 6px
 }
@@ -146,12 +147,14 @@ section{
 }
 .animation-box img{
     width: 100%;
+    max-width: 300px;
     position: relative !important;
 }
 .animation-box{
-    background-color: #872eb1a8;
+    background-color: #92FF07;
     height: 100%;
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -178,7 +181,7 @@ input[type=number] {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 .miner-input-box span i{
     font-weight: 900;
@@ -208,26 +211,32 @@ input[type=number] {
     margin: 20px;
     text-align: center;
 }
+.minus, .plus{
+    cursor: pointer;
+}
 .miners-box form button, .collect-btn{
     background-color: #872eb1a8 ;
     border: 6px solid #92FF07 !important;
     border-radius: 6px !important;
     color: #92FF07; 
+    text-align: center;
     width: 100%;
     font-weight: 700;
+    cursor: pointer;
     padding: 12px;
-    font-size:1.25rem;
+    font-size:1.5rem;
     letter-spacing: 5px;
 }
 .hero-flex{
     display: flex;
-    width: 70%;
+    height: 100vh;
+    width: 100%;
     padding: 20px 0;
     position: absolute;
+    top: 0;
     z-index: 999;
-    height: 100vh;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex-direction: column;
 }
 .img-flex{   
@@ -263,6 +272,7 @@ input[type=number] {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px; 
+    width: 50%;
 }
 .info-box{
     display: flex;
@@ -293,6 +303,7 @@ input[type=number] {
 .magic-dust{
     position: relative;
     width: 100%;
+    width: 70%;
     top: 50px;
 }   
 .magic-dust img{
@@ -308,8 +319,8 @@ input[type=number] {
     justify-content: center;
 }
 @media (max-width: 1860px){
-    .hero-flex{
-        width: 70%;
+    #explore-popup, .magic-dust{
+        width: 60%;
     }
     .miner-input-box{
         margin-bottom: 0;
@@ -319,8 +330,8 @@ input[type=number] {
     }
 }
 @media (max-width: 1660px){
-    .hero-flex{
-        width: 80%;
+    #explore-popup, .magic-dust{
+        width: 60%;
     }
     .miner-input-box{
         margin-bottom: 0;
@@ -340,8 +351,8 @@ input[type=number] {
 } 
 
 @media (max-width: 1280px){
-    .hero-flex{
-        width: 55%;
+    #explore-popup, .magic-dust{
+        width: 60%;
     }
     .miner-input-box{
         margin-bottom: 0;
@@ -351,11 +362,12 @@ input[type=number] {
         /*height: 250px; */
     }
     .miners-box-left h3{
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .magic-dust{
-        width:90%;
-        top: 50px;
+        /*width:90%;*/
+        transform: scaleX(1.5);
+        top: 30px;
     }
     .img-flex h1{
         font-size: 60px;
@@ -364,11 +376,53 @@ input[type=number] {
         width: 100%;
     }
     .miners-box form button, .collect-btn{  
-        padding: 5px;
-        font-size:0.75rem; 
+        padding: 10px;
+        font-size:1rem; 
     }
     .info-box h2, .miner-input-box input{  
         font-size: 32px;   
+    }
+    .info-box{  
+        font-size: 20px;
+        line-height: 100%;  
+    }
+}
+@media (max-width: 1180px){
+    #explore-popup, .magic-dust{
+        width: 60%;
+    }
+    .miner-input-box{
+        margin-bottom: 0;
+    }
+    .miners-box, .info-box{
+        padding: 20px ;
+        /*height: 250px; */
+    }
+    .miners-box-left h3{
+        font-size: 1.5rem;
+    }
+    .animation-box img{
+        width: 180px;
+    }
+    .magic-dust{
+        /*width:90%;*/
+        top: 30px;
+    }
+    .img-flex h1{
+        font-size: 60px;
+    }
+    .img-flex img{
+        width: 100%;
+    }
+    .miners-box form button, .collect-btn{  
+        padding: 10px;
+        font-size:1rem; 
+    }
+    .info-box h2, .miner-input-box input{  
+        font-size: 32px;   
+    }
+    .miner-input-box h3 {
+        margin: 10px auto;
     }
     .info-box{  
         font-size: 20px;

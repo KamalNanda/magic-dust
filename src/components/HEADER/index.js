@@ -23,9 +23,9 @@ const MobileHeader = () => {
 			    <li><a href="#contact">CONTACT</a></li>
 			    <li> 
 					<div class="social-holder">
-						<img src={discord}  alt={"discord"} />
-						<img src={telegram} alt={"telegram"} />
-						<img src={twitter}  alt={"twitter"} />
+						<img onClick={() => window.open('https://www.discord.com')} src={discord}  alt={"discord"} />
+						<img onClick={() => window.open('https://www.telegram.com')} src={telegram} alt={"telegram"} />
+						<img onClick={() => window.open('https://www.twitter.com')} src={twitter}  alt={"twitter"} />
 					</div>
 			    </li>
 			</ul>
@@ -36,10 +36,10 @@ const MobileHeader = () => {
 
 const DesktopHeader = () => {
 	return ( 
-		<div class="header"> 
+		<div class="header" id="header"> 
 			<img src={logo} alt="logo" />
 			<ul>
-			    <li><a href="#home" class="active">HOME</a></li>
+			    <li><a href="#home">HOME</a></li>
 			    <li><a href="#section-1">Miners</a></li>
 			    <li><a href="#section-2">$Dust Token</a></li>
 			    <li><a href="#section-3">Community</a></li>
@@ -48,9 +48,9 @@ const DesktopHeader = () => {
 			    <li><a href="#contact">CONTACT</a></li>
 			</ul>
 			<div class="social-holder">
-					<img src={discord}  alt={"discord"} />
-					<img src={telegram} alt={"telegram"} />
-					<img src={twitter}  alt={"twitter"} />
+						<img onClick={() => window.open('https://www.discord.com')} src={discord}  alt={"discord"} />
+						<img onClick={() => window.open('https://www.telegram.com')} src={telegram} alt={"telegram"} />
+						<img onClick={() => window.open('https://www.twitter.com')} src={twitter}  alt={"twitter"} />
 			</div>
 		</div> 
   	);

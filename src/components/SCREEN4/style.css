@@ -30,6 +30,7 @@
     background: #D1FED04A;
     border: 6px solid #92FF07;
     display: flex;
+    cursor: pointer;
     align-items: center; 
     font-size: 36px;
     text-align: center;

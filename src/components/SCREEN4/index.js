@@ -22,15 +22,15 @@ const Screen = () => {
 				</div>
 				<div class="pink-boxes">
 	            	<div class="green-box">  
-		                <img src={discord} />
+		                <img onClick={() => window.open('https://www.discord.com')} src={discord} />
 		                Magic Dust on Discord
 		            </div>
 		            <div class="green-box"> 
-		                <img src={telegram} />
+		                <img onClick={() => window.open('https://www.telegram.com')} src={telegram} />
 		                Magic Dust on Telegram
 		            </div>
 		            <div class="green-box"> 
-		                <img src={twitter} />
+		                <img onClick={() => window.open('https://www.twitter.com')} src={twitter} />
 		                Magic Dust on Twitter
 		            </div> 
 		            <div class="green-box"> 

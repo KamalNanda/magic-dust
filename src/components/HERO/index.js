@@ -58,13 +58,13 @@ const Hero = () => {
     
     
     <section id="home">
+      <DIVIDER />
         <div class="section-bg">
             <img src={mountainFront} id="mountains_front"  alt={"mountainFront"}/>
             <img src={cave} id="cave" alt={"cave"}/>
             <img src={mountainBack} id="mountains_behind"  alt={"mountainBack"}/>
             <img src={moon} id="moon"  alt={"moon"}/>  
         </div>
-      <DIVIDER />
          <div class="hero-flex"> 
             <div class="magic-dust">   
                 <img src={heroLogo}  alt={"heroLogo"}/>
