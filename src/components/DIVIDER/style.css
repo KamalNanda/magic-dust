@@ -1,7 +1,22 @@
 .Divider{
 	width: 100%;
+	position: absolute;
+	z-index: 3;
+	bottom: -100px; 
+	height: 280px;
 	/*display: grid;
 	grid-template-columns: repeat(10, 1fr); */
+	/*margin-bottom: 100px;*/
+}
+@media(max-width:  1360px){
+	.Divider{
+		bottom: -160px; 
+	}
+}
+@media(max-width:  768px){
+	.Divider{
+		display: none; 
+	}
 }
 .Divider img{
 	width: 100%;

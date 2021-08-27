@@ -1,12 +1,19 @@
 section{
     width: 100%;
-    height: 100vh; 
+    min-height: calc(100vh + 320px); 
     display: flex;
     align-items: center;
     background:  #2b1055; 
     justify-content: center;
+    position: relative;
+    z-index: 2222;
     width: 100%;
     overflow: hidden !important;
+}
+@media(max-width:  1360px){
+    section{
+    min-height: calc(100vh + 200px); 
+    }
 }
 #loader{
     width: 100%;

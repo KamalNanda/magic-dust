@@ -8,6 +8,7 @@ import heroLogo from '../../assets/images/hero-logo.png'
 import shadow from '../../assets/images/yellow-shadow.png'
 import mario from '../../assets/images/mario.png'
 import star from '../../assets/images/star.png'
+import DIVIDER from '../DIVIDER'
 import minersGrid from '../../assets/images/miners.png'
 import man from '../../assets/images/man_2.png'
 const Hero = () => {
@@ -63,6 +64,7 @@ const Hero = () => {
             <img src={mountainBack} id="mountains_behind"  alt={"mountainBack"}/>
             <img src={moon} id="moon"  alt={"moon"}/>  
         </div>
+      <DIVIDER />
          <div class="hero-flex"> 
             <div class="magic-dust">   
                 <img src={heroLogo}  alt={"heroLogo"}/>
