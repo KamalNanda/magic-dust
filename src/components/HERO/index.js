@@ -58,29 +58,18 @@ const Hero = () => {
     
     
     <section id="home">
-      <DIVIDER />
         <div class="section-bg">
             <img src={mountainFront} id="mountains_front"  alt={"mountainFront"}/>
             <img src={cave} id="cave" alt={"cave"}/>
             <img src={mountainBack} id="mountains_behind"  alt={"mountainBack"}/>
             <img src={moon} id="moon"  alt={"moon"}/>  
         </div>
-         <div class="hero-flex"> 
+        <div class="hero-flex"> 
             <div class="magic-dust">   
                 <img src={heroLogo}  alt={"heroLogo"}/>
             </div> 
-            <div id="explore-popup"> 
-                {/**<div class="info-box">
-                  <h2>MAGIC DUST</h2>
-                  <p>$DUST is “mined” by chatting in 
-                    $DUST enabled chat rooms 
-                    on Telegram and Discord. 
-                    For every message you send 
-                    in a $DUSTy chat room 
-                    you earn 0.5 $DUST. 
-                  </p> 
-                </div>**/}
-                                 <div class="miners-box">
+            <div id="explore-popup">  
+                <div class="miners-box">
                     <div class="miners-box-left">
                         <h3>MINT UP TO 20!</h3>
                         <form onSubmit={(e) => connectWallet(e)}>
@@ -116,25 +105,15 @@ const Hero = () => {
                     <div class="animation-box">
                         <img id="mario-img" alt="mario" src={mario} />
                     </div>
+                </div>   
+                <div class="img-flex"> 
+                    <h1>9,810 / 10,000  MINERS LEFT</h1>
+                    {/**<img src={shadow} alt="shadow" />**/}
+                    <p>Badass $Dust Miners ALGORITHMICALLY GENERATED from 25 RUGGED AF features. </p>
                 </div> 
-                                 {/**<div class="info-box">
-                  <h2>MAGIC DUST</h2>
-                  <p>$DUST is “mined” by chatting in 
-                    $DUST enabled chat rooms 
-                    on Telegram and Discord. 
-                    For every message you send 
-                    in a $DUSTy chat room 
-                    you earn 0.5 $DUST. 
-                  </p> 
-                </div>**/}
-
             </div>
-            <div class="img-flex"> 
-                <h1>9,810 / 10,000  MINERS</h1>
-                {/**<img src={shadow} alt="shadow" />**/}
-                <p>Badass $Dust Miners ALGORITHMICALLY GENERATED from 25 RUGGED AF features. </p>
-            </div> 
         </div>
+      <DIVIDER />
     </section>
   </>);
 }
