@@ -1,10 +1,12 @@
 section{  
-    width: 100%;
-    height: calc(100vh + 180px);
+    margin: auto;
+    height: 93vh;
+    top: 7vh;
     display: flex;
     align-items: center;
     background: #2b1055;
     justify-content: center;
+    flex-direction: column;
     position: relative;
     z-index: 2222;
     width: 100%;
@@ -95,8 +97,7 @@ section{
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100vh;
-    padding: 100px;
+    height: 90vh; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,14 +127,17 @@ section{
     width: 80%;
     margin: 0 10%;
     height: auto;
-    bottom: 0;
+    bottom: 10vh;
     top: unset;
 }
 .miners-box{
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     background-color: #872eb1a8;
-    grid-template-columns: 1fr 1fr;
+    /*grid-template-columns: auto auto;*/
     grid-gap: 20px; 
+    width: 80%;
+    margin: auto;
     align-items: center;
     padding: 40px 40px;   
     border: 6px solid #FF06D7; 
@@ -154,7 +158,8 @@ section{
     background-color: #92FF07;
     height: 100%;
     display: flex;
-    width: 100%;
+    /*width: 100%;*/
+    width: fit-content;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -229,10 +234,9 @@ input[type=number] {
 }
 .hero-flex{
     display: flex;
-    height: 100vh;
-    width: 100%;
-    padding: 20px 0;
-    position: absolute;
+    max-height: 80vh;
+    width: 60%; 
+    /*position: absolute;*/
     top: 0;
     z-index: 999;
     align-items: center;
@@ -253,18 +257,17 @@ input[type=number] {
 .img-flex p{
     color: #92FF07;
     font-size: 45px;
-    text-align: center;
-    letter-spacing: 2px;
+    text-align: center; 
     font-weight: 900; 
     line-height: 125%;
 }
 .img-flex h1{
     color: #FF06D7;
-    letter-spacing: 12px; 
-    font-size: 140px;
+    letter-spacing: 12px;  
+    font-family: 'Emtype Foundry Regular';
     text-shadow: 0 0 3px #00ACEE, 0 0 5px #00ACEE;    
     font-weight: normal;
-    font-size: 140px; 
+    font-size: 100px; 
     text-align: center;
     letter-spacing: 0.1em;   
     color: #F9F900; 
@@ -278,7 +281,10 @@ input[type=number] {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px; 
-    width: 50%;
+    width: 100%;
+    position: relative;
+    top: -60px;
+    z-index: 1;
 }
 .info-box{
     display: flex;
@@ -309,11 +315,12 @@ input[type=number] {
 .magic-dust{
     position: relative;
     width: 100%;
-    width: 70%;
-    top: 50px;
+    width: 100%;
+    z-index: 2;
+    /*top: 50px;*/
 }   
 .magic-dust img{
-    width: 85%;
+    width: 100%;
     height: auto;
     margin: auto;
     display: block;
@@ -322,42 +329,42 @@ input[type=number] {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto;
     justify-content: center;
 }
 @media (max-width: 1860px){
     #explore-popup{
-        width: 50%;
-    }
-    .magic-dust{
-
-        left: -50px;
-    }
+        /*width: 50%;*/
+    } 
     .miner-input-box{
         margin-bottom: 0;
     }
     .miners-box{
         padding: 40px ;
     }
+    .img-flex h1{
+        font-size: 80px;
+    }
 }
 @media (max-width: 1660px){
-    #explore-popup, .magic-dust{
-        width: 50%;
+    #explore-popup{
+        /*width: 50%;*/
+        top: -40px;
     }
     .miner-input-box{
         margin-bottom: 0;
     }
     .miners-box{
-        padding: 30px ;
+        padding: 20px ;
     }
     .animation-box img{
-        width: 180px;
+        /*width: 180px;*/
     }
     .magic-dust {
-        width: 70%;
-        left: -50px;
+        width: 100%; 
     }
     .img-flex h1{
-        font-size: 100px;
+        font-size: 70px;
     }
     .img-flex img{
         width: 120%;
@@ -365,7 +372,7 @@ input[type=number] {
 } 
 @media(max-width:  996px){
     #explore-popup, .magic-dust{
-        width: 55% !important;
+        /*width: 55% !important;*/
     }
 .animation-box img{
     width: 100%;
@@ -382,7 +389,7 @@ input[type=number] {
 }
 @media (max-width: 1280px){
     #explore-popup, .magic-dust{
-        width: 55%;
+        /*width: 55%;*/
     }
     .miner-input-box{
         margin-bottom: 0;
@@ -391,22 +398,19 @@ input[type=number] {
         padding: 20px ;
         /*height: 250px; */
     }
+    .img-flex p{ 
+        font-size: 26px !important; 
+    }
     .miners-box-left h3{
-        font-size: 2rem;
-    }
-    .magic-dust{
-        /*width:90%;*/
-        transform: scaleX(1.4);
-        top: 30px;
-        left: -50px;
-    }
+        font-size: 1.5rem;
+    } 
 .animation-box img{
     width: 100%;
     max-width: 200px;
     position: relative !important;
 }
     .img-flex h1{
-        font-size: 80px;
+        font-size: 60px;
     }
     .img-flex img{
         width: 100%;
@@ -425,7 +429,7 @@ input[type=number] {
 }
 @media (max-width: 1180px){
     #explore-popup, .magic-dust{
-        width: 60%;
+        /*width: 60%;*/
     }
     .miner-input-box{
         margin-bottom: 0;
@@ -435,17 +439,16 @@ input[type=number] {
         /*height: 250px; */
     }
     .miners-box-left h3{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .animation-box img{
         width: 150px;
     }
     .magic-dust{
-        /*width:90%;*/
-        top: 30px;
+        /*width:90%;*/ 
     }
     .img-flex h1{
-        font-size: 60px;
+        font-size: 50px;
     }
     .img-flex img{
         width: 100%;
@@ -476,8 +479,7 @@ input[type=number] {
     }
     .magic-dust{
         top: unset;
-        width: 100%;
-        margin-bottom: 40px;
+        width: 100%; 
     }
     .magic-dust img{
         width: 100%;

@@ -2,9 +2,13 @@
  
 @font-face {
     font-family: "Emtype Foundry";
-    font-style: normal;
-    font-weight: 700;
+    font-style: normal; 
     src: url("./assets/fonts/Emtype Foundry - Dixplay-Bk.otf");
+}
+@font-face {
+    font-family: "Emtype Foundry Regular";
+    font-style: normal; 
+    src: url("./assets/fonts/Emtype Foundry - Dixplay-Rg.otf");
 }
 @font-face {
     font-family: "Fontsphere";
@@ -17,10 +21,7 @@ html{
 }
 button{
     cursor: pointer;
-}
-ul{
-    margin-bottom: 0 !important;
-}
+} 
 *{
     margin: 0;
     padding:0;
@@ -58,19 +59,19 @@ body{
 } 
 @media (max-width:  1440px){
     #left, #right{
-    transform: scaleX(0.40) !imp  ;
+    transform: scaleX(0.50) !imp  ;
     } 
 #right{
-    right: -80px !important; 
+    right: -10px !important; 
 }
 #left{
-    left: -80px !important;
+    left: -10px !important;
      
-}
+    }
 }
 @media (max-width:  1280px){
     #left, #right{
-    transform: scaleX(0.40) !imp  ;
+    transform: scaleX(0.50) !important  ;
     } 
 }
 @media (max-width: 725px){
