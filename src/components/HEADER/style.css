@@ -15,10 +15,13 @@
     align-items: center;
 }  
 .header-logo{
-    width: 20%;
+    width: 15%;
+    margin-right: 3%;
+    margin-left: 2%;
 }
 .header .social-holder{
-    width: 20%;
+    width: 15%;
+    margin: 0 2.5%;
     padding: 20px;
 }
 .header .social-holder,
