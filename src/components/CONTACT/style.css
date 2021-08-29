@@ -13,10 +13,11 @@
      2px 2px 0 #FF06D7;  
 } 
 #contact{
-    height: fit-content;
+    height: 400vh;
 	position: relative;
     width: 100%;
     overflow: hidden !important;
+    background: url(../../assets/images/wallpaper.png);
 }
 #contact  form{ 
 	width: 60%;
@@ -65,16 +66,16 @@
 }
 .contact-wallpaper{
     width: 100%;
-    position: relative;
-    z-index:  -1;
-     top: -500px;  
+    position: absolute;
+    z-index:  1;
+     /*top: -500px;  */
 } 
 .contact-wallpaper img{
     width: 100%;
     transform: scaleY(1.2);
 }
 .message{ 
-    top: 1800px;
+    top: 500px;
     display: block;
     position: absolute;  
     width: 100%;
