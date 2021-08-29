@@ -316,6 +316,7 @@ input[type=number] {
     position: relative;
     width: 100%;
     width: 100%;
+    transform: scaleY(0.8); 
     z-index: 2;
     /*top: 50px;*/
 }   
@@ -410,8 +411,24 @@ input[type=number] {
     position: relative !important;
 }
     .img-flex h1{
-        font-size: 60px;
     }
+
+.img-flex h1{   
+        font-size: 60px;
+        margin-top: 0;
+    text-align: center;  
+    text-shadow:
+        -2px -2px 0 #FF13ED,  
+        2px -2px 0 #FF13ED,
+        -2px 2px 0 #FF13ED,
+        2px 2px 0 #FF13ED;
+}
+.img-flex{
+    margin-top: -20px;
+}
+.img-flex p{
+    font-size: 0.85rem !important;
+}
     .img-flex img{
         width: 100%;
     }
@@ -452,10 +469,6 @@ input[type=number] {
     }
     .img-flex img{
         width: 100%;
-    }
-    .miners-box form button, .collect-btn{  
-        padding: 10px;
-        font-size:1rem; 
     }
     .info-box h2, .miner-input-box input{  
         font-size: 32px;   
@@ -504,5 +517,9 @@ input[type=number] {
     } 
     .minted-popup img{
         width: 100%;
+    }
+    .miners-box form button, .collect-btn{  
+        padding: 10px;
+        font-size:1rem; 
     }
 }

@@ -7,6 +7,7 @@ const Contact = () => {
 
 	return(
 		<div id="contact">
+                {/**img class="wallpaper" src={wallpaper}  />**/}
          	<h1>CONTACT</h1>
 			<div class="form-cont">
                 <form> 
@@ -19,7 +20,6 @@ const Contact = () => {
             </div>
 			<img src={Man2} class="man22" style={{display:'block', margin:'auto'}}/>
 			<div class="contact-wallpaper">
-                <img class="wallpaper" src={wallpaper}  />
                 <div class="message">
                     <h1>DUST <br/>IS<br/> MAGIC</h1>
                 </div> 
