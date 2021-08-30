@@ -34,7 +34,7 @@ const MobileHeader = () => {
 			    <li> 
 					<div class="social-holder">
 						<img onClick={() => window.open('https://www.discord.com')} src={discord}  alt={"discord"} />
-						<img onClick={() => window.open('https://www.telegram.com')} src={telegram} alt={"telegram"} />
+						<img onClick={() => window.open('https://www.telegram.org')} src={telegram} alt={"telegram"} />
 						<img onClick={() => window.open('https://www.twitter.com')} src={twitter}  alt={"twitter"} />
 					</div>
 			    </li>
@@ -69,7 +69,7 @@ const DesktopHeader = () => {
 			</ul>
 			<div class="social-holder">
 						<img onClick={() => window.open('https://www.discord.com')} src={discord}  alt={"discord"} />
-						<img onClick={() => window.open('https://www.telegram.com')} src={telegram} alt={"telegram"} />
+						<img onClick={() => window.open('https://www.telegram.org')} src={telegram} alt={"telegram"} />
 						<img onClick={() => window.open('https://www.twitter.com')} src={twitter}  alt={"twitter"} />
 			</div>
 		</div> 

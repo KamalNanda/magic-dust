@@ -26,7 +26,7 @@ const Screen = () => {
 		                Magic Dust on Discord
 		            </div>
 		            <div class="green-box"> 
-		                <img onClick={() => window.open('https://www.telegram.com')} src={telegram} />
+		                <img onClick={() => window.open('https://www.telegram.org')} src={telegram} />
 		                Magic Dust on Telegram
 		            </div>
 		            <div class="green-box"> 

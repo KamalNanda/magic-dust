@@ -20,8 +20,8 @@
     margin-left: 2%;
 }
 .header .social-holder{
-    width: 15%;
-    margin: 0 2.5%;
+    width: 17%;
+    margin: 0 1.5%;
     padding: 20px;
 }
 .header .social-holder,
@@ -53,6 +53,7 @@
 #mobile-nav ul li{
     list-style: none; 
     text-align: center; 
+    font-size: 2px !important;
     border-left: 2px solid #91e01f;
 }
 #mobile-nav ul li a{
@@ -63,6 +64,7 @@
     border: none !important;
     text-align: left !important; 
     margin: 10px 0 !important;
+    font-size: 37px !important; 
 }
 .header ul li a,
 #mobile-nav ul li a{
@@ -72,8 +74,7 @@
     font-size: 32px !important; 
     position: relative;
     /* border-radius: 20px; */
-} 
-
+}  
 #mobile-nav{
     background-color:#8706c8;
     padding: 10px 40px; 
@@ -150,7 +151,7 @@
         /*margin: 0 20px;*/
     }
     .social-holder img{
-        width: 30px;
+        width: 25px;
     }
 }
 @media (max-width: 996px) {
