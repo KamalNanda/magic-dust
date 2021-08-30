@@ -75,7 +75,7 @@
     transform: scaleY(1.2);
 }
 .message{ 
-    top: 500px;
+    top: 300px;
     display: block;
     position: absolute;  
     width: 100%;
@@ -104,7 +104,7 @@ img.gem {
     transform: scaleX(1) scaleY(1.0);
 } 
 .message{
-    top: 900px;
+    /*top: 900px;*/
 }
 }
 @media(max-width:  1024px){
@@ -128,8 +128,8 @@ img.gem {
 }
 @media (max-width:  1760px){
     #contact h1{
-        font-size: 120px !important;
-        transform: scale(1);
+        font-size: 120px !important;/*
+        transform: scale(1);*/
     }
     #contact .man22{
         width: 60%;
@@ -153,10 +153,27 @@ img.gem {
     }
 }
 @media (max-width: 1280px){
+    #contact h1{
+        font-size: 120px !important;
+        transform: scale(1);
+    }
+    .message h1{ 
+        transform: scaleX(1.5) scaleY(1.25) !important;
+        line-height: 250px !important;
+    }
     #contact .man22{
         width: 30% !important;
-    }
+    } 
+}
+@media (max-width: 1024px){ 
+    .message h1{ 
+        transform: scaleX(1.25) scaleY(1) !important;
+        line-height: 200px !important;
+    } 
+    .message{
 
+    top: 200px;
+    }
 }
 @media (max-width:  786px){
     #contact h1,

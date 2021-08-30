@@ -47,31 +47,31 @@ body{
     position: absolute;
     z-index: 9999999;
     height: 100%;
-    transform: scaleX(0.5) ;
+    transform: scaleX(0.75) ;
 }
 #right{
-    right: -50px !important;
+    right: -100px  ;
         transform-origin: 100% 0%;
 }
 #left{
-    left: -50px !important;
+    left: -100px  ;
         transform-origin: 0% 100%;
 } 
 @media (max-width:  1440px){
     #left, #right{
-    transform: scaleX(0.50) !imp  ;
+    transform: scaleX(0.80) !important  ;
     } 
 #right{
-    right: -10px !important; 
+    right: -200px  ; 
 }
 #left{
-    left: -10px !important;
+    left: -120px  ;
      
     }
 }
 @media (max-width:  1280px){
     #left, #right{
-    transform: scaleX(0.50) !important  ;
+    transform: scaleX(0.80) !important  ;
     } 
 }
 @media (max-width: 725px){

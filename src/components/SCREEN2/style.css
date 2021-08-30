@@ -1,6 +1,6 @@
 #section-1{
     position: relative;
-    padding-top: 900px ;
+    padding-top: 500px ;
     width: 100%; 
     overflow: hidden !important;
 }
@@ -32,9 +32,13 @@
     letter-spacing: 0.1em; 
     color: #FF13ED;
 }
-.pink-box .row img{
-    margin-right: 20px ;
+.sec-box{
+    width: 50%;
+    margin: 0 25%;
 }
+/*.pink-box .row img{
+    margin-right: 20px ;
+}*/
 .pink-box h2{ 
     font-style: normal;
     font-weight: 900;
@@ -81,7 +85,7 @@
 }
 @media (max-width : 1780px){
     #section-1{
-        padding-top: 800px;
+        padding-top: 400px;
     }
     #group{
         right: 200px;
@@ -109,7 +113,7 @@
 }
 @media (max-width : 1280px){
     #section-1{
-        padding-top: 500px;
+        padding-top: 250px;
     }
 #group{
     position: absolute;
