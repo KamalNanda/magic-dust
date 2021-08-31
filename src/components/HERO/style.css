@@ -1,16 +1,41 @@
 section{  
     margin: auto;
-    height: 93vh;
-    top: 7vh;
+    /*height: 93vh;*/ 
     display: flex;
     align-items: center;
     background: #2b1055;
     justify-content: center;
     flex-direction: column;
     position: relative;
+    margin-top: 7vh;
     z-index: 2222;
     width: 100%;
     overflow: hidden !important;
+}
+#home i{
+    position: absolute;
+    background: white;
+    border-radius: 50px;
+    z-index: 1;
+    animation: animate linear infinite;
+}
+#green-arrow{
+    position: absolute;
+    z-index: 10000000;
+    left: 50px;
+    top: 50px;
+    width: 27%;
+}
+.hero-flex{
+    display: flex;
+    height: 78vh;
+    width: 50%; 
+    /*position: absolute;*/
+    top: 0;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 @media(max-width:  1360px){
     section{
@@ -81,7 +106,7 @@ section{
 }
 .minted-popup h1{
     color: #FF06D7;
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
     display: block;
     margin: auto;
@@ -131,14 +156,14 @@ section{
     top: unset;
 }
 .miners-box{
-    display: flex;
+    display: grid;
     justify-content: space-between;
-    background-color: #872eb1a8;
-    /*grid-template-columns: auto auto;*/
+    background-color: #872EB1DB;
+    grid-template-columns: 6fr 4fr;
     grid-gap: 20px; 
-    width: 80%;
+    width:90%;
     margin: auto;
-    align-items: center;
+    /*align-items: center;*/
     padding: 40px 40px;   
     border: 6px solid #FF06D7; 
     border-radius: 6px
@@ -146,7 +171,7 @@ section{
 .miners-box p{ 
     font-size:1.5rem;
     text-align: center; 
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     color: #92FF07
 }
 .miners-box h3{ 
@@ -164,8 +189,8 @@ section{
     background-color: #92FF07;
     height: 100%;
     display: flex;
-    /*width: 100%;*/
-    width: fit-content;
+    width: 100%;
+    /*width: fit-content;*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -227,28 +252,18 @@ input[type=number] {
 }
 .miners-box form button, .collect-btn{
     /*background-color: #872eb1a8 ;*/
-    background-color: #C101B2;
-    /*border: 6px solid #92FF07 important;*/
-    border-radius: 6px !important;
-    color: #fff; 
+    background-color: #872EB1DB;
+    border: 6px solid #FF06D7  ;
+    border-radius: 6px  ;
+    color: #FF06D7; 
     text-align: center;
     width: 100%;
     font-weight: 700;
+    margin-top:1rem ;
     cursor: pointer;
     padding: 0.5rem 1rem;
     font-size:1.5rem;
     letter-spacing: 5px;
-}
-.hero-flex{
-    display: flex;
-    max-height: 80vh;
-    width: 60%; 
-    /*position: absolute;*/
-    top: 0;
-    z-index: 999;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
 }
 .img-flex{   
     display: flex;
@@ -279,10 +294,10 @@ input[type=number] {
     letter-spacing: 0.1em;   
     color: #F9F900; 
     text-shadow:
-        -4px -4px 0 #FF13ED,  
-        4px -4px 0 #FF13ED,
-        -4px 4px 0 #FF13ED,
-        4px 4px 0 #FF13ED;
+        -2px -2px 0 #FF13ED,  
+        2px -2px 0 #FF13ED,
+        -2px 2px 0 #FF13ED,
+        2px 2px 0 #FF13ED;
 }
 #explore-popup{
     display: grid;
@@ -329,7 +344,7 @@ input[type=number] {
 }   
 .magic-dust img{
     width: 100%;
-    height: auto;
+    height: auto; 
     margin: auto;
     display: block;
 }
@@ -342,7 +357,7 @@ input[type=number] {
 }
 @media (max-width: 1920px){
     .img-flex h1{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 /*.miners-box form button, .collect-btn{
     font-size: 2rem;
@@ -374,7 +389,7 @@ input[type=number] {
 }
 .miners-box form button, .collect-btn{ 
     /*border: 4px solid #92FF07 !important;   */
-    padding: 0.3rem 0.2rem !important;
+    padding: 0.3rem 0.2rem  ;
     font-size:1.5rem ;
     min-width: 300px;
     letter-spacing: 0px;
@@ -392,7 +407,7 @@ input[type=number] {
     .
 .miners-box form button, .collect-btn{ 
     /*border: 4px solid #92FF07 !important;   */
-    padding: 0.2 0.4rem !important;
+    padding: 0.2 0.4rem  ;
     font-size:1.15rem ;
     min-width: 300px;
     letter-spacing: 0px;
@@ -401,13 +416,13 @@ input[type=number] {
         margin-bottom: 0;
     }
     .miners-box{
-        padding: 20px ;
+        padding: 40px ;
     }
 .miners-box p{ 
     margin-top: 10px;
     font-size:1.2rem;
     text-align: center; 
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     color: #92FF07
 }
 .animation-box img{
@@ -445,19 +460,29 @@ input[type=number] {
     border:4px solid #17F16E; 
     margin: 20px; 
 }
+.hero-flex{
+    margin-top: 30px;
+}
+    .img-flex h1{
+        font-size: 2.5rem !important;
+    }
 .miners-box-left{}
 } 
 @media (max-width: 1280px){
-     .miners-box{
-        width: 70%;
-    /*display: none*/
-
+     
+#green-arrow{ 
+    left: 30px;
+    top: 30px;
+    width: 27%;
+}
+    .miners-box{
+        padding: 40px ;
     }
 .miners-box p{ 
     margin-top: 10px;
     font-size:1rem;
     text-align: center; 
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     color: #92FF07
 }
     .miners-box-left>h3{
@@ -471,7 +496,7 @@ input[type=number] {
     width: 30px;
     height: 30px; 
 
-} 
+}
 .miner-input-box input{
     width:40px;  
     font-size: 1.25rem;
@@ -480,7 +505,7 @@ input[type=number] {
 }
 .miners-box form button, .collect-btn{ 
     /*border: 4px solid #92FF07 !important;   */
-    padding: 0.1rem !important;
+    padding: 0.1rem  ;
     font-size:1.15rem;
     min-width: 200px;
     letter-spacing: 0px;
@@ -493,11 +518,7 @@ input[type=number] {
 }
     .miner-input-box{
         margin-bottom: 0;
-    }
-    .miners-box, .info-box{
-        padding: 20px ;
-        /*height: 250px; */
-    }
+    } 
     .img-flex p{ 
         font-size: 26px !important; 
     }
@@ -545,7 +566,7 @@ input[type=number] {
 }
 @media (max-width: 1180px){
     .miners-box{
-        width: fit-content;
+        /*width: fit-content;*/
 
     } 
     .img-flex h1{
@@ -560,7 +581,7 @@ input[type=number] {
     margin-top: 10px;
     font-size:0.75rem;
     text-align: center; 
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     color: #92FF07
 }
 
@@ -591,8 +612,8 @@ input[type=number] {
         width: 100%;
     }
     .miners-box form button, .collect-btn{  
-        padding: 5px !imporant; 
-        font-size:0.95rem !important; 
+        padding: 5px ; 
+        font-size:0.95rem 
     }
     .info-box h2, .miner-input-box input{  
         font-size: 32px;   
@@ -609,6 +630,11 @@ input[type=number] {
     #explore-popup, .magic-dust{
         /*width: 55% !important;*/
     }
+#green-arrow{ 
+    left: 30px;
+    top: 40px;
+    width: 27%;
+}
 .img-flex h1{   
         font-size: 1.5rem !important;
         margin-top: 0;
@@ -619,6 +645,18 @@ input[type=number] {
         -2px 2px 0 #FF13ED,
         2px 2px 0 #FF13ED;
 }
+.miners-box p{ 
+    margin-top: 10px;
+    font-size:0.55rem;
+    text-align: center; 
+    letter-spacing: 5px;
+    color: #92FF07
+}
+    .miners-box form button, .collect-btn{  
+        padding: 5px  ; 
+        font-size:0.95rem ; 
+        border-width: 4px;
+    }
 .img-flex p{
     font-size: 0.75rem !important;
 }
@@ -636,6 +674,9 @@ input[type=number] {
     }
 }
 @media (max-width: 786px){
+    section{
+        margin-top: 0;
+    }
     .miners-box,
     #explore-popup{
         grid-template-columns: 1fr;
@@ -675,5 +716,50 @@ input[type=number] {
     .miners-box form button, .collect-btn{  
         padding: 10px;
         font-size:1rem; 
+    }
+    #green-arrow{ 
+        left: 00px;
+        transform: scaleY(-1);
+        bottom: 20px;
+        top: unset;
+        width: 25%;
+    }
+}
+@media (max-width:  525px){
+    .img-flex h1{
+        font-size: 1.25rem !important;
+        text-shadow:
+        -1px -1px 0 #FF13ED,  
+        1px -1px 0 #FF13ED,
+        -1px 1px 0 #FF13ED,
+        1px 1px 0 #FF13ED;
+    }
+    .hero-flex{
+
+    }
+    #green-arrow{ 
+        left: 00px; 
+        bottom: 30px;
+        top: unset;
+        width: 25%;
+    }
+    #explore-popup {
+        top: -10px;
+    }
+    .miners-box form button, .collect-btn {  
+        min-width: 100px; 
+    }
+    .hero-flex{
+        height: unset;
+    }
+}
+@media (max-width:  425px){ 
+    #green-arrow{  
+        bottom: 40px;  
+    }
+}
+@media (max-width:  375px){ 
+    #green-arrow{  
+        bottom: 70px;  
     }
 }

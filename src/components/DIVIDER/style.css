@@ -3,21 +3,20 @@
 	z-index: 4;
 	bottom: 0px;  
 	/* display: grid; */
-	display: flex;
-	height: 15vh;
-	background: #00cec9;
-	align-items: center;
+	display: flex; 
+	background: #00cec9; 
 	justify-items: center;
 	/* grid-template-columns: repeat(10, 1fr);  */
 	/*margin-bottom: 100px;*/
 }
-.Divider div{ 
-	height: 200px;
+.Divider div{  
 	width: 100%;
+	position: relative;
 }  
-.Divider div img{ 
-	height: 200px;
-	width: 100%; 
+.Divider div img{  
+	width: 100%;
+	position: relative; 
+	height: 100%;
 }  
 @media(max-width:  1760px){ 
 	.Divider div{  
@@ -33,13 +32,7 @@
 	.Divider div{  
 		width: 100%;
 	}   
-}
-@media(max-width:  1360px){
-	.Divider{
-		/*bottom: -160px; */
-	height: 20vh;
-	} 
-}
+} 
 @media(max-width:  768px){
 	.Divider{
 		/*display: none; */
