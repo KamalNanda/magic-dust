@@ -3,11 +3,17 @@ import './style.css'
 import Man2 from '../../assets/images/man23.png'  
 import wallpaper from '../../assets/images/wallpaper.png'  
 import gem from '../../assets/images/gem.png'  
+import gemplatform from '../../assets/images/gemplatform.png'
 const Contact = () => {
 
 	return(
+        <div style={{position:'relative'}}>
+
+          <div class="gemplatform">
+            <img src={gemplatform}/>
+          </div>
 		<div id="contact">
-                {/**img class="wallpaper" src={wallpaper}  />**/}
+                {/**img class="wallpaper" src={gemplatform}  />**/}
          	<h1>CONTACT</h1>
 			<div class="form-cont">
                 <form> 
@@ -24,8 +30,9 @@ const Contact = () => {
                     <h1>DUST <br/>IS<br/> MAGIC</h1>
                 </div> 
             </div>  
-            <img class="gem" src={gem}  />
+            {/* <img class="gem" src={gem}  /> */}
 		</div>	
+        </div>
 	)  
 }
 export default Contact

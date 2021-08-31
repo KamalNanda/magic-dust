@@ -20,7 +20,7 @@ function App() {
       <div id="group-div">
         <img src={left} id="left" />
         <img src={right} id="right" />
-        <SCREEN2 />
+        
         <SCREEN3 />
         <SCREEN4 />
         <TEAM />

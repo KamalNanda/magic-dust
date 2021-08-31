@@ -1,6 +1,5 @@
 import React from 'react' 
 import './style.css'  
-import gemplatform from '../../assets/images/gemplatform.png'
 const FAQ = () => {
 
 	return(
@@ -56,9 +55,9 @@ const FAQ = () => {
 				 	</ul>
 				 </div>
 			</div>  
-          <div class="gemplatform">
+          {/**<div class="gemplatform">
            	<img src={gemplatform}/>
-          </div>
+          </div> **/}
 		</div>
 	)
 }

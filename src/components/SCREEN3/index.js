@@ -3,13 +3,15 @@ import './style.css'
 import Man from '../../assets/images/screen3man.png' 
 import Man2 from '../../assets/images/man22.png' 
 import sf from '../../assets/images/sf.png' 
+import Cieling from '../../assets/images/CAVE CIELING FRONT.png'
 import aw from '../../assets/images/aw.png' 
 import gpk from '../../assets/images/gpk.png'  
 const Screen = () => { 
 
-	return(
+	return(<div style={{position:"relative"}}>
+			<img src={Cieling} class="cieling" />
 		<div id="section-2">
-			<img src={Man} /> 
+			{/** <img src={Man} /> **/}
 			<h1><span>$dust</span> flows<br/>
 	            like <span>magic</span><br/>
 	            while <span>communities</span><br/>
@@ -27,6 +29,6 @@ const Screen = () => {
 			</p>
 			<img src={Man2} />
 		</div>	
-	)  
+	</div>)  
 }
 export default Screen
