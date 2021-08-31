@@ -143,6 +143,12 @@ section{
     border: 6px solid #FF06D7; 
     border-radius: 6px
 }
+.miners-box p{ 
+    font-size:1.5rem;
+    text-align: center; 
+    letter-spacing: 5px;
+    color: #92FF07
+}
 .miners-box h3{ 
     font-size:2rem;
     text-align: center; 
@@ -220,15 +226,16 @@ input[type=number] {
     cursor: pointer;
 }
 .miners-box form button, .collect-btn{
-    background-color: #872eb1a8 ;
-    border: 6px solid #92FF07 !important;
+    /*background-color: #872eb1a8 ;*/
+    background-color: #C101B2;
+    /*border: 6px solid #92FF07 important;*/
     border-radius: 6px !important;
-    color: #92FF07; 
+    color: #fff; 
     text-align: center;
     width: 100%;
     font-weight: 700;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     font-size:1.5rem;
     letter-spacing: 5px;
 }
@@ -365,6 +372,13 @@ input[type=number] {
     max-width: 250px !important;
     position: relative !important;
 }
+.miners-box form button, .collect-btn{ 
+    /*border: 4px solid #92FF07 !important;   */
+    padding: 0.3rem 0.2rem !important;
+    font-size:1.5rem ;
+    min-width: 300px;
+    letter-spacing: 0px;
+}
 }
 @media (max-width: 1660px){
     #explore-popup{
@@ -375,10 +389,11 @@ input[type=number] {
     .miners-box-left>h3{
         font-size: 2.0rem ;
     }
+    .
 .miners-box form button, .collect-btn{ 
-    border: 4px solid #92FF07 !important;   
-    padding: 0.2rem !important;
-    font-size:1.0rem ;
+    /*border: 4px solid #92FF07 !important;   */
+    padding: 0.2 0.4rem !important;
+    font-size:1.15rem ;
     min-width: 300px;
     letter-spacing: 0px;
 }
@@ -388,6 +403,13 @@ input[type=number] {
     .miners-box{
         padding: 20px ;
     }
+.miners-box p{ 
+    margin-top: 10px;
+    font-size:1.2rem;
+    text-align: center; 
+    letter-spacing: 5px;
+    color: #92FF07
+}
 .animation-box img{
     /*width: 100%;*/
     width: unset;
@@ -431,6 +453,13 @@ input[type=number] {
     /*display: none*/
 
     }
+.miners-box p{ 
+    margin-top: 10px;
+    font-size:1rem;
+    text-align: center; 
+    letter-spacing: 5px;
+    color: #92FF07
+}
     .miners-box-left>h3{
         font-size: 1.5rem !important ;
     }
@@ -450,9 +479,9 @@ input[type=number] {
     margin: 5px 20px; 
 }
 .miners-box form button, .collect-btn{ 
-    border: 4px solid #92FF07 !important;   
+    /*border: 4px solid #92FF07 !important;   */
     padding: 0.1rem !important;
-    font-size:1.0rem;
+    font-size:1.15rem;
     min-width: 200px;
     letter-spacing: 0px;
 }
@@ -527,6 +556,13 @@ input[type=number] {
         -2px 2px 0 #FF13ED,
         2px 2px 0 #FF13ED;
     }
+.miners-box p{ 
+    margin-top: 10px;
+    font-size:0.75rem;
+    text-align: center; 
+    letter-spacing: 5px;
+    color: #92FF07
+}
 
 #explore-popup{
     top: -40px;
@@ -556,7 +592,7 @@ input[type=number] {
     }
     .miners-box form button, .collect-btn{  
         padding: 5px !imporant; 
-        font-size:0.75rem !important; 
+        font-size:0.95rem !important; 
     }
     .info-box h2, .miner-input-box input{  
         font-size: 32px;   

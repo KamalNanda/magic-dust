@@ -3,23 +3,44 @@
 	z-index: 4;
 	bottom: 0px;  
 	display: grid;
+	height: 15vh;
 	background: #00cec9;
-	height: 13vh;
 	align-items: center;
-	/*grid-template-columns: repeat(10, 1fr); */
+	justify-items: center;
+	grid-template-columns: repeat(10, 1fr); 
 	/*margin-bottom: 100px;*/
+}
+.Divider div{ 
+	height: 100%; 
+	width: 100%;
+}  
+.Divider div img{ 
+	height: 100%;
+	width: 100%; 
+}  
+@media(max-width:  1760px){ 
+	.Divider div{  
+		width: 100%;
+	}   
+}
+@media(max-width:  1660px){  
+	.Divider div{  
+		width: 100%;
+	}  
+}
+@media(max-width:  1570px){ 
+	.Divider div{  
+		width: 100%;
+	}   
 }
 @media(max-width:  1360px){
 	.Divider{
 		/*bottom: -160px; */
-	}
+	height: 20vh;
+	} 
 }
 @media(max-width:  768px){
 	.Divider{
 		/*display: none; */
 	}
-}
-.Divider img{
-	width: 100%; 
-	height: 10vh;
-}
+} 
