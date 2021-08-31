@@ -694,10 +694,7 @@ input[type=number] {
     }
     .hero-flex{
         justify-content: unset;
-    } 
-    .section-bg{
-        display: none;
-    }
+    }  
     .minted-popup{
         padding: 20px;
         width: 90%;
