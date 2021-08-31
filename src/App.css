@@ -33,7 +33,7 @@ button{
 body{
     min-height: 100vh;
     overflow-x: hidden;
-    background: linear-gradient(#8806C9,#8806C9, #8806C9, #8806C9, #8806C9,#000,#000,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#000,#000,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9, #000);  
+    background: linear-gradient(#8806C9,#8806C9, #8806C9, #8806C9, #000,#000,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#000,#000,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9, #000);  
     /*background: url('./assets/images/grandbg.png'); */
     position: relative;  
 }
@@ -50,11 +50,11 @@ body{
     transform: scaleX(0.75) ;
 }
 #right{
-    right: -100px  ;
+    right: -150px  ;
         transform-origin: 100% 0%;
 }
 #left{
-    left: -100px  ;
+    left: -130px  ;
         transform-origin: 0% 100%;
 } 
 @media (max-width:  1440px){

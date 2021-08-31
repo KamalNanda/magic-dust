@@ -1,10 +1,11 @@
 #contact h1{
 	font-style: normal;
 	font-weight: 900;
-	font-size: 200px;
+	font-size: 180px;
     transform: scaleX(2) scaleY(1.5);
 	line-height: 150%; 
 	text-align: center; 
+    margin-top: 200px;
 	color: #92FF07; 
     text-shadow:
    -2px -2px 0 #FF06D7,  
@@ -16,6 +17,8 @@
     height: 400vh;
 	position: relative;
     width: 100%;
+    top: -150px;
+    z-index: -1;
     overflow: hidden !important;
     background: url(../../assets/images/wallpaper.png);
 }
