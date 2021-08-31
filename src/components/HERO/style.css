@@ -12,13 +12,6 @@ section{
     width: 100%;
     overflow: hidden !important;
 }
-#home i{
-    position: absolute;
-    background: white;
-    border-radius: 50px;
-    z-index: 1;
-    animation: animate linear infinite;
-}
 #green-arrow{
     position: absolute;
     z-index: 10000000;

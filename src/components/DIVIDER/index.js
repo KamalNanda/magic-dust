@@ -1,5 +1,6 @@
 import React from 'react'
-import './style.css' 
+import './style.css'
+import Div from '../../assets/images/man_2.png'
 import man1 from '../../assets/images/miners/1.png'
 import man2 from '../../assets/images/miners/2.png'
 import man3 from '../../assets/images/miners/3.png'
@@ -9,39 +10,40 @@ import man6 from '../../assets/images/miners/6.png'
 import man7 from '../../assets/images/miners/7.png'
 import man8 from '../../assets/images/miners/8.png'
 import man9 from '../../assets/images/miners/9.png'
-import man10 from '../../assets/images/miners/10.png' 
+import man10 from '../../assets/images/miners/10.png'
+import Miners from '../../assets/images/DUST MINERS GIF.png'
 const Divider = () => {
 	return <div id="divider" class="Divider">
 		{/**<img src={Miners} /> **/} 
 		<div>
-			<img src={man1} alt="man1" />
+			<img src={man1} />
 		</div>
 		<div>
-			<img src={man2} alt="man2" />
+			<img src={man2} />
 		</div>
 		<div>
-			<img src={man3} alt="man3" />
+			<img src={man3} />
 		</div>
 		<div>
-			<img src={man4} alt="man4" /> 
+			<img src={man4} /> 
 		</div>
 		<div>
-			<img src={man5} alt="man5" />
+			<img src={man5} />
 		</div>
 		<div>
-			<img src={man6} alt="man6" />
+			<img src={man6} />
 		</div>
 		<div>
-			<img src={man7} alt="man7" /> 
+			<img src={man7} />
 		</div>
 		<div>
-			<img src={man8} alt="man8" />
+			<img src={man8} />
 		</div>
 		<div>
-			<img src={man9} alt="man9" />
+			<img src={man9} />
 		</div>
 		<div>
-			<img src={man10} alt="man10" />
+			<img src={man10} />
 		</div>
 	</div>
 }
