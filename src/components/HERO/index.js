@@ -71,7 +71,9 @@ const Hero = () => {
             <div id="explore-popup">  
                 <div class="miners-box">
                     <div class="miners-box-left">
-                        <h3>MINT UP TO 20!</h3>
+                        <p>Magic Dust Miners are<br/>
+                        coming to collect your <br/>
+                            dust broooo.<br/></p> 
                         <form onSubmit={(e) => connectWallet(e)}>
                             <div class="miner-input-box">
                                 <h3>
@@ -86,7 +88,7 @@ const Hero = () => {
                                     <span onClick={plusFunction} class="plus"><i>+</i></span></h3>
                                 <div id="miners-container"></div>
                             </div>
-                            {
+                           {/** {
                               !isConnected  
                                 ? <div 
                                     class="collect-btn"
@@ -98,7 +100,12 @@ const Hero = () => {
                                     onClick={(e) => connectWallet(e)} 
                                     type="submit"  
                                   >MINT MINERS!</div>
-                            } 
+                            } **/}
+                             <div 
+                                    class="collect-btn"
+                                    type="button" 
+                                    onClick={() => setConnected(true)}
+                                  >JOIN DISCORD</div> 
                                                          
                         </form>
                     </div>
@@ -109,7 +116,7 @@ const Hero = () => {
                 <div class="img-flex"> 
                     <h1>9,810 / 10,000  MINERS LEFT</h1>
                     <img src={shadow} alt="shadow" />
-                    <p>Badass $Dust Miners ALGORITHMICALLY GENERATED from 25 RUGGED AF features. </p>
+                    <p>Coming soooooooooooooon!</p>
                 </div> 
             </div>
         </div>
@@ -117,5 +124,5 @@ const Hero = () => {
     </section>
   </>);
 }
-
+ 
 export default Hero;
