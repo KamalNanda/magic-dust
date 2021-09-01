@@ -268,6 +268,11 @@ input[type=number] {
     font-size:1.5rem;
     letter-spacing: 5px;
 }
+.miners-box form button:hover, .collect-btn:hover{ 
+    background-color: #92FF07 ; 
+    color: #FF06D7;    
+    font-weight: 500;
+}
 .img-flex{   
     display: flex;
     align-items: center; 
