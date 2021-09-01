@@ -11,8 +11,8 @@ import FAQ from './components/FAQ'
 import arrow from './assets/images/arrow.png'
 import CONTACT from './components/CONTACT'
 import FOOTER from './components/FOOTER'
-import left from './assets/images/left.png'
-import right from './assets/images/right.png'
+import left from './assets/images/left-min.png'
+import right from './assets/images/right-min.png'
 function App() {
   return (
     <div className="App">

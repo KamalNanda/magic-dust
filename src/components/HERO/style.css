@@ -506,6 +506,12 @@ input[type=number] {
     }
 .miners-box-left{}
 } 
+@media (max-width:  1440px){
+
+.img-flex p{
+    font-size: 1.15rem !important;
+    }
+}
 @media (max-width: 1280px){
      
 #green-arrow{ 
@@ -572,7 +578,7 @@ input[type=number] {
     }
 
 .img-flex h1{   
-        font-size: 2.5rem !important;
+        font-size: 2.25rem !important;
         margin-top: 0;
     text-align: center;  
     text-shadow:
@@ -585,7 +591,7 @@ input[type=number] {
     margin-top: -20px;
 }
 .img-flex p{
-    font-size: 1.15rem !important;
+    font-size: 1.05rem !important;
 }
     .img-flex img{
         width: 100%;
