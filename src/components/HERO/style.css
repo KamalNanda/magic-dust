@@ -166,7 +166,8 @@ section{
     /*align-items: center;*/
     padding: 40px 40px;   
     border: 6px solid #FF06D7; 
-    border-radius: 6px
+    border-radius: 6px;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .miners-box p{ 
     font-size:1.5rem;
@@ -259,6 +260,7 @@ input[type=number] {
     text-align: center;
     width: 100%;
     font-weight: 700;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin-top:1rem ;
     cursor: pointer;
     padding: 0.5rem 1rem;
@@ -282,6 +284,7 @@ input[type=number] {
     text-align: center; 
     font-weight: 900; 
     line-height: 125%;
+    text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .img-flex h1{
     color: #FF06D7;
@@ -347,6 +350,7 @@ input[type=number] {
     height: auto; 
     margin: auto;
     display: block;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .miners-box-left{
     display: flex;
@@ -694,7 +698,10 @@ input[type=number] {
     }
     .hero-flex{
         justify-content: unset;
-    }  
+    } 
+    .section-bg{
+        display: none;
+    }
     .minted-popup{
         padding: 20px;
         width: 90%;
@@ -732,7 +739,7 @@ input[type=number] {
         1px 1px 0 #FF13ED;
     }
     .hero-flex{
-        width: 90%
+
     }
     #green-arrow{ 
         left: 00px; 
