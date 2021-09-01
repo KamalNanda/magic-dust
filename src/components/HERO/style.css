@@ -726,6 +726,7 @@ input[type=number] {
     }
     #green-arrow{ 
         left: 00px;
+        display:none;
         transform: scaleY(-1);
         bottom: 20px;
         top: unset;
