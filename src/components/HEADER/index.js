@@ -16,9 +16,9 @@ const MobileHeader = () => {
 				isShown && <ul> 
 			    <li> 
 					<div class="social-holder">
-						<img onClick={() => window.open('https://www.discord.com')} src={discord}  alt={"discord"} />
-						<img onClick={() => window.open('https://www.telegram.org')} src={telegram} alt={"telegram"} />
-						<img onClick={() => window.open('https://www.twitter.com')} src={twitter}  alt={"twitter"} />
+						<img onClick={() => window.open('https://discord.gg/U358VVND')} src={discord}  alt={"discord"} />
+						<img onClick={() => window.open('https://t.me/joinchat/DOuJ0Mgk9rAxNDgx')} src={telegram} alt={"telegram"} />
+						<img onClick={() => window.open('https://twitter.com/dustismagic?s=20')} src={twitter}  alt={"twitter"} />
 					</div>
 			    </li>
 			</ul>
@@ -32,9 +32,9 @@ const DesktopHeader = () => {
 		<div class="header" id="header"> 
 			<img class="header-logo" src={logo} alt="logo" /> 
 			<div class="social-holder">
-						<img onClick={() => window.open('https://www.discord.com')} src={discord}  alt={"discord"} />
-						<img onClick={() => window.open('https://www.telegram.org')} src={telegram} alt={"telegram"} />
-						<img onClick={() => window.open('https://www.twitter.com')} src={twitter}  alt={"twitter"} />
+						<img onClick={() => window.open('https://discord.gg/U358VVND')} src={discord}  alt={"discord"} />
+						<img onClick={() => window.open('https://t.me/joinchat/DOuJ0Mgk9rAxNDgx')} src={telegram} alt={"telegram"} />
+						<img onClick={() => window.open('https://twitter.com/dustismagic?s=20')} src={twitter}  alt={"twitter"} />
 			</div>
 		</div> 
   	);
