@@ -69,7 +69,7 @@ const Hero = () => {
         {
           !isConnected  
             ? <div 
-                class="collect-btn"
+                class="collect-btn not-connected"
                 type="button" 
                  id="collect"
                 onClick={() => setConnected(true)}
@@ -123,9 +123,9 @@ const Hero = () => {
                     </div>
                 </div>   
                 <div class="img-flex">  
-                    <h1>10,000 $DUST MINER NFTs</h1>
+                    <h1>9,810/10,000 MINERS LEFT</h1>
                     <img src={shadow} alt="shadow" />
-                    <p>Coming Soon! Coming Soon! Coming Soon!</p>
+                    <p>Badass $Dust Miners ALGORITHMICALLY GENERATED from 25 RUGGED AF features.</p>
                 </div> 
             </div>
         </div>

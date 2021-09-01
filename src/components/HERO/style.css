@@ -276,6 +276,11 @@ input[type=number] {
     font-size:1.5rem;
     letter-spacing: 5px;
 } 
+#collect .collect-btn, .not-connected{
+    font-size: 1rem !important;
+    padding: 0.5rem 0.75rem ;
+    font-weight: 900;
+}
 .disconnect{
     background-color: #F36EFF;
     color: #fff;
@@ -305,7 +310,7 @@ input[type=number] {
 }
 .img-flex p{
     color: #92FF07;
-    font-size: 45px;
+    font-size: 36px;
     text-align: center; 
     font-weight: 900; 
     line-height: 125%;

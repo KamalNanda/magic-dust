@@ -2,12 +2,14 @@ import React from 'react'
 import './style.css'
 import Miner from '../../assets/images/miner-box.png'
 import REDX from '../../assets/images/red-x.png'
+import Cieling from '../../assets/images/CAVE CIELING FRONT.png'
 import Group from '../../assets/images/Group 383.png'
 import box from '../../assets/images/Group 388.png'
 const Screen = () => {
 
 	return(
 		<div id="section-1">
+			<img src={Cieling} class="cieling" />
 			{/**<div class="pink-box">
 				<img src={Group} id="group"/>
 				<div class='row'>
