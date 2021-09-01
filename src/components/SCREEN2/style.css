@@ -1,0 +1,238 @@
+#section-1{
+    position: relative;
+    padding-top: 500px ;
+    width: 100%; 
+    /*overflow: hidden !important;*/
+    margin-bottom: 300px;
+}
+.cieling{
+    position: absolute;
+    width: 100%; 
+    top: 0; 
+    z-index: -1;
+    transform: scaleY(1.65) ;
+    transform-origin: 100% 0%;
+}
+.pink-flex{
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    grid-gap: 20px;
+    align-items: center; 
+}
+.pink-flex img{
+    width: 100%;
+}
+.pink-flex h1{
+    color: #92FF07;
+    font-size: 40px;
+}
+.pink-flex h4{
+    color: #92FF07;
+    font-family: Emtype Foundry Regular;  
+    font-size: 20x;
+    line-height: 20x; 
+    letter-spacing: 0.1em; 
+}
+@media (max-width: 1660px){
+    .pink-flex h1{
+        font-size: 32px;
+    }
+    .pink-flex h4{
+        line-height: unset;
+        font-size: 16px;
+    }
+    #group{
+        right: -150px;
+        width: 50%;
+        top: 150px;
+    }
+}
+@media (max-width: 1280px){
+    .pink-flex h1{
+        font-size: 30px;
+    }
+    .pink-flex h4{
+        line-height: unset;
+        font-size: 16px;
+    }
+}
+@media(max-width: 786px){
+    .pink-flex{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+.pink-box{
+    background: #650C85;
+    border: 6px solid #F36EFF;
+    border-radius: 6px;
+    padding: 40px 70px;
+    position: relative;
+    width: 60% !important;
+    margin: auto;
+    margin-bottom: 200px;
+} 
+.add-white{ 
+    margin: 0 10px ;
+    width: 20px !important;
+}
+.row{
+    display: flex; 
+    align-items: center;
+    margin-bottom: 25px;
+}
+.pink-box .row p{  
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20x;
+    line-height: 20x; 
+    letter-spacing: 0.1em; 
+    color: #fff;
+}
+.sec-box{
+    width: 50%;
+    margin: 0 25%;
+} 
+@media (max-width : 768px){
+    #section-2 p, #section-2 p span{
+        width: 90% !important;
+        font-size: 60px !important;
+        line-height:  80px !important;
+    }
+    #section-2 h1,
+    #section-2 h1 span{
+        font-size: 100px !important;
+    }
+    .pink-box .row img{
+        width: 60px;
+    }
+    .pink-box h2{
+        font-size: 60px;
+    }
+}
+#group{
+    width: 60%;
+    position: absolute; 
+    top: 50px;
+    right: -200px;
+}
+@media (max-width: 1880px){
+    #group{
+        position: absolute; 
+        top: 600px;
+        width: 15px;
+        right: -25px;
+    }
+
+}
+@media (max-width:  768px){
+    #group{
+        display: none;
+    }
+}
+@media (max-width : 1780px){
+    #section-1{
+        padding-top: 400px;
+    }
+    #group{
+        right: -100px;
+        width: 50%;
+        top: 150px;
+    }
+    #section-2 p, #section-2 p span{
+        width: 90% !important;
+        font-size: 60px !important;
+        line-height:  80px !important;
+    }
+    #section-2 h1,
+    #section-2 h1 span{
+        font-size: 100px !important;
+    }
+    .pink-box .row img{
+        width: 80px;
+    }
+    .add-white{ 
+        margin: 0 5px ;
+        width: 12px !important;
+    }
+    .pink-box h2{
+        font-size: 60px;
+    } 
+    .pink-box h2{
+        font-size: 80px !important;
+    } 
+    .pink-box .row p{
+        font-size: 20px;
+    }
+}
+@media(max-width: 1660px){
+    #group{
+        right: -120px;
+        width: 50%;
+        top: 100px;
+    }
+    #group{
+        right: -150px;
+        width: 50%;
+        top: 150px;
+    }
+    .pink-box .row img{
+        width: 60px ;
+    }
+
+}
+@media (max-width : 1280px){
+    #section-1{
+        padding-top: 250px;
+    }
+    #group{
+        right: -120px;
+        width: 60%;
+        top: 30px;
+    }
+    #section-2 p, #section-2 p span{
+        width: 90% !important;
+        font-size: 60px !important;
+        line-height:  80px !important;
+    }
+    #section-2 h1,
+    #section-2 h1 span{
+        font-size: 100px !important;
+    }
+    .add-white{ 
+        margin: 0 5px ;
+        width: 8px !important;
+    }
+    .pink-box .row{
+        margin-bottom: 10px;
+    }
+    .pink-box .row img{
+        width: 50px ;
+    }
+    .pink-box h2{
+        font-size: 60px;
+    }
+    .pink-box .row p{
+        font-size: 16px;
+    }
+    .pink-box h2{
+        font-size: 60px !important;
+    }
+    #section-1 .pink-box{
+        padding: 20px 40px!important;
+    }
+}
+@media (max-width: 1024px){
+    .pink-box .row img{
+        width: 40px ;
+    }
+    .pink-box .row p{
+        font-size: 12px;
+    }
+    #group{
+        position: absolute; 
+        top: 50px;
+        width: 50% !important;
+        right: -105px;
+    }
+}

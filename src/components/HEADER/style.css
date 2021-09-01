@@ -1,0 +1,199 @@
+.header{
+    position: fixed;
+    top: 0;
+    z-index: 9999999999999999;
+    background-color:#8706c8;
+    box-shadow: 2px 0px 30px black;
+    left: 0;
+    overflow: hidden !important;
+    width: 100%;
+    padding: 20px 15px ;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    display: flex; 
+    align-items: center;
+}  
+.header-logo{
+    width: 15%;
+    margin-right: 3%;
+    margin-left: 2%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+}
+.header .social-holder{
+    width: 17%;
+    margin: 0 1.5%;
+    padding: 20px 40px;
+}
+.header .social-holder,
+#mobile-nav .social-holder{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+}
+.header .social-holder img,
+#mobile-nav .social-holder img{ 
+    cursor: pointer;
+    margin: auto;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.header ul{
+    width: 60% !important;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+} 
+#mobile-nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#mobile-nav ul{
+    align-items: flex-start;
+    align-self: flex-start; 
+}
+.header ul li,
+#mobile-nav ul li{
+    list-style: none; 
+    text-align: center; 
+    font-size: 2px !important;
+    border-left: 2px solid #91e01f;
+}
+#mobile-nav ul li a{
+    margin: 20px 0 !important;
+    font-size: 37px !important; 
+}
+#mobile-nav ul li{
+    border: none !important;
+    text-align: left !important; 
+    margin: 10px 0 !important;
+    font-size: 37px !important; 
+}
+.header ul li a,
+#mobile-nav ul li a{
+    text-decoration: none;
+    color: #91e01f    ; 
+    /*margin: 0 15px;*/
+    font-size: 32px !important; 
+    position: relative;
+    /* border-radius: 20px; */
+}  
+#mobile-nav{
+    background-color:#8706c8;
+    padding: 10px 40px; 
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+} 
+#mobile-nav ul{
+    flex-direction: column;
+}
+#mobile-nav img{
+    width: 40px;
+}
+.header ul li:nth-child(1){
+    border-left: none;
+}
+.header ul li a:hover,
+.header ul li a.active{  
+    border-bottom: 2px solid #91e01f;  
+}
+@media (max-width: 1800px){
+    .header ul li a,
+    #mobile-nav ul li a{
+        font-size: 28px !important;        
+    } 
+}
+@media (max-width: 1660px) {
+    .header{
+        padding: 10px;
+    }
+    .header ul li a{
+        font-size: 0.75rem; 
+        /*margin: 0 10px;*/
+    }
+    .social-holder img{
+        width: 30px;
+    }
+    .img-flex p{ 
+        font-size: 32px !important; 
+    }
+}
+@media (max-width: 1440px) {
+    .header{
+        padding: 10px 20px;
+    }
+    .header img{
+        /*width: 180px;*/
+    }
+    .header .social-holder{  
+        top: 5px !important;
+    }
+    .header ul li a{
+        font-size: 0.9rem !important; 
+        /*margin: 0 10px;*/
+    }
+    .social-holder img{
+        width: 25px;
+    }
+}
+@media (max-width: 1280px) {
+    .header{
+        padding: 10px 10px;
+    }
+    .header img{
+        /*width: 180px;*/
+    }
+    .header .social-holder{ 
+        right: 50px;
+        top: 5px !important;
+    }
+    .header ul li a{
+        font-size: 0.75rem !important; 
+        /*margin: 0 20px;*/
+    }
+    .social-holder img{
+        width: 25px;
+    }
+}
+@media (max-width: 996px) {
+    .header{
+        padding: 2px 5px;
+    }
+    .header img{
+        width: 150px;
+    }
+    .header .social-holder{ 
+        right: 50px;
+        top: 5px !important;
+    }
+    .header ul li a{
+        font-size: 0.65rem !important;
+        padding: 1px 1px; 
+        margin: 0 0px;
+    }
+    .social-holder img{
+        width: 20px;
+    }
+}
+@media (max-width: 725px){
+    .header, 
+    .header ul{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start !important;
+        text-align: left;
+    }
+    .header ul li{
+        border: none !important;
+    }
+    .header{
+        display: none;
+    }
+    #mobile-nav{
+        display: flex;
+    }
+    .social-holder img {
+        margin-right: 20px !important;
+    }
+} 
