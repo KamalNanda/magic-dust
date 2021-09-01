@@ -33,6 +33,7 @@ const Hero = () => {
                         </p>
                          
                         <div 
+                            onClick={() => window.open("https://discord.gg/U358VVND")}
                             class="collect-btn"
                             type="button"  
                           >JOIN DISCORD</div> 
