@@ -83,10 +83,7 @@
 	width: 100%;
 }
 }
-@media (max-width:  1760px){
-	#section-2{
-		margin-top: 100px;
-	}
+@media (max-width:  1760px){ 
 	#section-2 h1,
 	#section-2 h1 span{
 		font-size: 90px !important;
