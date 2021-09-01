@@ -73,12 +73,12 @@ const Hero = () => {
                 type="button" 
                  id="collect"
                 onClick={() => setConnected(true)}
-              >CONNECT WALLET!</div> 
+              >WALLET NOT CONNECTED!</div> 
             : <div id="collect">
                 <div class="collect-btn" >
                     WALLET CONNECTED
                 </div>
-                <div class="collect-btn disconnect">
+                <div class="collect-btn disconnect" onClick={() => setConnected(false)}>
                     DISCONNECT WALLET
                 </div>
             </div>
