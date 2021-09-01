@@ -704,10 +704,7 @@ input[type=number] {
     }
     .hero-flex{
         justify-content: unset;
-    } 
-    .section-bg{
-        display: none;
-    }
+    }  
     .minted-popup{
         padding: 20px;
         width: 90%;
@@ -745,7 +742,7 @@ input[type=number] {
         1px 1px 0 #FF13ED;
     }
     .hero-flex{
-
+        width: 90%
     }
     #green-arrow{ 
         left: 00px; 
@@ -765,7 +762,7 @@ input[type=number] {
 }
 @media (max-width:  425px){ 
     #green-arrow{  
-        bottom: 40px;  
+        bottom: 70px;  
     }
 }
 @media (max-width:  375px){ 
