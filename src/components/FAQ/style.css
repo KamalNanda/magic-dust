@@ -39,8 +39,7 @@
 	font-size: 1.25rem;
 }
 .gemplatform{
-	position: relative;
-	top: 100px;
+	position: relative; 
 }
 .gemplatform img{
 	width: 100%;

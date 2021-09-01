@@ -5,6 +5,8 @@
     transform: scaleX(2) scaleY(1.5);
 	line-height: 150%; 
 	text-align: center; 
+    top: -100px;
+    position: relative;
     margin-top: 200px;
 	color: #92FF07; 
     text-shadow:
@@ -13,14 +15,12 @@
     -2px 2px 0 #FF06D7,
      2px 2px 0 #FF06D7;  
 } 
-#contact{
-    height: 400vh;
+#contact{ 
 	position: relative;
-    width: 100%;
-    top: -150px;
-    z-index: -1;
-    overflow: hidden !important;
-    background: url(../../assets/images/wallpaper.png);
+    width: 100%; 
+    z-index: 1;
+    /*background-size: contain;*/
+    overflow: hidden !important; 
 }
 #contact  form{ 
 	width: 60%;
@@ -68,8 +68,7 @@
     height: 300px;
 }
 .contact-wallpaper{
-    width: 100%;
-    position: absolute;
+    width: 100%; 
     z-index:  1;
      /*top: -500px;  */
 } 
@@ -77,44 +76,16 @@
     width: 100%;
     transform: scaleY(1.2);
 }
-.message{ 
-    top: 300px;
-    display: block;
-    position: absolute;  
+#contact .man22{
+    margin-bottom: 100px;
+}
+.message{  
+    display: block; 
     width: 100%;
-    transform: scaleX(2) scaleY(1.5); 
-}
-.gem{
-	position: absolute;
-	bottom: -800px;
-}
-img.gem {
-    width: 100%x !important;
-    transform: scaleX(1.0) scaleY(0.75);
-}
-@media(max-width:  1660px){
-img.gem {
-    width: 100%x !important;
-    bottom: -1000px;
-    transform: scaleX(1) scaleY(0.6);
-}
-}
-
-@media(max-width:  1280px){
-img.gem {
-    width: 100%;
-    bottom: -600px;
-    transform: scaleX(1) scaleY(1.0);
-} 
-.message{
-    /*top: 900px;*/
-}
-}
-@media(max-width:  1024px){
-.gem {
-    /*display: none;*/
-}
-}
+    margin: 200px auto;
+    /*transform: scaleX(2) scaleY(1.5); */
+}   
+  
 .message h1{
     color: #FF8BB6 !important;
     line-height: 400px;

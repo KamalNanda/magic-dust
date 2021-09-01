@@ -25,11 +25,16 @@ function App() {
         
         <SCREEN3 />
         <SCREEN4 />
-        <TEAM />
         <ROADMAP />
-        <FAQ />
-      <CONTACT />
+        <FAQ /> 
+        <div class="bottom-section">
+          <div className="contact-bg" ></div>
+          <div className="gradient-bg"></div>
+          <TEAM />
+           <CONTACT />
+         </div>
       </div>
+      <FOOTER />
       <a id="arrow"  href="#home"><img src={arrow}/></a>
     </div>
   );

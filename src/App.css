@@ -33,17 +33,39 @@ button{
 body{
     min-height: 100vh;
     overflow-x: hidden;
-    background: linear-gradient(#8806C9,#8806C9, #8806C9, #8806C9, #000,#000,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#000,#000,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9, #000);  
+    background: linear-gradient(#8806C9,#8806C9, #8806C9, #8806C9, #000,#000,#000,#000,#000,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#fff,#fff ,#fff,#fff,#fff,#fff,#fff);  
     /*background: url('./assets/images/grandbg.png'); */
     position: relative;  
 }
- 
+.bottom-section{
+    position: relative;
+}
+.contact-bg{
+    position: absolute;
+    background:url('./assets/images/Group 592.png') ;
+    width: 100%;
+    top: 0;
+    transform: scaleX(1.2);
+    z-index: -5;
+    height: 500vh;
+}
+ .gradient-bg{
+    z-index: -4;
+    top: 0;
+    width: 100%;
+    position: absolute;
+    /*filter: opacity(0.5);*/
+    background:  linear-gradient(#8806C9,#000,#000000c2, #ffffff57,#ffffff57,#ffffff57) ;
+    height: 500vh;
+
+ }
 #group-div{
     position: relative;
     width: 100%;
 }
 #left, #right{
     top: 0; 
+    display: none;
     position: absolute;
     z-index: 9999999;
     height: 100%;

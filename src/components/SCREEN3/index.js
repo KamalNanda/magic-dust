@@ -2,29 +2,35 @@ import React from 'react'
 import './style.css'
 import Man from '../../assets/images/screen3man.png' 
 import Man2 from '../../assets/images/man22.png' 
-import sf from '../../assets/images/sf.png' 
-import aw from '../../assets/images/aw.png' 
-import gpk from '../../assets/images/gpk.png'  
+import aw from '../../assets/images/partners/aw.png' 
+import topps from '../../assets/images/partners/topps.png' 
+import bayc from '../../assets/images/partners/bayc.png' 
+import nw from '../../assets/images/partners/nw.png'  
+import btc from '../../assets/images/partners/btc.png' 
 const Screen = () => { 
 
 	return(<div style={{position:"relative"}}>
 		<div id="section-2">
 			{/** <img src={Man} /> **/}
 	        <p>Some of the biggest NFT<br/>
-				 communities are mining <span>$dust </span><br/>
+				 communities are mining $dust<br/>
 				 on Discord + Telegram . . .
 			</p>
-            <div class="games-flex">
-				<img src={sf} /> 
-				<img src={gpk} /> 
+            <div class="games-flex" style={{marginTop:'100px'}}>
+				<img src={topps} /> 
+				<img src={bayc} /> 
 				<img src={aw} /> 
             </div>
-			<h1><span>$dust</span> flows<br/>
-	            like <span>magic</span><br/>
-	            while <span>communities</span><br/>
-	            form, <span>interact</span><br/>
-	            and <span>grow!</span>
-            </h1>
+            <div class="games-flex gf-2">
+				<img src={btc} /> 
+				<img src={nw} />  
+            </div>
+			<p>$dust flows
+	            like magic<br/>
+	            while communities<br/>
+	            form, interact
+	            and grow!
+            </p>
 			<img src={Man2} />
 		</div>	
 	</div>)  

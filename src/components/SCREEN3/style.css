@@ -4,10 +4,10 @@
 	justify-content: center;
 	flex-direction: column;
 	margin-top: 000px; 
-	background: url(../../assets/images/CAVE BACKGROUND.png) ;
+	/*background: url(../../assets/images/CAVE BACKGROUND.png) ;
 	background-size: 1300px;
 	background-repeat: no-repeat;
-	background-position:  bottom;
+	background-position:  bottom;*/
     width: 100%;
     overflow: hidden !important;
 	position: relative;
@@ -24,7 +24,7 @@
 	font-family: 'Fontsphere';
 	text-transform: uppercase;
 	font-weight: 700; 
-	margin-top: 600px;
+	margin-top: 100px;
 	font-size: 120px;
 	text-shadow:
 		-2px -2px 0 #F36EFF,  
@@ -50,21 +50,35 @@
 }
 .games-flex{
 	width: 60%;
-	margin: 120px auto;
+	/*margin: 120px auto;*/
+	margin: auto; 
 	display: grid;
 	align-items: center; 
 	grid-template-columns: 1fr 1fr 1fr;
 }
+.gf-2{
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 50px;
+}
 .games-flex img{
 	width: 100%;
 }
+.gf-2 img{
+	width: 70%;
+	margin: 50px auto;
+}
 #section-2 p{
-    color: #F36EFF;
     text-align: center;  
-    line-height: 150px;
+    line-height: 100px;
     width: 60%;
     margin: auto;
     font-size:100px; 
+    color: #FF06D7;
+    text-shadow:
+   -2px -2px 0 #fff,  
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff,
+     2px 2px 0 #fff;
 }
 #section-2 p span{
     font-size:100px;

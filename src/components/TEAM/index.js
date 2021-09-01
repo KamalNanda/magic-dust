@@ -1,7 +1,7 @@
 import React from 'react' 
 import './style.css' 
 import Man from '../../assets/images/man-half.png' 
-import Man2 from '../../assets/images/man22.png'  
+import Man2 from '../../assets/images/man23.png'  
 let teamLi = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 const Team = () => {
 
