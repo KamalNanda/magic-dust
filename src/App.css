@@ -47,7 +47,7 @@ body{
     top: 0;
     transform: scaleX(1.2);
     z-index: -5;
-    height: 500vh;
+    height: 600vh;
 }
  .gradient-bg{
     z-index: -4;
@@ -56,8 +56,22 @@ body{
     position: absolute;
     /*filter: opacity(0.5);*/
     background:  linear-gradient(#8806C9,#000,#000000c2, #ffffff57,#ffffff57,#ffffff57) ;
-    height: 500vh;
-
+    height: 600vh; 
+ }
+ @media(max-width: 1660px){
+    .contact-bg, .gradient-bg{
+        height: 600vh;
+    }
+ }
+ @media(max-width: 1280px){
+    .contact-bg, .gradient-bg{
+        height: 700vh;
+    }
+ }
+ @media(max-width: 1024px){
+    .contact-bg, .gradient-bg{
+        height: 800vh;
+    }
  }
 @keyframes animate {
     0%{
