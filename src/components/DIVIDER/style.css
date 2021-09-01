@@ -1,0 +1,40 @@
+.Divider{
+	width: 100%; 
+	z-index: 4;
+	bottom: 0px;  
+	/* display: grid; */
+	display: flex; 
+	background: #00cec9; 
+	justify-items: center;
+	/* grid-template-columns: repeat(10, 1fr);  */
+	/*margin-bottom: 100px;*/
+}
+.Divider div{  
+	width: 100%;
+	position: relative;
+}  
+.Divider div img{  
+	width: 100%;
+	position: relative; 
+	height: 100%;
+}  
+@media(max-width:  1760px){ 
+	.Divider div{  
+		width: 100%;
+	}   
+}
+@media(max-width:  1660px){  
+	.Divider div{  
+		width: 100%;
+	}  
+}
+@media(max-width:  1570px){ 
+	.Divider div{  
+		width: 100%;
+	}   
+} 
+@media(max-width:  768px){
+	.Divider{
+		/*display: none; */
+	}
+} 
