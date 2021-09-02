@@ -11,10 +11,12 @@ import plus from '../../assets/images/+.png'
 import equal from '../../assets/images/=.png'
 import arrow from '../../assets/images/arrow-curve.png'
 import Discord from '../../assets/images/DiscordScreen.png'
+import Miner5 from '../../assets/images/miner5.png'
 const Screen = () => {
 	const lists = ["Du$t is a token you can mine by chatting in any NFT community on Discord that hosts a Magic Du$t Miner Bot.", "The more you chat the more Du$t you collect.", "Magic Du$t Miners are NFTs that multiply the Du$t you collect.", "Only 11,111 Miners exist, but there’s no limit to how many Miners you can hold in a single wallet. ", "Each Magic Du$t Miner you hold will further multiply your $Du$t rewards!  " ]
 	return(
 		<div id="section-1">
+			<img src={Miner5} id="Miner5" />
 			<img src={Cieling} class="cieling" />
 			{/**<div class="pink-box pink-flex">
 				<div>

@@ -7,7 +7,7 @@ import linkedin from '../../assets/images/linkedin.png'
 import Man2 from '../../assets/images/man22.png'  
 const Screen = () => {
 
-	return(
+	return(<>
 		<div id="section-3">
          	<h1>FIND YOUR DUSTY FRIENDS</h1>
 			<div class="social-flex">
@@ -41,6 +41,6 @@ const Screen = () => {
 			</div> 
 			<img src={Man2} style={{display:'block', margin:'auto'}}/>
 		</div>	
-	)  
+	</>)  
 }
 export default Screen

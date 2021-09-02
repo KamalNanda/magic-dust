@@ -13,9 +13,17 @@ import CONTACT from './components/CONTACT'
 import FOOTER from './components/FOOTER'
 import left from './assets/images/left.png'
 import right from './assets/images/right.png'
+import Miner8 from './assets/images/miner8.png'
+import Miner6 from './assets/images/miner6.png'
+import Miner9 from './assets/images/miner9.png'  
+import Miner10 from './assets/images/miner7.png'  
 function App() {
   return (
     <div className="App">
+      <img src={Miner8} id="Miner8" /> 
+      <img src={Miner9} id="Miner6" /> 
+      <img src={Miner6} id="Miner9" />
+      <img src={Miner10} id="Miner10" />
       <Header />
       <HERO />  
       <div id="group-div">

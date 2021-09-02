@@ -56,6 +56,45 @@
      2px 2px 0 #650C85;
     
 }
+#Miner5{
+    position: absolute;
+    right: -30px;
+    width: 300px;
+    transform: rotateZ(-15deg);
+    top: 100px;
+    z-index: 99999999;
+}
+#Miner6{
+    width: 300px;
+    position: absolute;
+    left: -30px;
+    transform: rotateZ(-15deg);
+    bottom: -200px;
+    z-index: 99999999; 
+}
+#Miner9{
+    position: absolute;
+    left: -30px ;
+    width: 300px;
+    bottom: -200px;
+    z-index: 99999999; 
+}
+#Miner10{
+    position: absolute;
+    right: -30px ;
+    width: 300px;
+    bottom: -200px;
+    z-index: 99999999; 
+
+}
+#Miner8{
+    width: 300px;
+    position: absolute;
+    right: -30px;
+    transform: rotateZ(-15deg);
+    bottom: -200px;
+    z-index: 99999999; 
+}
 .pink-boxes-grid .pink-box li{
     font-size: 20px;
     line-height: 25px;
