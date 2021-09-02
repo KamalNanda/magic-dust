@@ -33,13 +33,17 @@
     line-height: 20x; 
     letter-spacing: 0.1em; 
 }
+.discord-wall{
+    width: 100%;
+}
 .pink-boxes-discord{
-    display: flex;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
     align-items: center;
     justify-content: center;
     width: 80%;
     margin: 150px auto;
-}
+}  
 .pink-boxes-grid > .pink-box h1{
     text-align: center;  
     line-height: 45px; 
@@ -62,6 +66,15 @@
     width: 70% !important;
     margin: auto;
     margin-bottom: 20px; 
+}
+@media (max-width: 1360px){
+   .pink-boxes-grid > .pink-box h1{
+        font-size: 36px;
+        line-height: 36px;
+   }
+    .pink-boxes-grid .pink-box{
+        padding: 15px 30px;
+    }
 }
 .arrow-curve{
     position: absolute;
@@ -117,7 +130,7 @@
         flex-direction: column;       
     }
     .discord-wall{
-        width: 100%;
+        /*width: 100%;*/
     }
 }
 @media(max-width: 786px){

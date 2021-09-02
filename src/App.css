@@ -119,7 +119,7 @@ body{
 }
 @media (max-width:  1280px){
     #left, #right{
-    transform: scaleX(0.80) !important  ;
+    transform: scaleX(0.80)  !important  ;
     } 
 }
 @media (max-width: 725px){

@@ -512,6 +512,35 @@ input[type=number] {
     font-size: 1.15rem !important;
     }
 }
+@media (max-width: 1360px){
+    .miners-box{
+        padding: 20px !important;
+    }
+    .miners-box form button, .collect-btn{  
+        border: 4px solid #FF06D7  ;
+        border-radius: 6px  ; 
+        margin-top:0rem ; 
+        padding: 0.25rem 1rem;
+        font-size:0.75rem !important; 
+        letter-spacing: 5px;
+    } 
+    .miner-input-box h3 span{ 
+        width: 40px;
+        height: 40px;
+        border: 2px solid #92FF07;
+        border-radius: 100px;
+
+    } 
+    .miner-input-box h3 span b{  
+        font-size: 30px;
+    } 
+    .miner-input-box input{
+        width:60px;  
+        font-size: 1.25rem !important;
+        border:6px solid #92FF07;  
+        margin: 10px 20px !important; 
+    }
+}
 @media (max-width: 1280px){
      
 #green-arrow{ 

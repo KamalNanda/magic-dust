@@ -65,25 +65,7 @@ const Hero = () => {
             <img src={cave} id="cave" alt={"cave"}/>
             <img src={mountainBack} id="mountains_behind"  alt={"mountainBack"}/>
             <img src={moon} id="moon"  alt={"moon"}/>  
-        </div>
-        {
-          !isConnected  
-            ? <div 
-                class="collect-btn not-connected"
-                type="button" 
-                 id="collect"
-                onClick={() => setConnected(true)}
-              >WALLET NOT CONNECTED!</div> 
-            : <div id="collect">
-                <div class="collect-btn" >
-                    WALLET CONNECTED
-                </div>
-                <div class="collect-btn disconnect" onClick={() => setConnected(false)}>
-                    DISCONNECT WALLET
-                </div>
-            </div>
-        } 
-        
+        </div> 
         <div class="hero-flex"> 
             <div class="magic-dust">   
                 <img src={heroLogo}  alt={"heroLogo"}/>
