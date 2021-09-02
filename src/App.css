@@ -33,7 +33,7 @@ button{
 body{
     min-height: 100vh;
     overflow-x: hidden;
-    background: linear-gradient(#8806C9,#8806C9, #8806C9, #8806C9, #000,#000,#000,#000,#000,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#fff,#fff ,#fff,#fff,#fff,#fff,#fff);  
+    background: linear-gradient(#8806C9,#8806C9, #8806C9, #8806C9, #8806C9,#8806C9,#000,#000,#000,#000,#000,#000,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#fff,#fff ,#fff,#fff,#fff,#fff,#fff);  
     /*background: url('./assets/images/grandbg.png'); */
     position: relative;  
 }
@@ -42,12 +42,12 @@ body{
 }
 .contact-bg{
     position: absolute;
-    background:url('./assets/images/Group 592.png') ;
+    background:url('./assets/images/wallpaper.png') ;
     width: 100%;
     top: 0;
     transform: scaleX(1.2);
     z-index: -5;
-    height: 600vh;
+    height: 450vh;
 }
  .gradient-bg{
     z-index: -4;
@@ -55,22 +55,22 @@ body{
     width: 100%;
     position: absolute;
     /*filter: opacity(0.5);*/
-    background:  linear-gradient(#8806C9,#000,#000000c2, #ffffff57,#ffffff57,#ffffff57) ;
-    height: 600vh; 
+    background:  linear-gradient(#8806C9,#8806C9,#ffffff57,#ffffff57, #ffffff57,#ffffff57,#ffffff57) ;
+    height: 450vh; 
  }
  @media(max-width: 1660px){
     .contact-bg, .gradient-bg{
-        height: 600vh;
+        height: 400vh;
     }
  }
  @media(max-width: 1280px){
     .contact-bg, .gradient-bg{
-        height: 700vh;
+        height: 500vh;
     }
  }
  @media(max-width: 1024px){
     .contact-bg, .gradient-bg{
-        height: 800vh;
+        height: 600vh;
     }
  }
 @keyframes animate {

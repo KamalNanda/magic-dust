@@ -67,6 +67,11 @@
 		width: 100%;
 	}
 }
-.team-grid div{
+.team-grid .member{
 	background: #EC12DB;
+}
+.team-member p{
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
 }

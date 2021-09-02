@@ -11,8 +11,8 @@ import FAQ from './components/FAQ'
 import arrow from './assets/images/arrow.png'
 import CONTACT from './components/CONTACT'
 import FOOTER from './components/FOOTER'
-import left from './assets/images/left-min.png'
-import right from './assets/images/right-min.png'
+import left from './assets/images/left.png'
+import right from './assets/images/right.png'
 function App() {
   return (
     <div className="App">
@@ -27,10 +27,10 @@ function App() {
         <SCREEN4 />
         <ROADMAP />
         <FAQ /> 
+          <TEAM />
         <div class="bottom-section">
           <div className="contact-bg" ></div>
           <div className="gradient-bg"></div>
-          <TEAM />
            <CONTACT />
          </div>
       </div>

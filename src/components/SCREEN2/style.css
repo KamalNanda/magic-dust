@@ -3,14 +3,14 @@
     padding-top: 500px ;
     width: 100%; 
     /*overflow: hidden !important;*/
-    margin-bottom: 300px;
+    margin-bottom: 000px;
 }
 .cieling{
     position: absolute;
     width: 100%; 
     top: 0; 
     z-index: -1;
-    transform: scaleY(1.65) ;
+    /*transform: scaleY(1.65) ;*/
     transform-origin: 100% 0%;
 }
 .pink-flex{
@@ -33,6 +33,61 @@
     line-height: 20x; 
     letter-spacing: 0.1em; 
 }
+.pink-boxes-discord{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 150px auto;
+}
+.pink-boxes-grid > .pink-box h1{
+    text-align: center;  
+    line-height: 45px; 
+    font-size:45px; 
+    color: #FFF200;
+    text-shadow:
+   -2px -2px 0 #650C85,  
+    2px -2px 0 #650C85,
+    -2px 2px 0 #650C85,
+     2px 2px 0 #650C85;
+    
+}
+.pink-boxes-grid .pink-box li{
+    font-size: 20px;
+    line-height: 25px;
+    color: white;
+}
+.pink-boxes-grid .pink-box{
+    padding: 20px 40px;
+    width: 70% !important;
+    margin: auto;
+    margin-bottom: 20px; 
+}
+.arrow-curve{
+    position: absolute;
+    bottom: 00px;
+    left: -90px;
+}
+#arrow-0{
+    transform: scale(1.1);
+    bottom: 50px;
+}
+#arrow-1{
+    /*width: 50px;*/
+    transform: scale(0.9);
+}
+#arrow-2{
+    /*width: 50px;*/
+    transform: scale(0.8);
+}
+#arrow-3{
+    /*width: 50px;*/
+    transform: scale(0.7);
+}
+#arrow-4{
+    /*width: 50px;*/
+    transform: scale(0.6);
+}
 @media (max-width: 1660px){
     .pink-flex h1{
         font-size: 32px;
@@ -44,7 +99,7 @@
     #group{
         right: -150px;
         width: 50%;
-        top: 150px;
+        bottom: 00px;
     }
 }
 @media (max-width: 1280px){
@@ -61,10 +116,13 @@
         display: flex;
         flex-direction: column-reverse;
     }
+    .pink-boxes-discord{
+        flex-direction: column;       
+    }
 }
 .pink-box{
-    background: #650C85;
-    border: 6px solid #F36EFF;
+    background: #8806C9;
+    border: 6px solid #FF06D7;
     border-radius: 6px;
     padding: 40px 70px;
     position: relative;
@@ -113,13 +171,13 @@
 #group{
     width: 60%;
     position: absolute; 
-    top: 50px;
+    bottom: -80px;
     right: -200px;
 }
 @media (max-width: 1880px){
     #group{
         position: absolute; 
-        top: 600px;
+        bottom: -100px;
         width: 15px;
         right: -25px;
     }
@@ -137,7 +195,7 @@
     #group{
         right: -100px;
         width: 50%;
-        top: 150px;
+        bottom: -50px;
     }
     #section-2 p, #section-2 p span{
         width: 90% !important;
@@ -165,16 +223,11 @@
         font-size: 20px;
     }
 }
-@media(max-width: 1660px){
-    #group{
-        right: -120px;
-        width: 50%;
-        top: 100px;
-    }
+@media(max-width: 1660px){ 
     #group{
         right: -150px;
         width: 50%;
-        top: 150px;
+        bottom: -50px;
     }
     .pink-box .row img{
         width: 60px ;
@@ -188,7 +241,7 @@
     #group{
         right: -120px;
         width: 60%;
-        top: 30px;
+        bottom: -50px;
     }
     #section-2 p, #section-2 p span{
         width: 90% !important;
@@ -231,7 +284,7 @@
     }
     #group{
         position: absolute; 
-        top: 50px;
+        bottom: -30px;
         width: 50% !important;
         right: -105px;
     }

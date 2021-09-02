@@ -1,7 +1,7 @@
 import React from 'react' 
 import './style.css'
 import Man from '../../assets/images/screen3man.png' 
-import Man2 from '../../assets/images/man22.png' 
+import Man2 from '../../assets/images/miner1.png' 
 import aw from '../../assets/images/partners/aw.png' 
 import topps from '../../assets/images/partners/topps.png' 
 import bayc from '../../assets/images/partners/bayc.png' 
@@ -17,20 +17,16 @@ const Screen = () => {
 				 on Discord + Telegram . . .
 			</p>
             <div class="games-flex" style={{marginTop:'100px'}}>
-				<img src={topps} /> 
-				<img src={bayc} /> 
-				<img src={aw} /> 
-            </div>
-            <div class="games-flex gf-2">
 				<img src={btc} /> 
-				<img src={nw} />  
-            </div>
-			<p>$dust flows
+				<img src={aw} /> 
+				<img src={nw} /> 
+            </div> 
+			{/**<p>$dust flows
 	            like magic<br/>
 	            while communities<br/>
 	            form, interact
 	            and grow!
-            </p>
+            </p>**/}
 			<img src={Man2} />
 		</div>	
 	</div>)  

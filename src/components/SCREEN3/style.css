@@ -73,12 +73,12 @@
     width: 60%;
     margin: auto;
     font-size:100px; 
-    color: #FF06D7;
+    color: #FFF200;
     text-shadow:
-   -2px -2px 0 #fff,  
-    2px -2px 0 #fff,
-    -2px 2px 0 #fff,
-     2px 2px 0 #fff;
+   -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+     2px 2px 0 #000;
 }
 #section-2 p span{
     font-size:100px;

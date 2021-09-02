@@ -109,11 +109,21 @@ const Hero = () => {
                                     <span onClick={plusFunction} class="plus"><b>+</b></span></h3>
                                 <div id="miners-container"></div>
                             </div>
-                            <div 
-                                class="collect-btn" 
-                                onClick={(e) => connectWallet(e)} 
-                                type="submit"  
-                              >MINT MINERS!</div>
+                                {
+                                  !isConnected  
+                                    ? <div 
+                                        class="collect-btn "
+                                        type="button"  
+                                        onClick={() => setConnected(true)}
+                                      >CONNECT WALLET</div> 
+                                    : <div 
+                                        class="collect-btn" 
+                                        onClick={(e) => connectWallet(e)} 
+                                        type="submit"  
+                                      >MINT MINERS!</div>
+                                } 
+        
+                            
                              
                                                          
                         </form> 
@@ -121,9 +131,9 @@ const Hero = () => {
                     <div class="animation-box">
                         <img id="mario-img" alt="mario" src={mario} />
                     </div>
-                </div>   
+                </div>    
                 <div class="img-flex">  
-                    <h1>9,810/10,000 MINERS LEFT</h1>
+                    <h1>9,810/11,111 MINERS LEFT</h1>
                     <img src={shadow} alt="shadow" />
                     <p>Badass $Dust Miners ALGORITHMICALLY GENERATED from 25 RUGGED AF features.</p>
                 </div> 
