@@ -108,3 +108,8 @@
 	}
 
 }
+@media (max-width:  600px){
+	.games-flex{
+		grid-template-columns: 1fr;
+	}
+}

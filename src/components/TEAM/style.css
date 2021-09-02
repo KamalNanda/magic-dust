@@ -48,16 +48,19 @@
 	.member img{
 		width: 80px !important;
 	}
+	.team-grid{
+		grid-template-columns: repeat(4, 1fr); 
+	}
 }
 @media (max-width:  1360px){ 
 	.member img{
 		width: 100px !important;
 	}
 }
-@media (max-width:  1024px){
-	.team-grid{
-		grid-template-columns: repeat(4, 1fr); 
-	}
+@media (max-width:  1124px){
+	#team > div.pink-box{
+		width: 80% !important;
+	} 
 }
 @media (max-width:  786px){
 	.team-grid{
@@ -65,6 +68,17 @@
 	}
 	.member img{
 		width: 100%;
+	}
+	.contact-bg, .gradient-bg{
+		height: 205vh;
+	}
+}
+@media (max-width:  525px){
+	.team-grid{
+		grid-template-columns: repeat(2, 1fr); 
+	} 
+	.contact-bg, .gradient-bg{
+		height: 175vh;
 	}
 }
 .team-grid .member{

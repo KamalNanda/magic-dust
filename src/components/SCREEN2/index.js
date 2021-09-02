@@ -23,6 +23,7 @@ const Screen = () => {
 				</div>
 				<img src={Discord} alt="discord-screen" />
 			</div> **/}
+				<img src={Group} id="mob-miner" />
 			<div class="pink-box">
 				<img src={Group} id="group"/>
 				<div class='row'>
@@ -74,7 +75,7 @@ const Screen = () => {
 						})
 					}
 				</div>
-				<img src={Discord} alt="discord-screen" />
+				<img className="discord-wall" src={Discord} alt="discord-screen" />
 			</div>
 		</div>
 	)

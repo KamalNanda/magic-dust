@@ -111,6 +111,15 @@
         font-size: 16px;
     }
 }
+@media (max-width:  1024px){
+
+    .pink-boxes-discord{
+        flex-direction: column;       
+    }
+    .discord-wall{
+        width: 100%;
+    }
+}
 @media(max-width: 786px){
     .pink-flex{
         display: flex;
@@ -287,5 +296,32 @@
         bottom: -30px;
         width: 50% !important;
         right: -105px;
+    }
+}
+#mob-miner{
+    display: none;
+}
+@media (max-width: 760px){
+    #section-1{
+        padding-top:100px ;
+    }
+    #mob-miner{
+        display: block;
+        width: 40%;
+        margin: 0 auto 80px auto;
+    }
+}
+@media (max-width:  600px){
+    #section-1 .pink-box{
+        width: 80% !important;
+    }
+}
+@media (max-width: 475px){
+    #section-1 .pink-box{
+        width: 90% !important;
+    }
+    #section-1 > div.pink-box, .discord-wall,
+    #faq .pink-box{
+        width: 100% !important;
     }
 }
