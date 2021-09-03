@@ -34,12 +34,12 @@ window.addEventListener('scroll', function(){
     right.style.top =  document.getElementById('group-div').offsetTop   -value * 0.80 + 'px' 
     Miner5.style.top =  document.getElementById('section-1').offsetHeight  + 200 -value * 0.80 + 'px' 
     Miner6.style.top =  document.getElementById('team').offsetTop  - 100 -value * 0.80 + 'px' 
-    Miner8.style.top = document.getElementById('team').offsetTop -  document.getElementById('roadmap').offsetHeight  + -value * 0.80 + 'px'  
-    Miner9.style.top = document.getElementById('team').offsetTop  -  document.getElementById('roadmap').offsetHeight*1.7  + -value * 0.80 + 'px' 
-    Miner10.style.top = document.getElementById('team').offsetTop  +  document.getElementById('roadmap').offsetHeight*3.1  + -value * 0.80 + 'px' 
+    Miner8.style.top = document.getElementById('team').offsetTop -  document.getElementById('faq').offsetHeight  + -value * 0.80 + 'px'  
+    Miner9.style.top = document.getElementById('team').offsetTop  -  document.getElementById('faq').offsetHeight*1.7  + -value * 0.80 + 'px' 
+    Miner10.style.top = document.getElementById('team').offsetTop  +  document.getElementById('faq').offsetHeight*3.1  + -value * 0.80 + 'px' 
 }) 
 
-stars()
+// stars()
 
 function stars(){
     let count = 500; 

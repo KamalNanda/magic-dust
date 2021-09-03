@@ -1,13 +1,12 @@
 section{  
     margin: auto;
-    /*height: 93vh;*/ 
+    /*height: 93vh; */
     display: flex;
     align-items: center;
-    background: #2b1055;
-    justify-content: center;
+    background: #2b1055; 
     flex-direction: column;
     position: relative;
-    margin-top: 7vh;
+    /*padding-top: 7vh;*/
     z-index: 2222;
     width: 100%;
     overflow: hidden !important;
@@ -19,9 +18,6 @@ section{
     z-index: 1;
     animation: animate linear infinite;
 }
-#home{
-    padding-top: 15px;
-}
 #green-arrow{
     position: absolute;
     z-index: 10000000;
@@ -31,13 +27,14 @@ section{
 }
 .hero-flex{
     display: flex;
-    height: 78vh;
-    width: 50%; 
+    /*height: 70vh;*/
+    width: 60%; 
     /*position: absolute;*/
     top: 0;
+    padding-top: 00px;
+    padding-bottom: 0;
     z-index: 999;
-    align-items: center;
-    justify-content: center;
+    align-items: center; 
     flex-direction: column;
 }
 @media(max-width:  1360px){
@@ -165,6 +162,8 @@ section{
     grid-template-columns: 6fr 4fr;
     grid-gap: 20px; 
     width:90%;
+    /*max-height: 50vh;*/
+    min-height: 40vh;
     margin: auto;
     /*align-items: center;*/
     padding: 40px 40px;   
@@ -176,30 +175,34 @@ section{
     font-size:2rem;
     text-align: center; 
     letter-spacing: 2px;
-    color: #92FF07
+    color: #92FF07;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1;
 }
 .miners-box p strong{
     font-size: 2rem;    
+    margin: 0 !important;
+    padding: 0 !important;
     font-weight: 400;
     font-family: Emtype Foundry Regular;
 }
-.miners-box h3{ 
+.miners-box h3{
+    margin: 0; 
     font-size:2rem;
     text-align: center; 
     letter-spacing: 5px;
     color: #92FF07
 }
 .animation-box img{
-    width: 100%;
-    max-width: 300px;
+    width: 80%; 
     position: relative !important;
 }
 .animation-box{
     background-color: #92FF07;
     height: 100%;
     display: flex;
-    width: 100%;
-    /*width: fit-content;*/
+    width: 100%; 
     flex-direction: column;
     align-items: center;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -216,8 +219,8 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 .miner-input-box{ 
-    padding: 10px;
-    min-height: 90px;
+    /*padding: 10px;*/
+    /*min-height: 90px;*/
 }
 .miner-input-box h3{
     color: #17F16E; 
@@ -227,7 +230,7 @@ input[type=number] {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 .miner-input-box span b{
     font-weight: 900;
@@ -257,7 +260,7 @@ input[type=number] {
     border:6px solid #92FF07;
     font-weight: 700;
     color: #000;
-    margin: 20px;
+    margin: 0 20px;
     text-align: center;
 }
 .minus, .plus{
@@ -273,28 +276,12 @@ input[type=number] {
     width: 100%;
     font-weight: 700;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    margin-top:1rem ;
+    margin-top:20px ;
     cursor: pointer;
     padding: 0.5rem 1rem;
     font-size:1.5rem;
     letter-spacing: 5px;
-} 
-#collect .collect-btn, .not-connected{
-    font-size: 1rem !important;
-    padding: 0.5rem 0.75rem ;
-    font-weight: 900;
-}
-.disconnect{
-    background-color: #F36EFF;
-    color: #fff;
-}
-#collect{
-    position: absolute;
-    z-index: 99999;
-    width: fit-content;
-    top: 2vh;
-    right: 40px;
-}
+}   
 @media (max-width: 768px){
     #collect{
         display: none;
@@ -305,22 +292,30 @@ input[type=number] {
     align-items: center; 
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 .img-flex img{
     position: absolute;
     z-index: -1;
-    width: 150%;
+    top: 0;
+    width: 100%;
+    transform: scaleX(1.5);
 }
 .img-flex p{
     color: #92FF07;
     font-size: 36px;
     text-align: center; 
-    font-weight: 900; 
-    line-height: 125%;
+    font-weight: 900;  
+    line-height: 1;
+    margin: 0;
+    padding: 0;
     text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.img-flex h1{
+.img-flex h1{  
+    margin: 0;
+    padding: 0;
     color: #FF06D7;
+    line-height: 1;
     letter-spacing: 12px;  
     font-family: 'Emtype Foundry Regular';
     text-shadow: 0 0 3px #00ACEE, 0 0 5px #00ACEE;    
@@ -337,39 +332,11 @@ input[type=number] {
 }
 #explore-popup{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px; 
+    grid-template-columns: 1fr; 
     width: 100%;
-    position: relative;
-    top: -60px;
+    position: relative; 
     z-index: 1;
-}
-.info-box{
-    display: flex;
-    flex-direction: column;
-    background-color: #872eb1a8; 
-    grid-gap: 20px; 
-    align-items: center;
-    justify-content: center;
-    padding: 20px 25px;  
-    border: 6px solid #FF06D7;
-    border-radius: 6px;
-    width: 100%;
-    color: #FFF200;
-}
-.info-box h2{ 
-    font-family: Fontsphere  ; 
-    font-size: 60px;  
-    text-align: center;
-    letter-spacing: 0.1em;  
-}
-.info-box{ 
-    font-family: Emtype Foundry; 
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 150%; 
-    text-align: center; 
-}
+} 
 .magic-dust{
     position: relative;
     width: 100%;
@@ -389,8 +356,8 @@ input[type=number] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
-    justify-content: center;
+    margin: 0 auto;
+    justify-content: space-evenly;
 }
 @media (max-width: 1920px){
     .img-flex h1{
@@ -457,13 +424,13 @@ input[type=number] {
     }
 .miners-box p{ 
     margin-top: 10px;
-    font-size:1.2rem;
+    font-size:1.5rem;
     text-align: center; 
     letter-spacing: 2px;
     color: #92FF07
 }
 .miners-box p strong{
-    font-size:1.2rem;
+    font-size:1.5rem;
 
 }
 .animation-box img{
@@ -501,8 +468,7 @@ input[type=number] {
     border:4px solid #17F16E; 
     margin: 20px; 
 }
-.hero-flex{
-    margin-top: 30px;
+.hero-flex{ 
 }
     .img-flex h1{
         font-size: 2.5rem !important;
@@ -618,10 +584,7 @@ input[type=number] {
         2px -2px 0 #FF13ED,
         -2px 2px 0 #FF13ED,
         2px 2px 0 #FF13ED;
-}
-.img-flex{
-    margin-top: -20px;
-}
+} 
 .img-flex p{
     font-size: 1.05rem !important;
 }
@@ -661,8 +624,7 @@ input[type=number] {
     color: #92FF07
 }
 
-#explore-popup{
-    top: -40px;
+#explore-popup{ 
 }
     .miner-input-box{
         margin-bottom: 0;

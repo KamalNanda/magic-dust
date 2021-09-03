@@ -17,9 +17,11 @@ import Miner8 from './assets/images/miner8.png'
 import Miner6 from './assets/images/miner6.png'
 import Miner9 from './assets/images/miner9.png'  
 import Miner10 from './assets/images/miner7.png'  
+import Miner5 from './assets/images/miner5.png' 
 function App() {
   return (
     <div className="App">
+      <img src={Miner5} id="Miner5" />
       <img src={Miner8} id="Miner8" /> 
       <img src={Miner9} id="Miner6" /> 
       <img src={Miner6} id="Miner9" />
@@ -32,8 +34,7 @@ function App() {
         <SCREEN2 />
         
         <SCREEN3 />
-        <SCREEN4 />
-        <ROADMAP />
+        <SCREEN4 /> 
         <FAQ /> 
           <TEAM />
         <div class="bottom-section">

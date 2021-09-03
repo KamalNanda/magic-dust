@@ -1,0 +1,9 @@
+.pink-box{
+    background: #8806C9;
+    border: 6px solid #FF06D7;
+    border-radius: 6px;
+    padding: 30px 70px;
+    position: relative;
+    /*width: 60% !important;*/
+    margin: auto; 
+}  

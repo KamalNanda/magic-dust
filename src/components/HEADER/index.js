@@ -60,7 +60,9 @@ const DesktopHeader = () => {
 	} 
 	return ( 
 		<div class="header" id="header"> 
-			<img class="header-logo" src={logo} alt="logo" /> 
+			<div className="header-logo-cont">
+				<img class="header-logo" src={logo} alt="logo" /> 
+			</div>
 			 <ul>
 					<li><a onClick={() => onLinkClick("nav-home")} id="nav-home" href="#home" class="active">Home</a></li>
 			    <li><a onClick={() => onLinkClick("nav-section-1")} id="nav-section-1" href="#section-1">Miners</a></li>

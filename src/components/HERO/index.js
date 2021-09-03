@@ -37,7 +37,7 @@ const Hero = () => {
       document.getElementById('mario-img').src=man
     }, 2000)
   }
-  return (<> 
+  return (<>  
   {
     loading ? <div id="loader" >
         <img src={"https://media2.giphy.com/media/LFhufPNdTmlKynSCu5/giphy.gif?cid=790b761110173f73e2c2aeff46c86ba2308e2fcd3582a889&rid=giphy.gif&ct=s"} alt="loading" />
@@ -73,10 +73,10 @@ const Hero = () => {
             <div id="explore-popup">  
                 <div class="miners-box">
                     <div class="miners-box-left">
-                        <p>
-                           MINTING IS LIVE!<br/>
-                          <strong> LIMIT 10 PER WALLET</strong>
-                        </p>
+                        <div>
+                            <p>MINTING IS LIVE!<br/></p>
+                            <p><strong> LIMIT 10 PER WALLET</strong></p>
+                        </div>
                         <form onSubmit={(e) => connectWallet(e)}>
                             <div class="miner-input-box">
                                 <h3>
@@ -90,25 +90,21 @@ const Hero = () => {
                                     />
                                     <span onClick={plusFunction} class="plus"><b>+</b></span></h3>
                                 <div id="miners-container"></div>
-                            </div>
-                                {
-                                  !isConnected  
-                                    ? <div 
-                                        class="collect-btn "
-                                        type="button"  
-                                        onClick={() => setConnected(true)}
-                                      >CONNECT WALLET</div> 
-                                    : <div 
-                                        class="collect-btn" 
-                                        onClick={(e) => connectWallet(e)} 
-                                        type="submit"  
-                                      >MINT MINERS!</div>
-                                } 
-        
-                            
-                             
-                                                         
+                            </div>                      
                         </form> 
+                        {
+                          !isConnected  
+                            ? <div 
+                                class="collect-btn "
+                                type="button"  
+                                onClick={() => setConnected(true)}
+                              >CONNECT WALLET</div> 
+                            : <div 
+                                class="collect-btn" 
+                                onClick={(e) => connectWallet(e)} 
+                                type="submit"  
+                              >MINT MINERS!</div>
+                        } 
                     </div>
                     <div class="animation-box">
                         <img id="mario-img" alt="mario" src={mario} />
@@ -121,8 +117,8 @@ const Hero = () => {
                 </div> 
             </div>
         </div>
-    </section>
       <DIVIDER />
+    </section>
   </>);
 }
  

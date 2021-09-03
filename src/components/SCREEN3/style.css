@@ -8,7 +8,8 @@
 	background-size: 1300px;
 	background-repeat: no-repeat;
 	background-position:  bottom;*/
-    width: 100%;
+    width: 60%;
+    margin: auto;
     overflow: hidden !important;
 	position: relative;
 } 
@@ -46,10 +47,10 @@
 }
 #section-2 > img{
     margin: 80px auto;
-    width: 40%;
+    /*width: 40%;*/
 }
 .games-flex{
-	width: 60%;
+	/*width: 60%;*/
 	/*margin: 120px auto;*/
 	margin: auto; 
 	display: grid;
@@ -70,7 +71,7 @@
 #section-2 p{
     text-align: center;  
     line-height: 100px;
-    width: 60%;
+    /*width: 60%;*/
     margin: auto;
     font-size:100px; 
     color: #FFF200;

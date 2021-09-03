@@ -1,9 +1,9 @@
 #section-1{
     position: relative;
     padding-top: 500px ;
-    width: 100%; 
-    /*overflow: hidden !important;*/
-    margin-bottom: 000px;
+    width: 60%; 
+    margin: auto;
+    /*overflow: hidden !important;*/ 
 }
 .cieling{
     position: absolute;
@@ -12,36 +12,17 @@
     z-index: -1;
     /*transform: scaleY(1.65) ;*/
     transform-origin: 100% 0%;
-}
-.pink-flex{
-    display: grid;
-    grid-template-columns: 5fr 6fr;
-    grid-gap: 20px;
-    align-items: center; 
-}
-.pink-flex img{
-    width: 100%;
-}
-.pink-flex h1{
-    color: #92FF07;
-    font-size: 40px;
-}
-.pink-flex h4{
-    color: #92FF07;
-    font-family: Emtype Foundry Regular;  
-    font-size: 20x;
-    line-height: 20x; 
-    letter-spacing: 0.1em; 
-}
+} 
 .discord-wall{
     width: 100%;
 }
 .pink-boxes-discord{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 40px;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width:100%;
     margin: 150px auto;
 }  
 .pink-boxes-grid > .pink-box h1{
@@ -56,53 +37,14 @@
      2px 2px 0 #650C85;
     
 }
-#Miner5{
-    position: absolute;
-    right: -30px;
-    width: 300px;
-    transform: rotateZ(-15deg);
-    top: 100px;
-    z-index: 99999999;
-}
-#Miner6{
-    width: 300px;
-    position: absolute;
-    left: -30px;
-    transform: rotateZ(-15deg);
-    bottom: -200px;
-    z-index: 99999999; 
-}
-#Miner9{
-    position: absolute;
-    left: -30px ;
-    width: 300px;
-    bottom: -200px;
-    z-index: 99999999; 
-}
-#Miner10{
-    position: absolute;
-    right: -30px ;
-    width: 300px;
-    bottom: -200px;
-    z-index: 99999999; 
-
-}
-#Miner8{
-    width: 300px;
-    position: absolute;
-    right: -30px;
-    transform: rotateZ(-15deg);
-    bottom: -200px;
-    z-index: 99999999; 
-}
 .pink-boxes-grid .pink-box li{
-    font-size: 20px;
+    font-size: 24px;
     line-height: 25px;
     color: white;
 }
 .pink-boxes-grid .pink-box{
     padding: 20px 40px;
-    width: 70% !important;
+    width: 100% !important;
     margin: auto;
     margin-bottom: 20px; 
 }
@@ -180,27 +122,13 @@
     .pink-boxes-discord{
         flex-direction: column;       
     }
-}
-.pink-box{
-    background: #8806C9;
-    border: 6px solid #FF06D7;
-    border-radius: 6px;
-    padding: 40px 70px;
-    position: relative;
-    width: 60% !important;
-    margin: auto;
-    margin-bottom: 200px;
 } 
 .add-white{ 
     margin: 0 10px ;
+    height: fit-content;
     width: 20px !important;
-}
-.row{
-    display: flex; 
-    align-items: center;
-    margin-bottom: 25px;
-}
-.pink-box .row p{  
+} 
+.pink-box .d-flex p{  
     font-style: normal;
     font-weight: normal;
     font-size: 20x;
@@ -222,7 +150,7 @@
     #section-2 h1 span{
         font-size: 100px !important;
     }
-    .pink-box .row img{
+    .pink-box .d-flex img{
         width: 60px;
     }
     .pink-box h2{
@@ -267,7 +195,7 @@
     #section-2 h1 span{
         font-size: 100px !important;
     }
-    .pink-box .row img{
+    .pink-box .d-flex img{
         width: 80px;
     }
     .add-white{ 
@@ -280,7 +208,7 @@
     .pink-box h2{
         font-size: 80px !important;
     } 
-    .pink-box .row p{
+    .pink-box .d-flex p{
         font-size: 20px;
     }
 }
@@ -290,7 +218,7 @@
         width: 50%;
         bottom: -50px;
     }
-    .pink-box .row img{
+    .pink-box .d-flex img{
         width: 60px ;
     }
 
@@ -317,30 +245,27 @@
         margin: 0 5px ;
         width: 8px !important;
     }
-    .pink-box .row{
+    .pink-box .d-flex{
         margin-bottom: 10px;
     }
-    .pink-box .row img{
+    .pink-box .d-flex img{
         width: 50px ;
     }
     .pink-box h2{
         font-size: 60px;
     }
-    .pink-box .row p{
+    .pink-box .d-flex p{
         font-size: 16px;
     }
     .pink-box h2{
         font-size: 60px !important;
-    }
-    #section-1 .pink-box{
-        padding: 20px 40px!important;
-    }
+    } 
 }
 @media (max-width: 1024px){
-    .pink-box .row img{
+    .pink-box .d-flex img{
         width: 40px ;
     }
-    .pink-box .row p{
+    .pink-box .d-flex p{
         font-size: 12px;
     }
     #group{

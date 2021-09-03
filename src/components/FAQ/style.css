@@ -14,10 +14,13 @@
      2px 2px 0 #FF06D7;
 }
 #faq .pink-box{
-	width: 60% !important;
+	/*width: 60% !important;*/
+	margin-bottom: 40px;
+	padding: 20px 40px;
 }
 #faq{
-    width: 100%;
+    width: 60%;
+    margin: auto;
     overflow: hidden !important;
     }
 .faq-box{
@@ -52,16 +55,23 @@
 		width: 100%;
 	}
 	#faq .pink-box{
-		width: 60% !important;
+		/*width: 60% !important;*/
 	}
 }
 @media (max-width:  1280px){ 
+	.faq-box strong{
+		font-size: 30px;
+	}
+	.faq-box li, .faq-box p, .faq-box li strong{
+		font-size: 20px;
+		line-height: 1;
+	}
 	#faq h1{
 		font-size: 100px;
 	} 
 	#faq .pink-box{
-		padding: 20px 40px;
-		width: 70% !important;
+		padding: 10px 20px;
+		/*width: 70% !important;*/
 	} 
 }
 @media (max-width:  786px){ 
