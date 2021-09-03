@@ -19,6 +19,9 @@ section{
     z-index: 1;
     animation: animate linear infinite;
 }
+#home{
+    padding-top: 15px;
+}
 #green-arrow{
     position: absolute;
     z-index: 10000000;
