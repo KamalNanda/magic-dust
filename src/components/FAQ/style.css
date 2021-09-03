@@ -75,7 +75,10 @@
 	} 
 }
 @media (max-width:  786px){ 
-	#faq img{
-		width: 100%;
+	#faq img, 
+#faq, #team {
+		width: 100% !important;
+	} #contact form {
+		width: 90% !important;
 	}
 }

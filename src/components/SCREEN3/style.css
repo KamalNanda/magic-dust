@@ -94,6 +94,15 @@
 	#section-3 h1 {
 		font-size: 100px !important;
 	}
+	#section-2{
+		width: 80%;
+	}
+	#section-3{
+		width: 100% !important;
+	}
+	.green-box{
+		width: 90% !important;
+	}
 #section-2 > img{
 	width: 100%;
 }
@@ -112,5 +121,8 @@
 @media (max-width:  600px){
 	.games-flex{
 		grid-template-columns: 1fr;
+	}
+	.green-box{
+		width: 100% !important;
 	}
 }

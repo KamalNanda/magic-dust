@@ -32,7 +32,7 @@ const MobileHeader = () => {
 			    <li><a onClick={() => onLinkClick("nav-section-2")} id="nav-section-2" href="#section-2">$Dust Token</a></li>
 			    <li><a onClick={() => onLinkClick("nav-section-3")} id="nav-section-3" href="#section-3">Community</a></li>
 			    <li><a onClick={() => onLinkClick("nav-team")} id="nav-team" href="#team">Team</a></li>  
-			    <li><a onClick={() => onLinkClick("nav-faq")} id="nav-faq" href="#faq">Faq</a></li>
+			    <li><a onClick={() => onLinkClick("nav-faq")} id="nav-faq" href="#faq">FAQ</a></li>
 			    <li><a onClick={() => onLinkClick("nav-contact")} id="nav-contact" href="#contact">Contact</a></li>
 			    <li> 
 					<div class="social-holder">
@@ -68,7 +68,7 @@ const DesktopHeader = () => {
 			    <li><a onClick={() => onLinkClick("nav-section-2")} id="nav-section-2" href="#section-2">$Dust Token</a></li>
 			    <li><a onClick={() => onLinkClick("nav-section-3")} id="nav-section-3" href="#section-3">Community</a></li>
 			    <li><a onClick={() => onLinkClick("nav-team")} id="nav-team" href="#team">Team</a></li>  
-			    <li><a onClick={() => onLinkClick("nav-faq")} id="nav-faq" href="#faq">Faq</a></li>
+			    <li><a onClick={() => onLinkClick("nav-faq")} id="nav-faq" href="#faq">FAQ</a></li>
 			    <li><a onClick={() => onLinkClick("nav-contact")} id="nav-contact" href="#contact">Contact</a></li>
 			</ul>
 			<div class="social-holder">

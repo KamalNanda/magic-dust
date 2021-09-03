@@ -10,7 +10,7 @@ import Group from '../../assets/images/Group 383.png'
 import box from '../../assets/images/Group 388.png'
 import plus from '../../assets/images/+.png'
 import equal from '../../assets/images/=.png'
-import arrow from '../../assets/images/arrow-curve.png'
+import arrow from '../../assets/images/pink-arrow.png'
 import Discord from '../../assets/images/DiscordScreen.png' 
 const Screen = () => {
 	const lists = ["Du$t is a token you can mine by chatting in any NFT community on Discord that hosts a Magic Du$t Miner Bot.", "The more you chat the more Du$t you collect.", "Magic Du$t Miners are NFTs that multiply the Du$t you collect.", "Only 11,111 Miners exist, but there’s no limit to how many Miners you can hold in a single wallet. ", "Each Magic Du$t Miner you hold will further multiply your $Du$t rewards!  " ]
@@ -46,11 +46,8 @@ const Screen = () => {
 					</div>
 					{
 						lists.map((l, i) => {
-							return <PinkBox key={i} >
-								{/**<img src={arrow} id={`arrow-${i}`} className="arrow-curve"/>**/}
-								<ul>
-									<li>{l}</li>
-								</ul>
+							return <PinkBox key={i} > 
+									<div class="d-flex"><img src={arrow}/><p>{l}</p></div>
 							</PinkBox>
 						})
 					}

@@ -37,13 +37,19 @@
      2px 2px 0 #650C85;
     
 }
-.pink-boxes-grid .pink-box li{
+.pink-boxes-grid .pink-box p{
     font-size: 24px;
-    line-height: 25px;
+    line-height: 1; 
     color: white;
+    margin-bottom: 0;
+}
+.pink-boxes-grid .pink-box img{
+    width: 50px;
+    margin-right: 10px;
+    height: 50px;
 }
 .pink-boxes-grid .pink-box{
-    padding: 20px 40px;
+    padding: 10px;
     width: 100% !important;
     margin: auto;
     margin-bottom: 20px; 
@@ -54,7 +60,7 @@
         line-height: 36px;
    }
     .pink-boxes-grid .pink-box{
-        padding: 15px 30px;
+        padding: 10px;
     }
 }
 .arrow-curve{
@@ -281,22 +287,22 @@
 @media (max-width: 760px){
     #section-1{
         padding-top:100px ;
+        width: 80%;
     }
     #mob-miner{
         display: block;
         width: 40%;
         margin: 0 auto 80px auto;
     }
-}
-@media (max-width:  600px){
-    #section-1 .pink-box{
-        width: 80% !important;
+    .pink-boxes-discord{
+        display: flex;
+        flex-direction: column-reverse;
     }
-}
+} 
 @media (max-width: 475px){
-    #section-1 .pink-box{
-        width: 90% !important;
-    }
+    #section-1{ 
+        width: 100%;
+    } 
     #section-1 > div.pink-box, .discord-wall,
     #faq .pink-box{
         width: 100% !important;

@@ -73,7 +73,7 @@
 		width: 100%;
 	}
 	.contact-bg, .gradient-bg{
-		height: 205vh;
+		height: 340vh;
 	}
 }
 @media (max-width:  525px){
@@ -81,7 +81,7 @@
 		grid-template-columns: repeat(2, 1fr); 
 	} 
 	.contact-bg, .gradient-bg{
-		height: 175vh;
+		height: 275vh;
 	}
 }
 .team-grid .member{

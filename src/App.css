@@ -103,17 +103,17 @@ body{
  }
  @media(max-width: 1660px){
     .contact-bg, .gradient-bg{
-        height: 400vh;
+        height: 500vh;
     }
  }
  @media(max-width: 1280px){
     .contact-bg, .gradient-bg{
-        height: 500vh;
+        height: 600vh;
     }
  }
  @media(max-width: 1024px){
     .contact-bg, .gradient-bg{
-        height: 600vh;
+        height: 700vh;
     }
  }
 @keyframes animate {
@@ -166,8 +166,9 @@ body{
     } 
 }
 @media (max-width: 725px){
-#left, #right{
-    display: none;
+#left, #right, #Miner5,#Miner6,#Miner7,#Miner8,#Miner9,#Miner10{
+    display: none !important;
+
 }
 .message{
     top: 600px !important;
@@ -246,7 +247,7 @@ body{
     }
     .pink-boxes,
     .hero-flex{
-        width: 80% !important;
+        width: 100% !important;
     } 
     #explore-popup{
         width: 100% !important;
