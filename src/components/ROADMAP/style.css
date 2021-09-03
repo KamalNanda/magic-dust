@@ -7,7 +7,7 @@
 #roadmap> h1{
     font-size: 150px;
     text-align: center;
-    transform: scaleX(2) scaleY(1.5);
+    transform: scaleX(2) scaleY(1.25);
     width: 100%;
     margin: 0 auto;
     color: #FFF200;
@@ -23,7 +23,7 @@
     grid-gap: 0; 
 }
 .roadmap-grid-4{
-    width: 60%;
+    width: 50%;
     grid-template-columns: repeat(4, 1fr);
 }
 .roadmap-grid-5{

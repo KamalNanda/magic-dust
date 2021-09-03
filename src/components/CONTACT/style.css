@@ -1,8 +1,8 @@
 #contact h1{
 	font-style: normal;
 	font-weight: 900;
-	font-size: 180px;
-    transform: scaleX(2) scaleY(1.5);
+	font-size: 150px;
+    transform: scaleX(1.5) scaleY(1.25);
 	line-height: 150%; 
 	text-align: center; 
     top: -100px;
@@ -23,7 +23,7 @@
     overflow: hidden !important; 
 }
 #contact  form{ 
-	width: 60%;
+	width: 50%;
     margin: auto;   
 } 
 .form-cont div, 

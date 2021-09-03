@@ -3,7 +3,7 @@
 
     font-size: 150px;
     text-align: center;
-    transform: scaleX(2) scaleY(1.5);
+    transform: scaleX(1.5) scaleY(1.25);
     width: 100%;
     margin: 100px auto;
     color: #fff;
@@ -19,7 +19,7 @@
 	padding: 20px 40px;
 }
 #faq{
-    width: 60%;
+    width: 50%;
     margin: auto;
     overflow: hidden !important;
     }
