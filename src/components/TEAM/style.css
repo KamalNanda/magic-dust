@@ -26,6 +26,8 @@
 #team .pink-box{
 	padding-top: 40px;
 	padding-bottom: 40px;
+	background: #650C85;
+border: 6px solid #F36EFF !important;
 }
 .team-grid{
 	width: fit-content;

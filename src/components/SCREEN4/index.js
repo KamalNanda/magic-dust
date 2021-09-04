@@ -4,7 +4,7 @@ import discord from '../../assets/images/discord.png'
 import twitter from '../../assets/images/twitter.png' 
 import telegram from '../../assets/images/telegram.png' 
 import linkedin from '../../assets/images/linkedin.png' 
-import Man2 from '../../assets/images/man22.png'  
+import Man2 from '../../assets/images/miner2.png'  
 const Screen = () => {
 const socials = [{img: discord, text: 'Discord'}, {img: telegram, text: 'Telegram'}, {img: twitter, text: 'Twitter'}, {img: linkedin, text: 'Linkedin'}]
 	return(<>

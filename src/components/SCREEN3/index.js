@@ -18,8 +18,8 @@ const Screen = () => {
 			</p>
             <div class="games-flex" style={{marginTop:'100px'}}>
 				<img src={btc} /> 
-				<img src={aw} /> 
 				<img src={nw} /> 
+				<img src={aw} /> 
             </div> 
 			{/**<p>$dust flows
 	            like magic<br/>

@@ -35,6 +35,7 @@ function App() {
         
         <SCREEN3 />
         <SCREEN4 /> 
+        <ROADMAP />
         <FAQ /> 
           <TEAM />
         <div class="bottom-section">

@@ -1,6 +1,6 @@
 import React from 'react' 
 import './style.css' 
-import Man2 from '../../assets/images/man23.png'  
+import Man2 from '../../assets/images/miner00.png'  
 import wallpaper from '../../assets/images/wallpaper.png'  
 import gem from '../../assets/images/gem.png'  
 import gemplatform from '../../assets/images/gemplatform.png'

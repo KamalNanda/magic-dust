@@ -37,12 +37,7 @@ const Hero = () => {
       document.getElementById('mario-img').src=man
     }, 2000)
   }
-  return (<>  
-  {
-    loading ? <div id="loader" >
-        <img src={"https://media2.giphy.com/media/LFhufPNdTmlKynSCu5/giphy.gif?cid=790b761110173f73e2c2aeff46c86ba2308e2fcd3582a889&rid=giphy.gif&ct=s"} alt="loading" />
-    </div> : <></>
-  }
+  return (<>   
   {
     isMinersPopupShown 
       ? <div id="minted-popup">
@@ -74,24 +69,34 @@ const Hero = () => {
                 <div class="miners-box">
                     <div class="miners-box-left">
                         <div>
-                            <p>MINTING IS LIVE!<br/></p>
-                            <p><strong> LIMIT 10 PER WALLET</strong></p>
+                            <p>MINTING IS {loading ? 'UNDERWAY' : 'LIVE'}!<br/></p>
+                            {
+                                loading 
+                                    ? <p style={{lineHeight: '1px'}}><span>
+                                        Transactions may take several minutes, do not disconnect your wallet until you can received confirmation.
+                                    </span></p>
+                                    : <p><strong> LIMIT 10 PER WALLET</strong></p>
+
+                            }
                         </div>
-                        <form onSubmit={(e) => connectWallet(e)}>
-                            <div class="miner-input-box">
-                                <h3>
-                                    <span onClick={minusFunction} class="minus"><b>-</b></span>
-                                    <input 
-                                        required 
-                                        onChange={(e) => setMiners(e.target.value)}
-                                        type="number" 
-                                        value={miners} 
-                                        max="20" 
-                                    />
-                                    <span onClick={plusFunction} class="plus"><b>+</b></span></h3>
-                                <div id="miners-container"></div>
-                            </div>                      
-                        </form> 
+                        {
+                            !loading && <form onSubmit={(e) => connectWallet(e)}>
+                                <div class="miner-input-box">
+                                    <h3>
+                                        <span onClick={minusFunction} class="minus"><b>-</b></span>
+                                        <input 
+                                            required 
+                                            onChange={(e) => setMiners(e.target.value)}
+                                            type="number" 
+                                            value={miners} 
+                                            max="20" 
+                                        />
+                                        <span onClick={plusFunction} class="plus"><b>+</b></span></h3>
+                                    <div id="miners-container"></div>
+                                </div>                      
+                            </form> 
+                          }
+                        
                         {
                           !isConnected  
                             ? <div 
@@ -105,6 +110,7 @@ const Hero = () => {
                                 type="submit"  
                               >MINT MINERS!</div>
                         } 
+                        <p className="connected-status"><span>Wallet is{isConnected ? '' : ' not'} connected</span></p>
                     </div>
                     <div class="animation-box">
                         <img id="mario-img" alt="mario" src={mario} />

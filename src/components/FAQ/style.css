@@ -1,5 +1,5 @@
  
-#faq h1{
+/*#faq h1{
 
     font-size: 150px;
     text-align: center;
@@ -12,11 +12,16 @@
     2px -2px 0 #FF06D7,
     -2px 2px 0 #FF06D7,
      2px 2px 0 #FF06D7;
-}
+}*/
 #faq .pink-box{
 	/*width: 60% !important;*/
 	margin-bottom: 40px;
 	padding: 20px 40px;
+	background: #650C85;
+border: 6px solid #F36EFF !important;
+}
+.arrow-down{
+	transform: scaleY(-1);
 }
 #faq{
     width: 50%;
@@ -75,7 +80,7 @@
 	} 
 }
 @media (max-width:  786px){ 
-	#faq img, 
+ 
 #faq, #team {
 		width: 100% !important;
 	} #contact form {

@@ -56,11 +56,20 @@ section{
 #close{
     position: absolute;
     top: 20px;
+    cursor: pointer;
+    color: #FF06D7;
     right: 30px;
     font-weight: 600;
     color: rgb(27, 23, 23);
     font-size: 36px;
 }   
+.connected-status{
+    position: absolute;
+    bottom: 5px;
+}
+.connected-status span{
+    font-size: 20px !important;
+}
 #minted-popup{
     position: absolute;
     width: 100%;
@@ -188,6 +197,9 @@ section{
     padding: 0 !important;
     font-weight: 400;
     font-family: Emtype Foundry Regular;
+}
+.miners-box-left p span{
+    line-height: 1 !important;
 }
 .miners-box h3{
     margin: 0; 
