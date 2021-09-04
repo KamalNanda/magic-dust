@@ -6,7 +6,7 @@ import telegram from '../../assets/images/telegram.png'
 import linkedin from '../../assets/images/linkedin.png' 
 import Man2 from '../../assets/images/man22.png'  
 const Screen = () => {
-
+const socials = [{img: discord, text: 'Discord'}, {img: telegram, text: 'Telegram'}, {img: twitter, text: 'Twitter'}, {img: linkedin, text: 'Linkedin'}]
 	return(<>
 		<div id="section-3">
          	<h1>FIND YOUR DUSTY FRIENDS</h1>
@@ -21,22 +21,14 @@ const Screen = () => {
 			        <button>GIMME DUST!</button>
 				</div>
 				<div class="pink-boxes">
-	            	<div class="green-box">  
-		                <img onClick={() => window.open('https://www.discord.com')} src={discord} />
-		                Magic Dust on Discord
-		            </div>
-		            <div class="green-box"> 
-		                <img onClick={() => window.open('https://www.telegram.org')} src={telegram} />
-		                Magic Dust on Telegram
-		            </div>
-		            <div class="green-box"> 
-		                <img onClick={() => window.open('https://www.twitter.com')} src={twitter} />
-		                Magic Dust on Twitter
-		            </div> 
-		            <div class="green-box"> 
-		                <img src={linkedin} />
-		                Magic Dust on LinkedIn
-		            </div> 
+					{
+						socials.map((social, i) => {
+							return <div onClick={() => window.open(`https://www.${social.text}.${social.text === 'Telegram' ? 'org' : 'com'}`)} class="green-box">  
+				                <img src={social.img} alt={social.text} />
+				                Magic Dust on {`${social.text}`}
+				            </div>
+						})	
+					} 
 		        </div>
 			</div> 
 			<img src={Man2} style={{display:'block', margin:'auto'}}/>
