@@ -15,7 +15,7 @@ const Roadmap = () => {
 	const trophies = [{img: trophy1, text: '1 Trillion Du$t tokens minted on da WAX blockchain!', date: '08 / 2020'}, {img: trophy2, text: 'Magic Du$t Chat Mining Bot for Telegram DEPLOYED!!', date: '12 / 2020'}, {img: trophy3, text: 'First EVAR Du$t Token Multiplier NFT minted on WAX!!!', date: '12 / 2021'}, {img: trophy4, text: 'Magic Du$t chat mining bot for Discord debut!!!! ', date: '09 / 2021'}]
 	return(<>
 		<div id="roadmap"> 
-			<h1>ROADMAP</h1>
+			<h1 id="road-map">ROADMAP</h1>
 			<h2>UPCOMING</h2>
 			<div className="row justify-content-between"> 
 				{

@@ -320,14 +320,109 @@ body{
  
  #arrow{
     position: sticky;
-    bottom: 20px;
-    width: 60px;
+    bottom: 280px;
+    width: 100px;
     float: right;
-    height: 60px; 
-    right:20px;
+    height: 100px; 
+    right:115px;
     z-index: 9999988999999;
  }
  #arrow img{
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
  }
+ @media (max-width: 1860px){
+    #arrow{
+        bottom:  250px;
+        right:100px;
+    }
+    #arrow{
+        width: 90px;
+        height: 90px; 
+    }
+     #arrow img{
+        width: 90px;
+        height: 90px;
+     }
+ }
+ @media (max-width: 1660px){
+    #arrow{
+        bottom:  220px;
+    }
+    #arrow{
+        width: 80px;
+        height: 80px; 
+    }
+     #arrow img{
+        width: 80px;
+        height: 80px;
+     }
+ }
+ @media (max-width: 1440px){
+    #arrow{
+        bottom:  130px;
+    }
+    #arrow{
+        width: 60px;
+        height: 60px; 
+    }
+     #arrow img{
+        width: 60px;
+        height: 60px;
+     }
+ }  
+ @media (max-width: 1360px){
+    #arrow{
+        bottom:  115px;
+        right: 80px;
+    }
+    #arrow{
+        width: 60px;
+        height: 60px; 
+    }
+     #arrow img{
+        width: 60px;
+        height: 60px;
+     }
+ }
+ @media (max-width: 1280px){
+    #arrow{
+        bottom:  140px;
+        right: 80px;
+    }
+ }
+ @media (max-width: 1180px){
+    #arrow{
+        bottom:  120px;
+    }
+    #arrow{
+        width: 50px;
+        height: 50px; 
+    }
+     #arrow img{
+        width: 50px;
+        height: 50px;
+     }
+ }
+
+ @media (max-width: 1024px){
+    #arrow{
+        bottom:  100px;
+        right: 70px;
+    }
+    #arrow{
+        width: 40px;
+        height: 40px; 
+    }
+     #arrow img{
+        width: 40px;
+        height: 40px;
+     }
+ }
+ @media (max-width: 768px){
+    #arrow{
+        bottom: 60px;
+        right: 20px;
+    }
+ }
+ 

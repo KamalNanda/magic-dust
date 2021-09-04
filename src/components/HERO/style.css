@@ -31,8 +31,8 @@ section{
     width: 50%; 
     /*position: absolute;*/
     top: 0;
-    padding-top: 00px;
-    padding-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
     z-index: 999;
     align-items: center; 
     flex-direction: column;
@@ -533,6 +533,9 @@ input[type=number] {
 }
 @media (max-width: 1280px){
      
+.miners-box p strong{
+    font-size: 1rem;
+}
 #green-arrow{ 
     left: 30px;
     top: 30px;
@@ -637,6 +640,9 @@ input[type=number] {
         -2px 2px 0 #FF13ED,
         2px 2px 0 #FF13ED;
     }
+.img-flex p{
+    font-size: .95rem !important;
+}
 .miners-box p{ 
     margin-top: 10px;
     font-size:1rem;
