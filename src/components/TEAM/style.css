@@ -30,7 +30,7 @@
 .team-grid{
 	width: fit-content;
 	margin: auto;
-	grid-gap: 40px;
+	grid-gap: 20px;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 }
