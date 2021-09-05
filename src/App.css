@@ -132,41 +132,41 @@ body{
 #group-div{
     position: relative;
     width: 100%;
-}
-#left, #right{
+} 
+#leftfull , #left, #rightfull , #right{
     top: 0;  
     position: absolute;
     z-index: 9999999;
     height: 100%;
     transform: scaleX(0.75) ;
 }
-#right{
+#rightfull , #right{
     right: -150px  ;
         transform-origin: 100% 0%;
 }
-#left{
+#leftfull , #left{
     left: -130px  ;
         transform-origin: 0% 100%;
 } 
 @media (max-width:  1440px){
-    #left, #right{
+    #leftfull , #left, #rightfull , #right{
     transform: scaleX(0.80) !important  ;
     } 
-#right{
+#rightfull , #right{
     right: -200px  ; 
 }
-#left{
+#leftfull , #left{
     left: -120px  ;
      
     }
 }
 @media (max-width:  1280px){
-    #left, #right{
+    #leftfull , #left, #rightfull , #right{
     transform: scaleX(0.80)  !important  ;
     } 
 }
 @media (max-width: 725px){
-#left, #right, #Miner5,#Miner6,#Miner7,#Miner8,#Miner9,#Miner10{
+#leftfull , #left, #rightfull , #right, #Miner5,#Miner6,#Miner7,#Miner8,#Miner9,#Miner10{
     display: none !important;
 
 }
@@ -190,7 +190,7 @@ body{
     #light{
         height: 30% !important;
     }
-    #left-side, #bluesideleft, #stoneleft {
+      #left-side, #bluesideleft, #stoneleft {
         /* width: 100px; */
         transform: scaleX(0.35) !important;
         transform-origin: 0% 50%;
@@ -226,7 +226,7 @@ body{
     #mobile-nav{
         display: flex;
     }
-    #right-side , #bluesideright ,#stoneright{
+      #right-side , #bluesideright ,#stoneright{
         /* width: 100px; */
         transform: scaleX(0.35)!important;
         transform-origin: 100% 50%;
@@ -369,7 +369,10 @@ body{
      #arrow img{
         width: 60px;
         height: 60px;
-     }
+     } 
+#leftfull, #rightfull {
+    display: block;
+}
  }  
  @media (max-width: 1360px){
     #arrow{
