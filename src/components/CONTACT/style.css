@@ -25,6 +25,8 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
 }
 #contact  form{ 
 	width: 50%;
+    position: relative;
+    top: -75px;
     margin: auto;   
 } 
 .form-cont div, 
@@ -92,16 +94,17 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
 .message h1{
     color: #FFF200 !important;
     line-height: 400px;
-    margin: auto;
+    margin: 100px auto 0 auto;
     text-align: center;
     font-weight: 900;
     letter-spacing: 10px;
+        transform: scaleX(2.5) scaleY(1.5) !important;
     text-shadow:
         -2px -2px 0 #FF06D7,  
         2px -2px 0 #FF06D7,
         -2px 2px 0 #FF06D7,
         2px 2px 0 #FF06D7;
-    font-size: 200px;
+    font-size: 300px;
 }
 @media (max-width:  1760px){
     #contact h1{

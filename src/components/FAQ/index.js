@@ -7,7 +7,7 @@ const FAQComponent = (faq) => {
 	return <div class="pink-box">
 				<div class="faq-box">
 				 	<strong style={{marginBottom:0}} className="d-flex align-items-center">
-				 		 <img className={isShown ? 'arrow-down' : ''} onClick={() => setShown(!isShown)} src={arrow} style={{cursor:'pointer',marginRight:'10px',marginBottom:0,width: '40px', height:'40px'}}/> {faq.head}
+				 		 {faq.head} < img className={isShown ? 'arrow-down ms-auto' : 'ms-auto'} onClick={() => setShown(!isShown)} src={arrow} style={{cursor:'pointer',marginRight:'10px',marginBottom:0,width: '40px', height:'40px'}}/> 
 				 	</strong>
 				 	{
 				 		isShown && <>
