@@ -29,7 +29,7 @@ const Screen = () => {
 							{
 								lists.map((l, i) => {
 									return <PinkBox key={i} > 
-											<div class="d-flex"><img src={arrow}/><p>{l}</p></div>
+											<div class="d-flex"><img src={arrow} className="circle-arrow"/><p>{l}</p></div>
 									</PinkBox>
 								})
 							}
@@ -37,14 +37,14 @@ const Screen = () => {
 								{
 									lists2.map((l, i) => {
 										return <PinkBox key={i} > 
-												<div class="d-flex"><img src={arrow}/><p>{l}</p></div>
+												<div class="d-flex"><img src={arrow} className="circle-arrow"/><p>{l}</p></div>
 										</PinkBox>
 									})
 								}
 							</div>
 						</div> 
 					</div>
-					<div className="col-lg-7 col-md-7 col-sm-12">
+					<div style={{height:'100%', alignContent:'space-between', justifyContent:'space-between'}} className="col-lg-7 col-md-7 col-sm-12">
 						<PinkBox> 
 							<img src={Group} id="group"/>
 							{
@@ -52,7 +52,7 @@ const Screen = () => {
 									return <div key={i} class='d-flex my-2 align-items-center'>
 												{
 													mine.map((img, j) =>{
-														return <img key={j} alt={`miner-${i}-${j}`} src={img} className={ img == plus ? 'add-white' : ''} />
+														return <img key={j} alt={`miner-${i}-${j}`} src={img} className={ img == plus ? 'add-white' : 'pink-box-img'} />
 													})
 												}
 												<img src={equal} className="add-white" />  
@@ -66,11 +66,11 @@ const Screen = () => {
 								})
 							} 
 						</PinkBox> 
-						<div className="m-hide pink-boxes-grid">
+						<div className="m-hide pink-boxes-grid" style={{position:'relative', zIndex:'-1'}}>
 							{
 								lists2.map((l, i) => {
 									return <PinkBox key={i} > 
-											<div class="d-flex"><img src={arrow}/><p>{l}</p></div>
+											<div class="d-flex"><img src={arrow} className="circle-arrow"/><p>{l}</p></div>
 									</PinkBox>
 								})
 							}

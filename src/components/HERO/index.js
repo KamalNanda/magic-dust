@@ -13,12 +13,12 @@ import DIVIDER from '../DIVIDER'
 import minersGrid from '../../assets/images/miners.png'
 import man from '../../assets/images/man_2.png'
 const Hero = () => {
-  const [miners, setMiners] = React.useState(0)
+  const [miners, setMiners] = React.useState(1)
   const [isConnected, setConnected] = React.useState(false)
   const [loading, setloading] = React.useState(false)
   const [isMinersPopupShown, setMinersPopupShown] = React.useState(false)
   const minusFunction = () => { 
-    if(miners !== 0){
+    if(miners !== 1){
         setMiners(miners - 1)
     }  
 

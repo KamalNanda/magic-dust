@@ -11,7 +11,7 @@ const socials = [{img: discord, text: 'Discord'}, {img: telegram, text: 'Telegra
 		<div id="section-3">
          	<h1>FIND YOUR DUSTY FRIENDS</h1>
 			<div class="social-flex">
-				<div>
+				<div className="sec-2-flex">
 					<p>Want to host an official <br/>
 			            <span>Magic $dust Mine</span>  in your  <br/>
 			            Discord or Telegram community?  <br/>
@@ -20,7 +20,7 @@ const socials = [{img: discord, text: 'Discord'}, {img: telegram, text: 'Telegra
 			        </p>
 			        <button>GIMME DUST!</button>
 				</div>
-				<div class="pink-boxes">
+				<div class="green-boxes">
 					{
 						socials.map((social, i) => {
 							return <div onClick={() => window.open(`https://www.${social.text}.${social.text === 'Telegram' ? 'org' : 'com'}`)} class="green-box">  

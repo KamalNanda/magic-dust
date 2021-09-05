@@ -1,7 +1,7 @@
 #section-1{
     position: relative;
-    padding-top: 500px ;
-    width: 50%;
+    padding-top: 300px ;
+    width: 60%;
     margin: auto;
     /*overflow: hidden !important;*/ 
 }
@@ -143,6 +143,15 @@
     width: 50%;
     margin: 0 25%;
 } 
+
+.pink-boxes-grid{
+ 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-content: space-between;
+    justify-content: space-between; 
+}
 @media (max-width : 768px){
     #section-2 p, #section-2 p span{
         width: 90% !important;
@@ -153,8 +162,9 @@
     #section-2 h1 span{
         font-size: 100px !important;
     }
-    .pink-box .d-flex img{
+    .pink-box-img{
         width: 60px;
+        height: 60px;
     }
     .pink-box h2{
         font-size: 60px;
@@ -163,8 +173,8 @@
 #group{
     width: 70%;
     position: absolute; 
-    bottom: -150px;
-    z-index: 1111;
+    bottom: -160px;
+    z-index: 1111111111111111;
     right: -200px;
 }
 @media (max-width: 1880px){
@@ -183,7 +193,7 @@
 }
 @media (max-width : 1780px){
     #section-1{
-        padding-top: 400px;
+        padding-top: 300px;
     }
     #group{
         right: -100px;
@@ -199,13 +209,10 @@
     #section-2 h1 span{
         font-size: 100px !important;
     }
-    .pink-box .d-flex img{
-        width: 80px;
-    }
     .add-white{ 
         margin: 0 5px ;
         width: 12px !important;
-    }
+    } 
     .pink-box h2{
         font-size: 60px;
     } 
@@ -218,15 +225,24 @@
 }
 @media(max-width: 1660px){ 
     #group{
-        right: -150px;
-        width: 50%;
-        bottom: -50px;
+        right: -100px;
+        width: 55%;
+        bottom: -20px;
     }
     #section-1 .pink-box{
         padding: 10px;
     }
-    .pink-box .d-flex img{
-        width: 60px ;
+    .add-white{ 
+        margin: 0 5px ;
+        width: 12px !important;
+    } 
+    .circle-arrow{
+        width: 45px !important;
+        height: 45px !important;
+    } 
+    .pink-box-img{
+        width: 60px;
+        height: 60px;
     }
 .pink-boxes-grid > .pink-box h1{
     text-align: center;  
@@ -237,7 +253,7 @@
 }
 @media (max-width : 1280px){
     #section-1{
-        padding-top: 250px;
+        padding-top: 200px;
     }
     #section-1 .pink-box{
         padding: 10px;
@@ -263,13 +279,13 @@
     }
     .add-white{ 
         margin: 0 5px ;
-        width: 8px !important;
+        width: 10px !important;
     }
     .pink-box .d-flex{
         margin-bottom: 10px;
     }
-    .pink-box .d-flex img{
-        width: 50px ;
+    .circle-arrow{
+        width: 30px !important ;height: 30px !important;
     }
     .pink-box h2{
         font-size: 60px;
@@ -280,10 +296,22 @@
     .pink-box h2{
         font-size: 60px !important;
     } 
+    .pink-box-img{
+        width: 60px;
+        height: 60px;
+    }
+}
+@media (max-width:  1180px){
+
+    .pink-box-img{
+        width: 50px;
+        height: 50px;
+    }
 }
 @media (max-width: 1024px){
-    .pink-box .d-flex img{
-        width: 40px ;
+    .circle-arrow img{
+        width: 20px  !important;
+        height: 20px !important ;
     }
     .pink-box .d-flex p{
         font-size: 12px;
