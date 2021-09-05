@@ -14,8 +14,8 @@
  	width: 60%;
  	height: 200px;
  	filter: opacity(30%);
-	filter: blur(20px);	
-	top: -120px;
+	filter: blur(20px) opacity(70%);	
+	top: -130px;
 	z-index: 11111111111;
 	right: -100px;
 	border-radius: 50%;
