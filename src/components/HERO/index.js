@@ -9,6 +9,7 @@ import shadow from '../../assets/images/yellow-shadow.png'
 import Arrow from '../../assets/images/Group.png'
 import mario from '../../assets/images/mario.png'
 import star from '../../assets/images/star.png'
+import fomo from '../../assets/images/fomo.png'
 import DIVIDER from '../DIVIDER'
 import minersGrid from '../../assets/images/miners.png'
 import man from '../../assets/images/man_2.png'
@@ -45,8 +46,11 @@ const Hero = () => {
               <p onClick={() => setMinersPopupShown(false)} id="close">X</p>
               <h1>CONGRATULATIONS DUSTY FRIEND!</h1> 
               <img src={minersGrid} alt="miners"/>
-              <p>HODL YOUR MINER IN YOUR WALLET WHEN CHATTING ON ACTIVE $DUST COMMUNITIES 
-               ON DISCORD AND TELEGRAM TO EARN $DUST WITH EVERY CHAT!</p>
+              <div class="row"> 
+                <p className="col-md-8">HODL YOUR MINER IN YOUR WALLET WHEN CHATTING ON ACTIVE $DUST COMMUNITIES 
+                ON DISCORD AND TELEGRAM TO EARN $DUST WITH EVERY CHAT!</p>  
+                <div class="col-md-4"><img src={fomo} /></div>
+              </div> 
           </div>
       </div> 
       : <></>

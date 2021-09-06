@@ -59,6 +59,9 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
     #roadmap h1, #faq > h1, #team > h1{
         font-size: 120px;
     } 
+#roadmap > .row p{
+    font-size: 28px;
+}
 }
 @media (max-width:  1280px){ 
     #roadmap img.man2, #section-3 > img{
@@ -86,4 +89,8 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
     width: 70%;
     margin: auto;
 }
+}
+.achievement img{
+    width: 80%;
+    margin: auto;
 }

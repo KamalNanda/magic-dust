@@ -136,33 +136,39 @@ body{
 #leftfull , #left, #rightfull , #right{
     top: 0;  
     position: absolute;
-    z-index: 9999999;
-    height: 100%;
-    transform: scaleX(0.75) ;
+    width: 25%;
+    height: fit-content;
+    z-index: 9999999; 
 }
 #rightfull , #right{
-    right: -150px  ;
+    right: -100px  ;
         transform-origin: 100% 0%;
 }
 #leftfull , #left{
     left: -130px  ;
         transform-origin: 0% 100%;
 } 
-@media (max-width:  1440px){
-    #leftfull , #left, #rightfull , #right{
-    transform: scaleX(0.80) !important  ;
-    } 
+@media (max-width:  1440px){ 
 #rightfull , #right{
-    right: -200px  ; 
+    right: -150px  ; 
 }
 #leftfull , #left{
-    left: -120px  ;
+    left: -150px  ;
      
     }
 }
+@media (max-width:  1440px){
+    #leftfull , #left, #rightfull , #right{  
+    width: 35% ; 
+    } 
+}
 @media (max-width:  1280px){
-    #leftfull , #left, #rightfull , #right{
-    transform: scaleX(0.80)  !important  ;
+    #leftfull , #left, #rightfull , #right{ 
+    top: 0;  
+    position: absolute;
+    width: 30%;
+    height: fit-content;
+    z-index: 9999999; 
     } 
 }
 @media (max-width: 725px){
@@ -191,13 +197,10 @@ body{
         height: 30% !important;
     }
       #left-side, #bluesideleft, #stoneleft {
-        /* width: 100px; */
-        transform: scaleX(0.35) !important;
-        transform-origin: 0% 50%;
+        /* width: 100px; */  
     }
     #left-side   {
-        /* width: 100px; */
-        transform: scaleX(0.25) !important;
+        /* width: 100px; */ 
         transform-origin: 0% 50%;
     }
     .hero-line{
@@ -227,15 +230,11 @@ body{
         display: flex;
     }
       #right-side , #bluesideright ,#stoneright{
-        /* width: 100px; */
-        transform: scaleX(0.35)!important;
-        transform-origin: 100% 50%;
+        /* width: 100px; */ 
     }
 
     #right-side {
-        /* width: 100px; */
-        transform: scaleX(0.25)!important;
-        transform-origin: 100% 50%;
+        /* width: 100px; */ 
     }
     .section-flex{
         flex-direction: column-reverse !important;;

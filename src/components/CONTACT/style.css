@@ -64,10 +64,10 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
     border: 6px solid #F36EFF;
     border-radius: 6px;
     width: 100%;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
-    font-size: 2rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
+    font-size: 3rem;
     font-weight: 900;
-    padding: 30px;
+    padding: 0px 30px;
 }
 #contact  textarea{
     height: 300px;
@@ -87,7 +87,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
 .message{  
     display: block; 
     width: 100%;
-    margin: 200px auto;
+    margin: 400px auto 100px auto;
     /*transform: scaleX(2) scaleY(1.5); */
 }   
   

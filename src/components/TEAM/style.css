@@ -88,6 +88,10 @@ border: 6px solid #F36EFF !important;
 }
 .team-grid .member{
 	background: #EC12DB;
+	cursor: pointer;
+}
+.member:hover{
+	transform: scale(1.1);
 }
 .team-member p{
 	text-align: center;
