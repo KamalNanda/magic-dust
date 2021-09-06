@@ -96,7 +96,7 @@ section{
     align-items: center;
     justify-content: center;
     /*top: 50px;*/
-    min-height: 600px;
+    min-height: 500px;
     background-color: #872EB1;
     border: 6px solid #FF06D7;
     border-radius: 6px;
@@ -122,8 +122,7 @@ section{
     color: #FF06D7;
     font-size: 40px;
     text-align: center;
-    display: block;
-    margin: auto;
+    display: block; 
 }
 .minted-popup p{ 
     color: #FF06D7;
@@ -446,6 +445,12 @@ filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
         /*width: 50%;*/
         /*top: -40px;*/
 
+    }
+    .minted-popup{
+        padding: 20px; 
+    }
+    .minted-popup > img{
+        margin: 0 !important ;
     }
     .miners-box{
         padding: 30px ;
