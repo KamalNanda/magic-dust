@@ -1,0 +1,361 @@
+#section-1{
+    position: relative;
+    padding-top: 300px ;
+    width: 60%;
+    margin: auto;
+    /*overflow: hidden !important;*/ 
+}
+.cieling{
+    position: absolute;
+    width: 100%; 
+    top: 0; 
+    z-index: 1;
+    /*transform: scaleY(1.65) ;*/
+    transform-origin: 100% 0%;
+} 
+.discord-wall{
+    width: 90%; 
+    display: block;
+}
+.m-show{
+    display: none;
+}
+@media(max-width: 768px){
+    .m-show{
+        display: block;
+    }
+    .m-hide{
+        display: none !important;
+    }
+    .m-rev{
+        flex-direction: column-reverse;
+    }
+}
+.coin{
+    width: 30px !important;
+}
+.pink-boxes-discord{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 40px;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    margin: 150px auto;
+}  
+
+.pink-boxes-grid > .pink-box h1{
+    text-align: center;  
+    line-height: 45px; 
+    font-size:45px; 
+    color: #FFF200;
+    text-shadow:
+   -2px -2px 0 #650C85,  
+    2px -2px 0 #650C85,
+    -2px 2px 0 #650C85,
+     2px 2px 0 #650C85; 
+}
+.pink-boxes-grid .pink-box p{
+    font-size: 20px;
+    line-height: 1; 
+    color: #FBF5E3;
+    letter-spacing: 0px; 
+    margin-bottom: 0;
+}
+.pink-boxes-grid .pink-box img{
+    width: 50px;
+    margin-right: 10px;
+    height: 50px;
+}
+#section-1 .pink-box{
+    padding: 20px;
+    width: 100% !important;
+    margin: auto;
+    margin-bottom: 20px; 
+}
+@media (max-width: 1360px){
+   .pink-boxes-grid > .pink-box h1{
+        font-size: 30px;
+        line-height: 30px;
+   }
+    .pink-boxes-grid .pink-box{
+        padding: 10px;
+    }
+} 
+@media (max-width: 1660px){
+    .pink-flex h1{
+        font-size: 32px;
+    }
+    .pink-flex h4{
+        line-height: unset;
+        font-size: 16px;
+    }
+    #group{
+        right: -150px;
+        width: 50%;
+        bottom: 00px;
+    }
+}
+@media (max-width: 1280px){
+    .pink-flex h1{
+        font-size: 30px;
+    }
+    .pink-flex h4{
+        line-height: unset;
+        font-size: 16px;
+    }
+}
+@media (max-width:  1024px){
+
+    .pink-boxes-discord{
+        flex-direction: column;       
+    }
+    .discord-wall{
+        /*width: 100%;*/
+    }
+}
+@media(max-width: 786px){
+    .pink-flex{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .pink-boxes-discord{
+        flex-direction: column;       
+    }
+    #roadmap{
+        width: 100% !important;
+    }
+} 
+.add-white{ 
+    margin: 0 10px ;
+    height: fit-content;
+    width: 20px !important;
+} 
+.pink-box .d-flex p{  
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20x;
+    line-height: 20x; 
+    letter-spacing: 0.1em; 
+    color: #fff;
+}
+.sec-box{
+    width: 50%;
+    margin: 0 25%;
+} 
+
+.pink-boxes-grid{
+ 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-content: space-between;
+    justify-content: space-between; 
+}
+@media (max-width : 768px){
+    #section-2 p, #section-2 p span{
+        width: 90% !important;
+        font-size: 60px !important;
+        line-height:  80px !important;
+    }
+    #section-2 h1,
+    #section-2 h1 span{
+        font-size: 100px !important;
+    }
+    .pink-box-img{
+        width: 60px;
+        height: 60px;
+    }
+    .pink-box h2{
+        font-size: 60px;
+    }
+}
+#group{
+    width: 70%;
+    position: absolute; 
+    bottom: -160px;
+    z-index: 1111111111111111;
+    right: -200px;
+}
+@media (max-width: 1880px){
+    #group{
+        position: absolute; 
+        bottom: -100px;
+        width: 15px;
+        right: -25px;
+    }
+
+}
+@media (max-width:  768px){
+    #group{
+        display: none;
+    }
+}
+@media (max-width : 1780px){
+    #section-1{
+        padding-top: 300px;
+    }
+    #group{
+        right: -100px;
+        width: 50%;
+        bottom: -50px;
+    }
+    #section-2 p, #section-2 p span{
+        width: 90% !important;
+        font-size: 60px !important;
+        line-height:  80px !important;
+    }
+    #section-2 h1,
+    #section-2 h1 span{
+        font-size: 100px !important;
+    }
+    .add-white{ 
+        margin: 0 5px ;
+        width: 12px !important;
+    } 
+    .pink-box h2{
+        font-size: 60px;
+    } 
+    .pink-box h2{
+        font-size: 80px !important;
+    } 
+    .pink-box .d-flex p{
+        font-size: 20px;
+    }
+}
+@media(max-width: 1660px){ 
+    #group{
+        right: -100px;
+        width: 55%;
+        bottom: -20px;
+    }
+    #section-1 .pink-box{
+        padding: 10px;
+    }
+    .add-white{ 
+        margin: 0 5px ;
+        width: 12px !important;
+    } 
+    .circle-arrow{
+        width: 45px !important;
+        height: 45px !important;
+    } 
+    .pink-box-img{
+        width: 60px;
+        height: 60px;
+    }
+.pink-boxes-grid > .pink-box h1{
+    text-align: center;  
+    line-height: 36px; 
+    font-size:36px;   
+}
+
+}
+@media (max-width : 1280px){
+    #section-1{
+        padding-top: 200px;
+    }
+    #section-1 .pink-box{
+        padding: 10px;
+    }
+.pink-boxes-grid > .pink-box h1{
+    text-align: center;  
+    line-height: 28px; 
+    font-size:28px;  
+}
+    #group{
+        right: -120px;
+        width: 60%;
+        bottom: -50px;
+    }
+    #section-2 p, #section-2 p span{
+        width: 90% !important;
+        font-size: 60px !important;
+        line-height:  80px !important;
+    }
+    #section-2 h1,
+    #section-2 h1 span{
+        font-size: 100px !important;
+    }
+    .add-white{ 
+        margin: 0 5px ;
+        width: 10px !important;
+    }
+    .pink-box .d-flex{
+        margin-bottom: 10px;
+    }
+    .circle-arrow{
+        width: 30px !important ;height: 30px !important;
+    }
+    .pink-box h2{
+        font-size: 60px;
+    }
+    .pink-box .d-flex p{
+        font-size: 16px;
+    }
+    .pink-box h2{
+        font-size: 60px !important;
+    } 
+    .pink-box-img{
+        width: 60px;
+        height: 60px;
+    }
+}
+@media (max-width:  1180px){
+
+    .pink-box-img{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (max-width: 1024px){
+    .circle-arrow img{
+        width: 20px  !important;
+        height: 20px !important ;
+    }
+    .pink-box .d-flex p{
+        font-size: 12px;
+    }
+    #group{
+        position: absolute; 
+        bottom: -30px;
+        width: 50% !important;
+        right: -105px;
+    }
+}
+#mob-miner{
+    display: none;
+}
+@media (max-width: 760px){
+    #section-1{
+        padding-top:100px ;
+        width: 80%;
+    }
+    #mob-miner{
+        display: block;
+        width: 40%;
+        margin: 0 auto 80px auto;
+    }
+    .pink-boxes-discord{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+} 
+@media (max-width: 475px){
+    #section-1{ 
+        width: 100%;
+    } 
+    #section-1 > div.pink-box, .discord-wall,
+    #faq .pink-box{
+        width: 100% !important;
+    }
+}
+@media (max-width : 375px){
+    .pink-box-img{
+        width: 40px;
+        height: 40px;
+    }
+    .coin{
+        width: 20px !important;
+    }
+}
