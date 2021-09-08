@@ -35,10 +35,10 @@ function App() {
         <img src={right} id="right" />
         <SCREEN2 /> 
         <SCREEN3 />
-        <div style={{position:'relative'}}>
+        <div style={{position:'relative',overflowX:'hidden'}}>
           <img src={cavebg} id="cavebg" />
             <div style={{position:'relative'}}>
-              <div  style={{position:'relative', zIndex: 2}}>
+              <div  style={{position:'relative', zIndex: 2, overflowX:'hidden'}}>
                 <SCREEN4 /> 
               </div>
               <div style={{position:'relative'}}>

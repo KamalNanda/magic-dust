@@ -1,3 +1,4 @@
+
 import React from 'react' 
 import './style.css'   
 import gem1 from '../../assets/images/gem/1.png'

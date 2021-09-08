@@ -153,7 +153,7 @@ body{
     position: absolute;
     mix-blend-mode: multiply;
     width: 25%;
-    height: 1500vh;
+    height: 1400vh;
     z-index: 9999999; 
 }
 #rightfull , #right{
@@ -164,6 +164,17 @@ body{
     left: -60px  ;
         transform-origin: 0% 100%;
 } 
+@media (max-width:  1780px){ 
+#rightfull , #right{
+    right: -140px  ; 
+    height: 1400vh !important;
+}
+#leftfull , #left{
+    left: -50px  ;
+    height: 1400vh !important;
+     
+    }
+}
 @media (max-width:  1440px){ 
 #rightfull , #right{
     right: -140px  ; 
