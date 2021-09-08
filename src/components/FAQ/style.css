@@ -49,6 +49,7 @@ border: 6px solid #F36EFF !important;
 .gemplatform{
 	position: relative; 
 	z-index: 99999;
+	bottom: -200px;
 }
 .faq-box img{
 	border-radius: 100%;
