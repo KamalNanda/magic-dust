@@ -7,7 +7,7 @@ import telegram from "../../assets/images/telegram.svg"
 function Footer(){
 	return <div id="footer" className="footer">
 		<div className="cloudy"></div>
-		<p>Copyright 2021 Magic Dust Inc. All Rights Reserved so fuck off.</p>
+		<p>Copyright 2021 Magic Dust Inc. All Rights Reserved.</p>
 		<div className="footer-flex">
 			<img onClick={() => window.open('https://www.discord.com')} src={discord}  alt={"discord"} />
 			<img onClick={() => window.open('https://www.telegram.org')} src={telegram} alt={"telegram"} />

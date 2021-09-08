@@ -7,6 +7,7 @@ import SCREEN3 from './components/SCREEN3'
 import SCREEN4 from './components/SCREEN4'
 import TEAM from './components/TEAM'
 import ROADMAP from './components/ROADMAP'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import FAQ from './components/FAQ' 
 import arrow from './assets/images/arrow.png'
 import CONTACT from './components/CONTACT'
@@ -20,6 +21,7 @@ import Miner6 from './assets/images/miner6.png'
 import Miner9 from './assets/images/miner9.png'  
 import Miner10 from './assets/images/miner7.png'  
 import Miner5 from './assets/images/miner5.png' 
+import gemplatform from './assets/images/bottom-gems.png'
 function App() {
   return (
     <div className="App">
@@ -50,12 +52,12 @@ function App() {
                 </div>
               </div>
             </div>
-          </div>
-          <div class="bottom-section">
-            <div className="contact-bg" ></div>
-            <div className="gradient-bg"></div>
-             <CONTACT />
-           </div>
+          </div> 
+             <CONTACT /> 
+                <div class="gemplatform" id="gemplatform">
+                  <img src={gemplatform}/>
+                  
+                </div>
       <FOOTER />
       </div>
       <a id="arrow"  href="#home"><img src={arrow}/></a>

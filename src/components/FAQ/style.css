@@ -48,6 +48,11 @@ border: 6px solid #F36EFF !important;
 }
 .gemplatform{
 	position: relative; 
+	z-index: 99999;
+}
+.faq-box img{
+	border-radius: 100%;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .gemplatform img{
 	width: 100%;
@@ -83,7 +88,7 @@ border: 6px solid #F36EFF !important;
 @media (max-width:  786px){ 
  
 #faq, #team {
-		width: 100% !important;
+		width: 90% !important;
 	} #contact form {
 		width: 90% !important;
 	}

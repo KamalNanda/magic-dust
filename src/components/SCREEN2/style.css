@@ -1,6 +1,6 @@
 #section-1{
     position: relative;
-    padding-top: 300px ;
+    padding-top: 200px ;
     width: 60%;
     margin: auto;
     /*overflow: hidden !important;*/ 
@@ -9,7 +9,7 @@
     position: absolute;
     width: 100%; 
     top: 0; 
-    z-index: 1;
+    z-index: -1;
     /*transform: scaleY(1.65) ;*/
     transform-origin: 100% 0%;
 } 
@@ -193,7 +193,7 @@
 }
 @media (max-width : 1780px){
     #section-1{
-        padding-top: 300px;
+        padding-top: 150px;
     }
     #group{
         right: -100px;
@@ -253,7 +253,7 @@
 }
 @media (max-width : 1280px){
     #section-1{
-        padding-top: 200px;
+        padding-top:100px;
     }
     #section-1 .pink-box{
         padding: 10px;
@@ -343,11 +343,11 @@
 } 
 @media (max-width: 475px){
     #section-1{ 
-        width: 100%;
+        width: 90%;
     } 
     #section-1 > div.pink-box, .discord-wall,
     #faq .pink-box{
-        width: 100% !important;
+        width: 90% !important;
     }
 }
 @media (max-width : 375px){
