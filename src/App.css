@@ -130,7 +130,7 @@ body{
     }
 }
 #group-div{
-    position: relative;
+    position: revert;
     width: 100%;
     overflow: hidden;
 } 
@@ -143,7 +143,6 @@ body{
 }
 #cavebig{
     position: absolute;
-        z-index: 0;    
         width: 100%; 
     height: fit-content;
     mix-blend-mode: multiply;
@@ -155,7 +154,7 @@ body{
     mix-blend-mode: multiply;
     width: 25%;
     height: 100%;
-    z-index: 9; 
+    z-index: 9;  
 }
 #rightfull , #right{
     right: -170px  ;
@@ -167,12 +166,10 @@ body{
 } 
 @media (max-width:  1780px){ 
 #rightfull , #right{
-    right: -140px  ; 
-    height: 1400vh !important;
+    right: -140px  ;  
 }
 #leftfull , #left{
-    left: -50px  ;
-    height: 1400vh !important;
+    left: -50px  ; 
      
     }
 }
@@ -194,11 +191,9 @@ body{
 }
 @media (max-width:  1280px){
     #leftfull , #left, #rightfull , #right{ 
-    top: 0;  
-    position: absolute;
+    /*top: 0;   */
     width: 30%;
-    height: fit-content;
-    z-index: 9999999; 
+    /*height: fit-content;*/ 
     } 
 }
 @media (max-width: 725px){

@@ -29,7 +29,7 @@ const MobileHeader = () => {
 				isShown && <ul> 
 					<li><a onClick={() => onLinkClick("nav-home")} id="nav-home" href="#home" class="active">Home</a></li>
 			    <li><a onClick={() => onLinkClick("nav-section-1")} id="nav-section-1" href="#section-1">$Dust Token</a></li>
-			    <li><a onClick={() => onLinkClick("nav-section-2")} id="nav-section-2" href="#section-2">Community</a></li> 
+			    <li><a onClick={() => onLinkClick("nav-section-2")} id="nav-section-2" href="#section-3">Community</a></li> 
 			    <li><a onClick={() => onLinkClick("nav-roadmap")} id="roadmap" href="#road-map">Roadmap</a></li>
 			    <li><a onClick={() => onLinkClick("nav-faq")} id="nav-faq" href="#faq">FAQ</a></li>
 			    <li> 
@@ -65,10 +65,8 @@ const DesktopHeader = () => {
 					<li><a style={{color:"#91e01f"}}>|</a></li>
 			    <li><a onClick={() => onLinkClick("nav-section-1")} id="nav-section-1" href="#section-1">$Dust Token</a></li>
 			    <li><a style={{color:"#91e01f"}}>|</a></li>
-			    <li><a onClick={() => onLinkClick("nav-section-2")} id="nav-section-2" href="#section-2">Community</a></li>
-			    <li><a style={{color:"#91e01f"}}>|</a></li>
-			    {/**<li><a onClick={() => onLinkClick("nav-section-3")} id="nav-section-3" href="#section-3">Community</a></li>
-			    <li><a onClick={() => onLinkClick("nav-team")} id="nav-team" href="#team">Team</a></li>  **/}
+			    <li><a onClick={() => onLinkClick("nav-section-2")} id="nav-section-2" href="#section-3">Community</a></li>
+			    <li><a style={{color:"#91e01f"}}>|</a></li> 
 			    <li><a onClick={() => onLinkClick("nav-roadmap")} id="nav-roadmap" href="#road-map">Roadmap</a></li>
 			    <li><a style={{color:"#91e01f"}}>|</a></li>
 			    <li><a onClick={() => onLinkClick("nav-faq")} id="nav-faq" href="#faq">FAQ</a></li>

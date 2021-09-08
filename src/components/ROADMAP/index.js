@@ -32,7 +32,7 @@ const Roadmap = () => {
 			<div className="row"> 
 				{
 					trophies.map((trophy,i) =>{
-						return <div key={i} className="achievement d-flex flex-column align-items-center justify-content-between col-lg-3 col-md-3">
+						return <div key={i} className="achievement d-flex flex-column align-items-center justify-content-center col-lg-3 col-md-3">
 							<img src={trophy.img} alt={`gem-${i}`} />
 							<div>
 								<p>{trophy.text}</p>

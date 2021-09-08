@@ -1,32 +1,30 @@
 import React from 'react' 
 import arrow from '../../assets/images/arrow-down.png'
 import './style.css'  
-
-const FAQComponent = (faq) => {
-	const [isShown, setShown] = React.useState(false)
-	return <div class="pink-box">
-				<div class="faq-box">
+import Accordion from 'react-bootstrap/Accordion'
+const FAQComponent = (props) => { 
+	const {faq, key, number} = props 
+	return   <Accordion.Item eventKey={number} className="faq-box">
+			    <Accordion.Header>
 				 	<strong style={{marginBottom:0}} className="d-flex align-items-center">
-				 		 {faq.head} < img className={isShown ? 'arrow-down ms-auto' : 'ms-auto'} onClick={() => setShown(!isShown)} src={arrow} style={{cursor:'pointer',marginRight:'10px',marginBottom:0,width: '40px', height:'40px'}}/> 
+				 		 {faq.head} 
 				 	</strong>
+				 </Accordion.Header>
+			    <Accordion.Body>
+	      			<ul>
+				 		{
+				 			faq.li.map((l, j) => {
+				 				return <li  dangerouslySetInnerHTML={ { __html: l } } key={j}></li>
+				 			})
+				 		}
+				 	</ul> 
 				 	{
-				 		isShown && <>
-				 			<ul>
-						 		{
-						 			faq.li.map((l, j) => {
-						 				return <li  dangerouslySetInnerHTML={ { __html: l } } key={j}></li>
-						 			})
-						 		}
-						 	</ul> 
-						 	{
-					 			faq.p?.map((p, i) => {
-					 				return <p key={i}>{p}</p>
-					 			})
-					 		}
-				 		</>
-				 	}
-				</div>  
-			</div>  
+			 			faq.p?.map((p, i) => {
+			 				return <p key={i}>{p}</p>
+			 			})
+			 		}
+			    </Accordion.Body>
+			  </Accordion.Item>  
 }
 const FAQ = () => {
 	const faqs = [{head: 'What is the $DUST Token?', li: ['$DUST is a cryptocurrency that is currently available on two blockchains – WAX and Polygon.']},
@@ -37,12 +35,13 @@ const FAQ = () => {
 	return(
 		<div id="faq">
 			<h1 className="my-5">FAQ</h1>
+			<Accordion flush>
 			{
-				faqs.map((faq, i) => {
-					return <FAQComponent key={i} {...faq} />
+				faqs.map((faq, index) => { 
+					return <FAQComponent key={index} number={index} faq={faq} />
 				})
 			}
-			     
+			</Accordion> 
 		</div>
 	)
 }
