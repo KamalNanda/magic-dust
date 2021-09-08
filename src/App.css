@@ -176,12 +176,11 @@ body{
 @media (max-width:  1440px){ 
 #rightfull , #right{
     right: -190px  ; 
-    height: 1700vh !important;
+    height: 1000vh !important;
 }
 #leftfull , #left{
-    left: -60px  ;
-    height: 1700vh !important;
-     
+    left: -60px  ; 
+    height: 1000vh !important;
     }
 }
 @media (max-width:  1440px){
@@ -370,11 +369,11 @@ body{
      }
 #rightfull , #right{
     right: -160px  ; 
-    height: 1700vh !important;
+    height: 1400vh !important;
 }
 #leftfull , #left{
     left: -60px  ;
-    height: 1700vh !important;
+    height: 1500vh !important;
      
     } 
  }
@@ -390,6 +389,13 @@ body{
         width: 80px;
         height: 80px;
      }
+#rightfull , #right{ 
+    height: 1550vh !important;
+}
+#leftfull , #left{ 
+    height: 1600vh !important;
+     
+    } 
  }
  @media (max-width: 1440px){
     #arrow{
