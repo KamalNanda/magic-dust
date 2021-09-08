@@ -178,11 +178,11 @@ body{
 }
 @media (max-width:  1440px){ 
 #rightfull , #right{
-    right: -140px  ; 
+    right: -190px  ; 
     height: 1700vh !important;
 }
 #leftfull , #left{
-    left: -50px  ;
+    left: -60px  ;
     height: 1700vh !important;
      
     }
@@ -373,6 +373,15 @@ body{
         width: 90px;
         height: 90px;
      }
+#rightfull , #right{
+    right: -160px  ; 
+    height: 1700vh !important;
+}
+#leftfull , #left{
+    left: -60px  ;
+    height: 1700vh !important;
+     
+    } 
  }
  @media (max-width: 1660px){
     #arrow{
@@ -422,6 +431,15 @@ body{
         bottom:  140px;
         right: 60px;
     }
+#rightfull , #right{
+    right: -140px  ; 
+    height: 1700vh !important;
+}
+#leftfull , #left{
+    left: -40px  ;
+    height: 1700vh !important;
+     
+    } 
  }
  @media (max-width: 1180px){
     #arrow{
@@ -456,5 +474,12 @@ body{
         bottom: 60px;
         right: 20px;
     }
+    #cavebg, #cavebig{
+        display: none;
+    }
+body{ 
+    background: linear-gradient(#8806C9,#8806C9, #8806C9, #8806C9, #8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9 ,#8806C9,#fff,#fff,#fff,#fff);  
+    /*background: url('./assets/images/grandbg.png'); */ 
+}
  }
  

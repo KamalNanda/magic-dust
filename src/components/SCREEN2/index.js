@@ -14,6 +14,7 @@ import equal from '../../assets/images/=.png'
 import arrow from '../../assets/images/pink-arrow.png'
 import heart from '../../assets/images/heart.png'
 import Discord from '../../assets/images/DiscordScreen.png' 
+import DiscordMobile from '../../assets/images/discord-mobile.png' 
 const Screen = () => {
 	const lists = ["Du$t is a token you can mine by chatting in any NFT community on Discord that hosts a Magic Du$t Miner Bot.", "The more you chat the more Du$t you collect.", "Magic Du$t Miners are NFTs that multiply the Du$t you collect." ]
 	const lists2 = ["Only 11,111 Miners exist, but there’s no limit to how many Miners you can hold in a single wallet. ", "Each Magic Du$t Miner you hold will further multiply your $Du$t rewards!"]
@@ -21,7 +22,7 @@ const Screen = () => {
 	return(<div style={{position:'relative'}}>
 			<img src={Cieling} class="cieling" /> 
 		<div id="section-1">
-				<div className="row m-rev">
+				<div className="row ">
 					<div className="col-lg-5 col-md-5 col-sm-12">
 						<div className="pink-boxes-grid">
 							<div className="pink-box">
@@ -45,9 +46,10 @@ const Screen = () => {
 							</div>
 						</div> 
 					</div>
-					<div style={{height:'100%', alignContent:'space-between', justifyContent:'space-between'}} className="col-lg-7 col-md-7 col-sm-12">
-						<PinkBox> 
+					<div style={{height:'100%', alignContent:'space-between', justifyContent:'space-between', position:'relative'}} className="col-lg-7 col-md-7 col-sm-12">
+						
 							<img src={Group} id="group"/>
+							<PinkBox> 
 							{
 								minersList.map((mine, i) => {
 									return <div key={i} class='d-flex my-2 align-items-center'>
@@ -78,7 +80,9 @@ const Screen = () => {
 						</div>
 					</div>
 				</div> 
-				<img src={Discord} className="mx-auto my-5 discord-wall" />
+				<img src={Discord} className="m-hide mx-auto my-5 discord-wall" />
+				<img src={DiscordMobile} className="m-show mx-auto my-5 discord-wall" />
+
 		</div>
 	</div>)
 }

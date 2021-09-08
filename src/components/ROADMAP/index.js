@@ -21,21 +21,23 @@ const Roadmap = () => {
 			<div className="row justify-content-between"> 
 				{
 					upcomings.map((upcoming,i) =>{
-						return <div key={i} className="d-flex flex-column col-lg-2 col-md-2">
+						return <div key={i} className="d-flex align-items-center justify-content-between flex-column col-lg-2 col-md-2">
 							<img src={upcoming.img} alt={`gem-${i}`} />
 							<p>{upcoming.text}</p>
 						</div>
 					})
-				} 
+				}  
 			</div>
 			<h2>ACHIEVEMENTS</h2>
 			<div className="row"> 
 				{
 					trophies.map((trophy,i) =>{
-						return <div key={i} className="achievement d-flex flex-column align-items-center justify-content-start col-lg-3 col-md-3">
+						return <div key={i} className="achievement d-flex flex-column align-items-center justify-content-between col-lg-3 col-md-3">
 							<img src={trophy.img} alt={`gem-${i}`} />
-							<p>{trophy.text}</p>
-							<p className="date">{trophy.date}</p>
+							<div>
+								<p>{trophy.text}</p>
+								<p className="date">{trophy.date}</p>
+							</div>
 						</div>
 					})
 				} 
