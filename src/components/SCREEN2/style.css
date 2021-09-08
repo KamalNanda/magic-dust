@@ -197,6 +197,12 @@
         margin: 40px auto;
     }
 }
+.sec-2-col{
+    height:100%;
+    alignContent:space-between;
+    justifyContent:space-between;
+    position:relative
+}
 @media (max-width : 1780px){
     #section-1{
         padding-top: 150px;

@@ -11,6 +11,8 @@ import trophy1 from '../../assets/images/trophies/1.png'
 import trophy2 from '../../assets/images/trophies/2.png'
 import trophy3 from '../../assets/images/trophies/3.png'
 import trophy4 from '../../assets/images/trophies/4.png'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 const Roadmap = () => {
 	const upcomings = [{img: gem1, text: 'Mining Du$t on Polygon'},{img: gem2, text: 'Guild Mining'},{img: gem3, text: 'Breeding Miners'},{img: gem4, text: 'Derivative Miner Tools'},{img: gem5, text: 'Merch Store'},]
 	const trophies = [{img: trophy1, text: '1 Trillion Du$t tokens minted on da WAX blockchain!', date: '08 / 2020'}, {img: trophy2, text: 'Magic Du$t Chat Mining Bot for Telegram DEPLOYED!!', date: '12 / 2020'}, {img: trophy3, text: 'First EVAR Du$t Token Multiplier NFT minted on WAX!!!', date: '12 / 2021'}, {img: trophy4, text: 'Magic Du$t chat mining bot for Discord debut!!!! ', date: '09 / 2021'}]
@@ -18,30 +20,30 @@ const Roadmap = () => {
 		<div id="roadmap"> 
 			<h1 id="road-map">ROADMAP</h1>
 			<h2>UPCOMING</h2>
-			<div className="row justify-content-between"> 
+			<Row className="justify-content-between"> 
 				{
 					upcomings.map((upcoming,i) =>{
-						return <div key={i} className="d-flex align-items-center justify-content-between flex-column col-lg-2 col-md-2">
+						return <Col lg={2} md={2} key={i} className="d-flex align-items-center justify-content-between flex-column">
 							<img src={upcoming.img} alt={`gem-${i}`} />
 							<p>{upcoming.text}</p>
-						</div>
+						</Col>
 					})
 				}  
-			</div>
+			</Row>
 			<h2>ACHIEVEMENTS</h2>
-			<div className="row"> 
+			<Row> 
 				{
 					trophies.map((trophy,i) =>{
-						return <div key={i} className="achievement d-flex flex-column align-items-center justify-content-center col-lg-3 col-md-3">
+						return <Col lg={3} md={3} key={i} className="achievement d-flex flex-column align-items-center justify-content-between">
 							<img src={trophy.img} alt={`gem-${i}`} />
 							<div>
 								<p>{trophy.text}</p>
 								<p className="date">{trophy.date}</p>
 							</div>
-						</div>
+						</Col>
 					})
 				} 
-			</div>
+			</Row>
 			<img class="mt-5 man2" style={{display:'block', margin:'auto'}} src={Man2} />
 		</div>	
 	</>)  

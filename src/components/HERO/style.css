@@ -259,7 +259,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
     font-size: 2.5rem;
     position: relative;
     left: 3px;
-    bottom: 1px; 
+    bottom: 2px; 
     webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
@@ -274,7 +274,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
     text-align: center;
     width: 50px;
     height: 50px;
-    border: 2px solid #92FF07;
+    border: 3px solid #92FF07;
     border-radius: 100px; 
     webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
@@ -294,6 +294,10 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
 }
 .minus, .plus{
     cursor: pointer;
+}
+.plus b{
+
+    bottom: 0px !important; 
 }
 .miners-box form button, .collect-btn{
     /*background-color: #872eb1a8 ;*/
@@ -515,7 +519,7 @@ filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 .miner-input-box input{
     width:60px;  
     font-size: 1.5rem;
-    border:4px solid #17F16E; 
+    border:6px solid #92FF07; 
     margin: 20px; 
 }
 .hero-flex{ 
@@ -595,7 +599,7 @@ filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 .miner-input-box input{
     width:40px;  
     font-size: 1.25rem;
-    border:4px solid #17F16E; 
+    border:4px solid #92FF07; 
     margin: 5px 20px; 
 }
 .miners-box form button, .collect-btn{ 

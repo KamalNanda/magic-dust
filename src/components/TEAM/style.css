@@ -12,6 +12,18 @@
     -2px 2px 0 #FF06D7,
      2px 2px 0 #FF06D7; 
 }
+.team-grid .member{
+	background: #EC12DB;
+	cursor: pointer;
+}
+.team-member:hover{
+	transform: scale(1.1);
+}
+.team-member p{
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+}
 #team {
 	margin: auto;
 	margin-top: 100px;
@@ -85,16 +97,4 @@ border: 6px solid #F36EFF !important;
 	.contact-bg, .gradient-bg{
 		height: 275vh;
 	}
-}
-.team-grid .member{
-	background: #EC12DB;
-	cursor: pointer;
-}
-.member:hover{
-	transform: scale(1.1);
-}
-.team-member p{
-	text-align: center;
-	color: #fff;
-	font-size: 30px;
 }

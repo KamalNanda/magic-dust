@@ -15,15 +15,17 @@ import arrow from '../../assets/images/pink-arrow.png'
 import heart from '../../assets/images/heart.png'
 import Discord from '../../assets/images/DiscordScreen.png' 
 import DiscordMobile from '../../assets/images/discord-mobile.png' 
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 const Screen = () => {
 	const lists = ["Du$t is a token you can mine by chatting in any NFT community on Discord that hosts a Magic Du$t Miner Bot.", "The more you chat the more Du$t you collect.", "Magic Du$t Miners are NFTs that multiply the Du$t you collect." ]
 	const lists2 = ["Only 11,111 Miners exist, but there’s no limit to how many Miners you can hold in a single wallet. ", "Each Magic Du$t Miner you hold will further multiply your $Du$t rewards!"]
 	const minersList = [[Lineup1] , [Lineup1, plus, Lineup2], [Lineup1, plus, Lineup2, plus, Lineup3] ]
 	return(<div style={{position:'relative'}}>
 			<img src={Cieling} class="cieling" /> 
-		<div id="section-1">
-				<div className="row ">
-					<div className="col-lg-5 col-md-5 col-sm-12">
+		<div id="section-1"> 
+				<Row>
+					<Col lg={5} md={5} sm={12}> 
 						<div className="pink-boxes-grid">
 							<div className="pink-box">
 								<h1>Magic Du$t Miners help you mine Du$t Tokens</h1>
@@ -45,10 +47,9 @@ const Screen = () => {
 								}
 							</div>
 						</div> 
-					</div>
-					<div style={{height:'100%', alignContent:'space-between', justifyContent:'space-between', position:'relative'}} className="col-lg-7 col-md-7 col-sm-12">
-						
-							<img src={Group} id="group"/>
+					</Col> 
+					<Col lg={7} md={7} sm={12} className="sec-2-col">
+						<img src={Group} id="group"/>
 							<PinkBox> 
 							{
 								minersList.map((mine, i) => {
@@ -78,8 +79,8 @@ const Screen = () => {
 								})
 							}
 						</div>
-					</div>
-				</div> 
+					</Col>
+				</Row>
 				<img src={Discord} className="m-hide mx-auto my-5 discord-wall" />
 				<img src={DiscordMobile} className="m-show mx-auto my-5 discord-wall" />
 
