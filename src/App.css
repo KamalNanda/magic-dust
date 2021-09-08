@@ -87,14 +87,14 @@ body{
     position: absolute;
     background:url('./assets/images/wallpaper.png') ;
     width: 100%;
-    top: 0;
+    bottom: 0;
     transform: scaleX(1.2);
     z-index: -5;
     height: 450vh;
 }
  .gradient-bg{
     z-index: -4;
-    top: 0;
+    bottom: 0;
     width: 100%;
     position: absolute;
     /*filter: opacity(0.5);*/
@@ -168,22 +168,22 @@ body{
 @media (max-width:  1780px){ 
 #rightfull , #right{
     right: -140px  ; 
-    /*height: 1400vh !important;*/
+    height: 1400vh !important;
 }
 #leftfull , #left{
     left: -50px  ;
-    /*height: 1400vh !important;*/
+    height: 1400vh !important;
      
     }
 }
 @media (max-width:  1440px){ 
 #rightfull , #right{
     right: -140px  ; 
-    /*height: 1700vh !important;*/
+    height: 1700vh !important;
 }
 #leftfull , #left{
     left: -50px  ;
-    /*height: 1700vh !important;*/
+    height: 1700vh !important;
      
     }
 }

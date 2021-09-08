@@ -58,6 +58,8 @@ function App() {
                   <img src={gemplatform}/>
                   
                 </div>
+            <div className="contact-bg" ></div>
+            <div className="gradient-bg"></div>
       <FOOTER />
       </div>
       <a id="arrow"  href="#home"><img src={arrow}/></a>

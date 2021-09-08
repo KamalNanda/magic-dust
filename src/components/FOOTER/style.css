@@ -8,16 +8,16 @@
  	flex-direction: column;
  	align-items: center;
  	justify-content: space-evenly;
- 	z-index: 20;
+ 	z-index: 9999999;
  }
  .cloudy{
  	position: absolute;
  	width:100%;
- 	height: 600px;
+ 	height: 500px;
  	filter: opacity(30%);
 	filter: blur(30px) opacity(80%);	
 	transform: scaleX(1.5);
-	top: -600px;
+	top: -500px;
 	z-index: 11111111111;
 	/*right: -100px;*/
 	border-radius: 50%;

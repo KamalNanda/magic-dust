@@ -3,6 +3,7 @@ import './style.css'
 import Man2 from '../../assets/images/miner00.png'  
 import wallpaper from '../../assets/images/wallpaper.png'  
 import gem from '../../assets/images/gem.png'  
+import gemplatform from '../../assets/images/bottom-gems.png'
 const Contact = () => {
 
 	return(
@@ -10,9 +11,7 @@ const Contact = () => {
 
 		<div id="contact">
     
-            <div className="contact-bg" ></div>
-            <div className="gradient-bg"></div>
-               img class="wallpaper" src={gemplatform}  />**/}
+                {/**img class="wallpaper" src={gemplatform}  />**/}
                 <div>
                	  <h1>CONTACT</h1>
             			<div class="form-cont">
