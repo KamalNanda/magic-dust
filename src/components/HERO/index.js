@@ -10,6 +10,7 @@ import Arrow from '../../assets/images/Group.png'
 import mario from '../../assets/images/mario.png'
 import star from '../../assets/images/star.png'
 import fomo from '../../assets/images/fomo.png'
+import gif from '../../assets/images/mystery.gif'
 import DIVIDER from '../DIVIDER'
 import minersGrid from '../../assets/images/miners.png'
 import man from '../../assets/images/man_2.png'
@@ -117,7 +118,7 @@ const Hero = () => {
                         <p className="connected-status"><span>Wallet is{isConnected ? '' : ' not'} connected</span></p>
                     </div>
                     <div class="animation-box">
-                        <img id="mario-img" alt="mario" src={mario} />
+                        <img id="mario-img" alt="mario" src={loading ? gif : mario} />
                     </div>
                 </div>    
                 <div class="img-flex">  

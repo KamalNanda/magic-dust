@@ -17,9 +17,9 @@ const Screen = () => {
 				 on Discord + Telegram . . .
 			</p>
             <div class="games-flex" style={{marginTop:'100px'}}>
-				<img src={btc} /> 
-				<img src={nw} /> 
-				<img src={aw} /> 
+				<img className="mt-3" src={btc} /> 
+				<img className="mt-3" src={nw} /> 
+				<img className="mt-3" src={aw} /> 
             </div> 
 			{/**<p>$dust flows
 	            like magic<br/>

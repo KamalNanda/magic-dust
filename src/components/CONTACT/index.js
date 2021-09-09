@@ -9,7 +9,8 @@ import Button from 'react-bootstrap/Button'
 const Contact = () => {
  
 	return(
-        <div style={{position:'relative'}}>
+        <div style={{position:'relative', zIndex:'-9'}}>
+            <div className="gradient-bg"></div>
 
 		<div id="contact">
     

@@ -66,7 +66,7 @@ border: 6px solid #F36EFF !important;
 	.team-grid{
 		grid-template-columns: repeat(5, 1fr); 
 		grid-gap: 10px;
-		padding: 40px;
+		padding: 20px;
 	}
 }
 @media (max-width:  1360px){ 
@@ -78,10 +78,15 @@ border: 6px solid #F36EFF !important;
 	}
 }
 @media (max-width:  1124px){ 
+	.team-grid{
+		grid-template-columns: repeat(3, 1fr); ;
+		padding: 10px;
+	}
 }
 @media (max-width:  786px){
 	.team-grid{
-		grid-template-columns: repeat(3, 1fr); 
+		grid-template-columns: repeat(3, 1fr); ;
+		padding: 10px;
 	}
 	.member img{
 		width: 100%;

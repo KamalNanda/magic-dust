@@ -35,7 +35,7 @@ const Roadmap = () => {
 				{
 					trophies.map((trophy,i) =>{
 						return <Col lg={3} md={3} key={i} className="achievement d-flex flex-column align-items-center justify-content-between">
-							<img src={trophy.img} alt={`gem-${i}`} />
+							<img className="mt-3" src={trophy.img} alt={`gem-${i}`} />
 							<div>
 								<p>{trophy.text}</p>
 								<p className="date">{trophy.date}</p>

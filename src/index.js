@@ -43,8 +43,7 @@ window.addEventListener('scroll', function(){
     // Miner10.style.top = document.getElementById('team').offsetTop  +  document.getElementById('faq').offsetHeight*3.1  + -value * 0.80 + 'px' 
 }) 
 
-stars()
-
+// stars() 
 function stars(){
     let count = 500; 
     let i = 0

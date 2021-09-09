@@ -88,18 +88,19 @@ body{
     background:url('./assets/images/wallpaper.png') ;
     width: 100%;
     bottom: 0;
-    transform: scaleX(1.2);
-    z-index: -5;
+    background-size: 100%;
+    transform: scaleX(1.0);
+    z-index: -10;
     height: 450vh;
 }
  .gradient-bg{
     z-index: -4;
-    bottom: 0;
+    top: 0;
     width: 100%;
     position: absolute;
     /*filter: opacity(0.5);*/
-    background:  linear-gradient(#8806C9,#ffffff57,#ffffff57,#ffffff57, #ffffff57,#ffffff57,#ffffff57) ;
-    height: 450vh; 
+    background:  linear-gradient(#8806C9,#8806C9,#ffffff57,#ffffff57, #ffffff57,#ffffff57,#ffffff57) ;
+    height: 200vh; 
  }
  @media(max-width: 1660px){
     .contact-bg, .gradient-bg{
@@ -153,17 +154,26 @@ body{
     position: absolute;
     mix-blend-mode: multiply;
     width: 25%;
-    height: 100%;
-    z-index: 9;  
+    height: 1450vh ;
+    z-index: -5;  
 }
 #rightfull , #right{
-    right: -170px  ;
+    right: -40px  ;
         transform-origin: 100% 0%;
 }
 #leftfull , #left{
-    left: -60px  ;
+    left: -70px  ;
         transform-origin: 0% 100%;
 } 
+@media (max-width:  1860px){ 
+#rightfull , #right{ 
+    height: 1300vh;
+}
+#leftfull , #left{ 
+    height: 1300vh;
+     
+    }
+}
 @media (max-width:  1780px){ 
 #rightfull , #right{
     right: -140px  ;  
@@ -176,11 +186,11 @@ body{
 @media (max-width:  1440px){ 
 #rightfull , #right{
     right: -190px  ; 
-    height: 1000vh !important;
+    height: 1300vh ;
 }
 #leftfull , #left{
     left: -60px  ; 
-    height: 1000vh !important;
+    height: 1300vh ;
     }
 }
 @media (max-width:  1440px){
@@ -252,14 +262,7 @@ body{
     }
     #mobile-nav{
         display: flex;
-    }
-      #right-side , #bluesideright ,#stoneright{
-        /* width: 100px; */ 
-    }
-
-    #right-side {
-        /* width: 100px; */ 
-    }
+    } 
     .section-flex{
         flex-direction: column-reverse !important;;
         padding-top: 100px !important;;
@@ -368,12 +371,12 @@ body{
         height: 90px;
      }
 #rightfull , #right{
-    right: -160px  ; 
+    right: -20px  ; 
     height: 1400vh !important;
 }
 #leftfull , #left{
     left: -60px  ;
-    height: 1500vh !important;
+    height: 1400vh !important;
      
     } 
  }
@@ -393,7 +396,7 @@ body{
     height: 1550vh !important;
 }
 #leftfull , #left{ 
-    height: 1600vh !important;
+    height: 1500vh !important;
      
     } 
  }
@@ -433,11 +436,11 @@ body{
         right: 60px;
     }
 #rightfull , #right{
-    right: -140px  ; 
+    right: -20px  ; 
     height: 1700vh !important;
 }
 #leftfull , #left{
-    left: -40px  ;
+    left: -60px  ;
     height: 1700vh !important;
      
     } 

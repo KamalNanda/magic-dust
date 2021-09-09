@@ -17,14 +17,7 @@ section{
     border-radius: 50px;
     z-index: 1;
     animation: animate linear infinite;
-}
-#green-arrow{
-    position: absolute;
-    z-index: 10000000;
-    left: 50px;
-    top: 50px;
-    width: 27%;
-}
+} 
 .hero-flex{
     display: flex;
     /*height: 70vh;*/
