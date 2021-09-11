@@ -57,7 +57,7 @@ const DesktopHeader = () => {
 				<img class="header-logo" src={process.env.PUBLIC_URL + '/assets/images/header-logo.png'} alt="logo" /> 
 			</div>
 			 <ul>
-					<li><a onClick={() => onLinkClick("nav-home")} id="nav-home" href="#home" class="active">Home</a></li>
+					<li><a onClick={() => onLinkClick("nav-home")} id="nav-home" href="#home" className={active === 'nav-home'? 'active' : ''}>Home</a></li>
 					<li><a style={{color:"#91e01f"}}>|</a></li>
 			    <li><a onClick={() => onLinkClick("nav-section-1")} id="nav-section-1" href="#section-1">$Dust Token</a></li>
 			    <li><a style={{color:"#91e01f"}}>|</a></li>
