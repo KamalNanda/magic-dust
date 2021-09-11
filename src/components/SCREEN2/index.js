@@ -25,13 +25,10 @@ const Screen = () => {
 									</Col>
 						})
 					}
-					<Row className="justify-content-between align-items-center">
-						<Col lg={8} md={8} sm={12}>
+					<Row className="justify-content-between align-items-center my-3">
+						<Col lg={12} md={12} sm={12}>
 							<img style={{width:'100%'}} src={process.env.PUBLIC_URL +'/assets/images/s2-left.png'} alt="s2l" />
-						</Col>
-						<Col lg={4} md={4} sm={12}>
-							<img style={{width:'100%'}} src={process.env.PUBLIC_URL +'/assets/images/s2-right.png'} alt="s2r" />
-						</Col>
+						</Col> 
 					</Row>
 					{
 						list2.map((l, i) => {
