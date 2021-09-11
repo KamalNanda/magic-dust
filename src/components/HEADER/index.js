@@ -1,9 +1,5 @@
 import React from 'react';
-import './style.css';
-import discord from "../../assets/images/discord.svg"
-import twitter from "../../assets/images/twitter.svg"
-import telegram from "../../assets/images/telegram.svg"
-import logo from "../../assets/images/header-logo.png"
+import './style.css';  
 const MobileHeader = () => {
 	const [isShown, setShown] = React.useState(false) 
 	const [active, setActive] = React.useState('nav-home')
@@ -20,8 +16,8 @@ const MobileHeader = () => {
 	}
 	return ( 
 		<div id="mobile-nav">
-			<div style={{display:'flex', justifyContent:'space-between', alignItems:'center', width:'100%'}}>
-				<img style={{width:'160px'}} class="header-logo" src={logo} alt="logo" /> 
+			<div style={{width:'100%'}} class="d-flex justify-content-between align-items-center">
+				<img style={{width:'160px'}} class="header-logo" src={process.env.PUBLIC_URL + '/assets/images/header-logo.png'} alt="logo" /> 
 				<img alt="ham" onClick={toggleDropDown} id="ham" src={isShown ? "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/1200px-VisualEditor_-_Icon_-_Close_-_white.svg.png" : "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png"} />
 			</div>
 			
@@ -34,9 +30,9 @@ const MobileHeader = () => {
 			    <li><a onClick={() => onLinkClick("nav-faq")} id="nav-faq" href="#faq">FAQ</a></li>
 			    <li> 
 					<div class="social-holder">
-						<img onClick={() => window.open('https://discord.gg/U358VVND')} src={discord}  alt={"discord"} />
-						<img onClick={() => window.open('https://t.me/joinchat/DOuJ0Mgk9rAxNDgx')} src={telegram} alt={"telegram"} />
-						<img onClick={() => window.open('https://twitter.com/dustismagic?s=20')} src={twitter}  alt={"twitter"} />
+						<img onClick={() => window.open('https://discord.gg/U358VVND')} src={process.env.PUBLIC_URL + '/assets/images/discord.svg'}  alt={"discord"} />
+						<img onClick={() => window.open('https://t.me/joinchat/DOuJ0Mgk9rAxNDgx')} src={process.env.PUBLIC_URL + '/assets/images/telegram.svg'} alt={"telegram"} />
+						<img onClick={() => window.open('https://twitter.com/dustismagic?s=20')} src={process.env.PUBLIC_URL + '/assets/images/twitter.svg'}  alt={"twitter"} />
 					</div>
 			    </li>
 			</ul>
@@ -58,7 +54,7 @@ const DesktopHeader = () => {
 	return ( 
 		<div class="header" id="header"> 
 			<div className="header-logo-cont">
-				<img class="header-logo" src={logo} alt="logo" /> 
+				<img class="header-logo" src={process.env.PUBLIC_URL + '/assets/images/header-logo.png'} alt="logo" /> 
 			</div>
 			 <ul>
 					<li><a onClick={() => onLinkClick("nav-home")} id="nav-home" href="#home" class="active">Home</a></li>
@@ -75,9 +71,15 @@ const DesktopHeader = () => {
 			    {/**<li><a onClick={() => onLinkClick("nav-contact")} id="nav-contact" href="#footer">Contact</a></li>**/}
 			</ul>
 			<div class="social-holder">
-						<img onClick={() => window.open('https://discord.gg/U358VVND')} src={discord}  alt={"discord"} />
-						<img onClick={() => window.open('https://t.me/joinchat/DOuJ0Mgk9rAxNDgx')} src={telegram} alt={"telegram"} />
-						<img onClick={() => window.open('https://twitter.com/dustismagic?s=20')} src={twitter}  alt={"twitter"} />
+						<a href="https://www.discord.com" target="_blank">
+							<img src={process.env.PUBLIC_URL+  'assets/images/discord.svg'}  alt={"discord"} />
+						</a>
+						<a href="https://www.telegram.org" target="_blank">
+							<img src={process.env.PUBLIC_URL+  'assets/images/telegram.svg'} alt={"telegram"} />
+						</a>
+						<a href="https://www.twitter.com" target="_blank">
+							<img src={process.env.PUBLIC_URL+  'assets/images/twitter.svg'}  alt={"twitter"} />
+						</a>
 			</div>
 		</div> 
   	);

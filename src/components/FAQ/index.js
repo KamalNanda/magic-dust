@@ -1,7 +1,7 @@
-import React from 'react' 
-import arrow from '../../assets/images/arrow-down.png'
+import React from 'react'  
 import './style.css'  
 import Accordion from 'react-bootstrap/Accordion'
+import SectionHeader from '../Common/SectionHeader'
 const FAQComponent = (props) => { 
 	const {faq, key, number} = props 
 	return   <Accordion.Item eventKey={number} className="faq-box">
@@ -34,7 +34,7 @@ const FAQ = () => {
 	]
 	return(
 		<div id="faq">
-			<h1 className="my-5">FAQ</h1>
+			<SectionHeader className="my-5">FAQ</SectionHeader>
 			<Accordion flush>
 			{
 				faqs.map((faq, index) => { 

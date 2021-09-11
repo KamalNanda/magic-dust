@@ -1,0 +1,20 @@
+
+      @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+ 
+      @font-face {
+          font-family: "Emtype Foundry";
+          font-style: normal; 
+          src: url(./assets/fonts/Emtype Foundry - Dixplay-Bk.otf);
+      }
+      @font-face {
+          font-family: "Emtype Foundry Regular";
+          font-style: normal; 
+          src: url(./assets/fonts/Emtype Foundry - Dixplay-Rg.otf);
+      }
+      @font-face {
+          font-family: "Fontsphere";
+          font-style: normal;
+          font-weight: 700;
+          src: url(./assets/fonts/Fontsphere - Pixeloza 01.otf);
+      }
+  

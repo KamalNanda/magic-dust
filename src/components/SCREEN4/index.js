@@ -1,12 +1,7 @@
 import React from 'react' 
-import './style.css'
-import discord from '../../assets/images/discord.png' 
-import twitter from '../../assets/images/twitter.png' 
-import telegram from '../../assets/images/telegram.png' 
-import linkedin from '../../assets/images/linkedin.png' 
-import Man2 from '../../assets/images/miner2.png'  
+import './style.css'  
 const Screen = () => {
-const socials = [{img: discord, text: 'Discord'}, {img: telegram, text: 'Telegram'}, {img: twitter, text: 'Twitter'}, {img: linkedin, text: 'Linkedin'}]
+const socials = [{img: process.env.PUBLIC_URL + '/assets/images/discord.png', text: 'Discord'}, {img: process.env.PUBLIC_URL + '/assets/images/telegram.png', text: 'Telegram'}, {img: process.env.PUBLIC_URL + '/assets/images/twitter.png', text: 'Twitter'}, {img: process.env.PUBLIC_URL + '/assets/images/linkedin.png', text: 'Linkedin'}]
 	return(<>
 		<div id="section-3">
          	<h1>FIND YOUR DUSTY FRIENDS</h1>
@@ -23,15 +18,15 @@ const socials = [{img: discord, text: 'Discord'}, {img: telegram, text: 'Telegra
 				<div class="green-boxes">
 					{
 						socials.map((social, i) => {
-							return <div onClick={() => window.open(`https://www.${social.text}.${social.text === 'Telegram' ? 'org' : 'com'}`)} class="green-box">  
+							return <a href={`https://www.${social.text}.${social.text === 'Telegram' ? 'org' : 'com'}`} target="_blank" ><div class="green-box">  
 				                <img src={social.img} alt={social.text} />
 				                Magic Dust on {`${social.text}`}
-				            </div>
+				            </div></a>
 						})	
 					} 
 		        </div>
 			</div> 
-			<img src={Man2} style={{display:'block', margin:'auto'}}/>
+			<img src={process.env.PUBLIC_URL + '/assets/images/miner2.png'} style={{display:'block', margin:'auto'}}/>
 		</div>	
 	</>)  
 }

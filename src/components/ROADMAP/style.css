@@ -4,21 +4,7 @@
   margin-top: 200px; 
     width: 50%;
     overflow: hidden !important;
-}
-#roadmap> h1, #faq > h1, #team > h1{
-    font-size: 150px;
-    text-align: center;
-    transform: scaleX(2) scaleY(1.25);
-    width: 100%;
-    margin: 0 auto;
-    color: #FFF200;
-      text-shadow:
-   -2px -2px 0 #FF06D7,  
-    2px -2px 0 #FF06D7,
-    -2px 2px 0 #FF06D7,
-     2px 2px 0 #FF06D7;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
-}    
+}   
 #roadmap h2{
     font-size: 60px;
     text-align: center;
@@ -35,18 +21,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
 #roadmap p{
     color: #FBF5E3;
     text-align: center;
-}
-/*.achievement-grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    justify-content: center;
-}
-.achievement{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}*/
+} 
 .achievement img{
     width: 100%; 
     margin: 0 auto;
@@ -83,10 +58,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
 @media (max-width:  1280px){ 
     #roadmap img.man2, #section-3 > img{
         width: 50%;
-    } 
-    #roadmap h1, #faq > h1, #team > h1{
-        font-size: 100px;
-    } 
+    }  
 } 
 @media (max-width:  786px){ 
     #roadmap img.man2, #section-3 > img{
@@ -95,18 +67,18 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
     .achievement img{
         width: 50%;
     }
-#roadmap h2{
-    font-size: 60px; 
-    transform: scaleX(1) scaleY(1); 
-    margin: 40px auto; 
-      text-shadow:
-   -2px -2px 0 #FF06D7,  
-    2px -2px 0 #FF06D7,
-    -2px 2px 0 #FF06D7,
-     2px 2px 0 #FF06D7;
+    #roadmap h2{
+        font-size: 60px; 
+        transform: scaleX(1) scaleY(1); 
+        margin: 40px auto; 
+          text-shadow:
+       -2px -2px 0 #FF06D7,  
+        2px -2px 0 #FF06D7,
+        -2px 2px 0 #FF06D7,
+         2px 2px 0 #FF06D7;
+    }   
+    .achievement p{
+        width: 70%;
+        margin: 0 auto;
+    }
 }   
-.achievement p{
-    width: 70%;
-    margin: 0 auto;
-}
-}

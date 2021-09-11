@@ -1,21 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
- 
-@font-face {
-    font-family: "Emtype Foundry";
-    font-style: normal; 
-    src: url("./assets/fonts/Emtype Foundry - Dixplay-Bk.otf");
-}
-@font-face {
-    font-family: "Emtype Foundry Regular";
-    font-style: normal; 
-    src: url("./assets/fonts/Emtype Foundry - Dixplay-Rg.otf");
-}
-@font-face {
-    font-family: "Fontsphere";
-    font-style: normal;
-    font-weight: 700;
-    src: url("./assets/fonts/Fontsphere - Pixeloza 01.otf");
-}
+
 html{
     scroll-behavior: smooth;  
 }
@@ -32,13 +15,13 @@ ul{
     box-sizing: border-box;
     font-family: 'Emtype Foundry', sans-serif;  
     font-size: 24px;
-    /*cursor: url(./assets/images/shovel.png),auto ;
+    /*cursor: urlassets/images/shovel.png),aut ;
 */} 
 body{
     min-height: 100vh;
     overflow-x: hidden;
-    background: linear-gradient(#8806C9,#8806C9, #8806C9, #8806C9, #8806C9,#8806C9,#000,#000,#000,#000,#000,#000,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9 ,#8806C9,#fff,#fff,#fff,#fff);  
-    /*background: url('./assets/images/grandbg.png'); */
+    background: linear-gradient(#8806C9,#8806C9, #8806C9, #8806C9, #8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#fff, #fff);  
+    /*background: url(./assets/images/grandbg.png');*/
     position: relative;  
 }
 .bottom-section{
@@ -85,9 +68,9 @@ body{
 }
 .contact-bg{
     position: absolute;
-    background:url('./assets/images/wallpaper.png') ;
+    background:url(./assets/images/wallpaper.png) ;
     width: 100%;
-    bottom: 0;
+    top: 0;
     background-size: 100%;
     transform: scaleX(1.0);
     z-index: -10;
@@ -97,7 +80,7 @@ body{
     z-index: -4;
     top: 0;
     width: 100%;
-    position: absolute;
+    position: absolute; 
     /*filter: opacity(0.5);*/
     background:  linear-gradient(#8806C9,#8806C9,#ffffff57,#ffffff57, #ffffff57,#ffffff57,#ffffff57) ;
     height: 200vh; 
@@ -154,7 +137,7 @@ body{
     position: absolute;
     mix-blend-mode: multiply;
     width: 25%;
-    height: 1450vh ;
+    height: 93% ;
     z-index: -5;  
 }
 #rightfull , #right{
@@ -483,7 +466,6 @@ body{
     }
 body{ 
     background: linear-gradient(#8806C9,#8806C9, #8806C9, #8806C9, #8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9 ,#8806C9,#fff,#fff,#fff,#fff);  
-    /*background: url('./assets/images/grandbg.png'); */ 
 }
  }
  

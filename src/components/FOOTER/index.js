@@ -1,17 +1,23 @@
 import React from 'react'
-import './style.css'
-import discord from "../../assets/images/discord.svg"
-import twitter from "../../assets/images/twitter.svg"
-import telegram from "../../assets/images/telegram.svg"
+import './style.css' 
 
 function Footer(){
 	return <div id="footer" className="footer">
-		<div className="cloudy"></div>
+		<div className="clo udy"></div>
 		<p>Copyright 2021 Magic Dust Inc. All Rights Reserved.</p>
 		<div className="footer-flex">
-			<img onClick={() => window.open('https://www.discord.com')} src={discord}  alt={"discord"} />
-			<img onClick={() => window.open('https://www.telegram.org')} src={telegram} alt={"telegram"} />
-			<img onClick={() => window.open('https://www.twitter.com')} src={twitter}  alt={"twitter"} />
+			<a href="https://www.discord.com" target="_blank">
+				<img src={process.env.PUBLIC_URL+  'assets/images/discord.svg'}  alt={"discord"} />
+			</a>
+			<a href="https://www.telegram.org" target="_blank">
+				<img src={process.env.PUBLIC_URL+  'assets/images/telegram.svg'} alt={"telegram"} />
+			</a>
+			<a href="https://www.twitter.com" target="_blank">
+				<img src={process.env.PUBLIC_URL+  'assets/images/twitter.svg'}  alt={"twitter"} />
+			</a>
+			
+			
+			
 		</div>
 	</div>
 }

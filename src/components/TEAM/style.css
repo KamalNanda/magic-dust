@@ -1,17 +1,4 @@
-#team h1{ 
-	font-style: normal;
-	font-weight: 900;
-	font-size: 150px;
-    transform: scaleX(1.5) scaleY(1.25);
-	line-height: 150%; 
-	text-align: center; 
-	color: #92FF07; 
-    text-shadow:
-   -2px -2px 0 #FF06D7,  
-    2px -2px 0 #FF06D7,
-    -2px 2px 0 #FF06D7,
-     2px 2px 0 #FF06D7; 
-}
+
 .team-grid .member{
 	background: #EC12DB;
 	cursor: pointer;
@@ -48,10 +35,7 @@ border: 6px solid #F36EFF !important;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 }
-@media (max-width: 1780px){
-	#team h1{
-		transform: scale(1.5, 1);
-	}
+@media (max-width: 1780px){ 
 	.member img{
 		width: 100% !important;
 	}

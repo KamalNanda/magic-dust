@@ -1,20 +1,14 @@
 import React from 'react' 
-import './style.css' 
-import Man2 from '../../assets/images/wood.png'  
-import wallpaper from '../../assets/images/wallpaper.png'  
-import gem from '../../assets/images/gem.png'  
-import gemplatform from '../../assets/images/bottom-gems.png'
+import './style.css'  
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 const Contact = () => {
  
 	return(
-        <div style={{position:'relative', zIndex:'-9'}}>
+        <div className="contact-container">
             <div className="gradient-bg"></div>
-
-		<div id="contact">
-    
-                {/**img class="wallpaper" src={gemplatform}  />**/}
+            <div className="contact-bg" ></div>
+		          <div id="contact"> 
                 <div>
                	  <h1>CONTACT</h1>
                   <Form>
@@ -29,13 +23,12 @@ const Contact = () => {
                     </Form.Group>
                     <Button >SUBMIT; RESISTANCE IS FUTILE.</Button >
                   </Form> 
-      			      <img src={Man2} class="man22" style={{display:'block', width:'50%', margin:'100px auto 100px auto'}}/>
+      			      <img src={process.env.PUBLIC_URL + '/assets/images/wood.png'} class="man22" style={{display:'block', width:'50%', margin:'100px auto 100px auto'}}/>
             			<div class="contact-wallpaper">
                             <div class="message">
                                 <h1>DUST <br/>IS<br/> MAGIC</h1>
                             </div> 
-                        </div>  
-                        {/* <img class="gem" src={gem}  /> */}
+                        </div>   
             		</div>	
               </div>
         </div>
