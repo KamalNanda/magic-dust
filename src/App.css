@@ -150,7 +150,7 @@ body{
     } 
 }
 @media (max-width: 725px){
-#leftfull , #left, #rightfull , #right, #Miner5,#Miner6,#Miner7,#Miner8,#Miner9,#Miner10{
+#leftfull , #left, #rightfull , #right{
     display: none !important;
 
 }
@@ -186,21 +186,7 @@ body{
     }
     .line {
         width: 85vw !important;
-    }
-    .gem-1{
-        width: 50%;
-        top: 50px !important;
-    }
-    .gem-2 {
-        top: 300px;
-        right: -30px !important;
-        width: 50%; 
-    }
-    .gem-3 {
-        width: 50%; 
-        top: 900px;
-        left: -100px;
-    }
+    } 
     .header{
         display: none;
     }
