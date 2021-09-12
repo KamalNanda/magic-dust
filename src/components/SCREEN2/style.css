@@ -3,14 +3,15 @@
     padding-top: 200px ;
     width: 60%;
     z-index: 1;
-    
+
     margin: auto;
     /*overflow: hidden !important;*/ 
 }
 .cieling{
     position: absolute;
     width: 100%; 
-    top: 0; 
+    top: -10px;
+    left: 0; 
     z-index: -1;
     /*transform: scaleY(1.65) ;*/
     transform-origin: 100% 0%;
