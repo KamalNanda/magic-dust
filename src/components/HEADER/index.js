@@ -1,16 +1,29 @@
 import React from 'react';
 import './style.css';  
-const MobileHeader = () => {
-	const [isShown, setShown] = React.useState(false) 
-	const [active, setActive] = React.useState('nav-home')
-	React.useEffect(() =>{
-		document.getElementById(active).classList.add('active')
-	})
-	const onLinkClick = (id) => {
-		document.getElementById(active).classList.remove('active')
-		document.getElementById(id).classList.add('active')
-		setActive(id)
-	}
+const SocialLinks = () => {
+	return <div class="social-holder">
+						<img onClick={() => window.open('https://discord.gg/U358VVND')} src={process.env.PUBLIC_URL + '/assets/images/discord.svg'}  alt={"discord"} />
+						<img onClick={() => window.open('https://t.me/joinchat/DOuJ0Mgk9rAxNDgx')} src={process.env.PUBLIC_URL + '/assets/images/telegram.svg'} alt={"telegram"} />
+						<img onClick={() => window.open('https://twitter.com/dustismagic?s=20')} src={process.env.PUBLIC_URL + '/assets/images/twitter.svg'}  alt={"twitter"} />
+					</div>
+}
+const NavLinks = ({active, onLinkClick}) => {
+	return <ul>
+					<li><a onClick={() => onLinkClick("nav-home")} id="nav-home" href="#home" className={active === 'nav-home'? 'active' : ''}>Home</a></li>
+					<li className="green-seperator"><a>|</a></li>
+			    <li><a onClick={() => onLinkClick("nav-section-1")} id="nav-section-1" href="#section-1"  className={active === 'nav-section-1'? 'active' : ''}>$Dust Token</a></li>
+			    <li className="green-seperator"><a>|</a></li>
+			    <li><a onClick={() => onLinkClick("nav-section-2")} id="nav-section-2" href="#section-3"  className={active === 'nav-section-2'? 'active' : ''}>Community</a></li>
+			    <li className="green-seperator"><a>|</a></li> 
+			    <li><a onClick={() => onLinkClick("nav-roadmap")} id="nav-roadmap" href="#roadmap"  className={active === 'nav-roadmap'? 'active' : ''}>Roadmap</a></li>
+			    <li className="green-seperator"><a>|</a></li>
+			    <li><a onClick={() => onLinkClick("nav-faq")} id="nav-faq" href="#faq"  className={active === 'nav-faq'? 'active' : ''}>FAQ</a></li>
+			    <li className="green-seperator"><a>|</a></li>
+			    <li><a onClick={() => onLinkClick("nav-contact")} id="nav-contact" href="#contact"  className={active === 'nav-contact'? 'active' : ''}>Inventory</a></li> 
+			</ul>
+}
+const MobileHeader = ({active, onLinkClick}) => {
+	const [isShown, setShown] = React.useState(false)  
 	const toggleDropDown = () => {
 		setShown(!isShown)
 	}
@@ -22,73 +35,33 @@ const MobileHeader = () => {
 			</div>
 			
 			{
-				isShown && <ul> 
-					<li><a onClick={() => onLinkClick("nav-home")} id="nav-home" href="#home" class="active">Home</a></li>
-			    <li><a onClick={() => onLinkClick("nav-section-1")} id="nav-section-1" href="#section-1">$Dust Token</a></li>
-			    <li><a onClick={() => onLinkClick("nav-section-2")} id="nav-section-2" href="#section-3">Community</a></li> 
-			    <li><a onClick={() => onLinkClick("nav-roadmap")} id="roadmap" href="#road-map">Roadmap</a></li>
-			    <li><a onClick={() => onLinkClick("nav-faq")} id="nav-faq" href="#faq">FAQ</a></li>
-			    <li> 
-					<div class="social-holder">
-						<img onClick={() => window.open('https://discord.gg/U358VVND')} src={process.env.PUBLIC_URL + '/assets/images/discord.svg'}  alt={"discord"} />
-						<img onClick={() => window.open('https://t.me/joinchat/DOuJ0Mgk9rAxNDgx')} src={process.env.PUBLIC_URL + '/assets/images/telegram.svg'} alt={"telegram"} />
-						<img onClick={() => window.open('https://twitter.com/dustismagic?s=20')} src={process.env.PUBLIC_URL + '/assets/images/twitter.svg'}  alt={"twitter"} />
-					</div>
-			    </li>
-			</ul>
+				isShown && <><NavLinks  active={active} onLinkClick={onLinkClick} /> <ul><li><SocialLinks /></li></ul> </>
 			}
+			
 		</div> 
   	);
 }
 
-const DesktopHeader = () => { 
-	const [active, setActive] = React.useState('nav-home')
-	React.useEffect(() =>{
-		document.getElementById(active).classList.add('active')
-	})
-	const onLinkClick = (id) => {
-		document.getElementById(active).classList.remove('active')
-		document.getElementById(id).classList.add('active')
-		setActive(id)
-	} 
+const DesktopHeader = ({active, onLinkClick}) => {  
 	return ( 
 		<div class="header" id="header"> 
 			<div className="header-logo-cont">
 				<img class="header-logo" src={process.env.PUBLIC_URL + '/assets/images/header-logo.png'} alt="logo" /> 
 			</div>
-			 <ul>
-					<li><a onClick={() => onLinkClick("nav-home")} id="nav-home" href="#home" className={active === 'nav-home'? 'active' : ''}>Home</a></li>
-					<li><a style={{color:"#91e01f"}}>|</a></li>
-			    <li><a onClick={() => onLinkClick("nav-section-1")} id="nav-section-1" href="#section-1">$Dust Token</a></li>
-			    <li><a style={{color:"#91e01f"}}>|</a></li>
-			    <li><a onClick={() => onLinkClick("nav-section-2")} id="nav-section-2" href="#section-3">Community</a></li>
-			    <li><a style={{color:"#91e01f"}}>|</a></li> 
-			    <li><a onClick={() => onLinkClick("nav-roadmap")} id="nav-roadmap" href="#road-map">Roadmap</a></li>
-			    <li><a style={{color:"#91e01f"}}>|</a></li>
-			    <li><a onClick={() => onLinkClick("nav-faq")} id="nav-faq" href="#faq">FAQ</a></li>
-			    <li><a style={{color:"#91e01f"}}>|</a></li>
-			    <li><a onClick={() => onLinkClick("nav-contact")} id="nav-contact" href="#contact">Inventory</a></li>
-			    {/**<li><a onClick={() => onLinkClick("nav-contact")} id="nav-contact" href="#footer">Contact</a></li>**/}
-			</ul>
-			<div class="social-holder">
-						<a href="https://www.discord.com" target="_blank">
-							<img src={process.env.PUBLIC_URL+  'assets/images/discord.svg'}  alt={"discord"} />
-						</a>
-						<a href="https://www.telegram.org" target="_blank">
-							<img src={process.env.PUBLIC_URL+  'assets/images/telegram.svg'} alt={"telegram"} />
-						</a>
-						<a href="https://www.twitter.com" target="_blank">
-							<img src={process.env.PUBLIC_URL+  'assets/images/twitter.svg'}  alt={"twitter"} />
-						</a>
-			</div>
+			 <NavLinks  active={active} onLinkClick={onLinkClick} />
+			<SocialLinks />
 		</div> 
   	);
 }
 const Header = () => {
+	const [active, setActive] = React.useState('nav-home')
+	const onLinkClick = (id) => { 
+		setActive(id)
+	} 
   return (
     <>
-		<DesktopHeader />
-		<MobileHeader />
+		<DesktopHeader active={active} onLinkClick={(id) => onLinkClick(id)} />
+		<MobileHeader active={active} onLinkClick={(id) => onLinkClick(id)} />
     </>
   );
 }

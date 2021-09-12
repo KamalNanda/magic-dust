@@ -26,46 +26,7 @@ body{
 }
 .bottom-section{
     position: relative;
-}
-#Miner5{
-    position: absolute;
-    right: -30px;
-    width: 300px;
-    transform: rotateZ(-15deg);
-    top: 1000px;
-    z-index: 99999999;
-}
-#Miner6{
-    width: 300px;
-    position: absolute;
-    left: -30px;
-    transform: rotateZ(-15deg);
-    bottom: -200px;
-    z-index: 99999999; 
-}
-#Miner9{
-    position: absolute;
-    left: -30px ;
-    width: 300px;
-    bottom: -200px;
-    z-index: 99999999; 
-}
-#Miner10{
-    position: absolute;
-    right: -30px ;
-    width: 300px;
-    bottom: -200px;
-    z-index: 99999999; 
-
-}
-#Miner8{
-    width: 300px;
-    position: absolute;
-    right: -30px;
-    transform: rotateZ(-15deg);
-    bottom: -200px;
-    z-index: 99999999; 
-}
+}  
 .contact-bg{
     position: absolute;
     background:url(./assets/images/wallpaper.png) ;
@@ -318,13 +279,7 @@ body{
     }
     .form-cont div, .contact-section input, .contact-section textarea{
         padding: 10px 20px !important;
-    }
-    #sideStoneRight,#stoneright1, .gem-5{
-        right: 0 !important;
-    }
-    #sideStoneLeft{
-        left: -20px !important;
-    }
+    } 
 } 
  
  #arrow{
@@ -339,6 +294,9 @@ body{
  #arrow img{
     width: 100px;
     height: 100px;
+ }
+ #arrow:hover{
+    transform: scale(1.25);
  }
  @media (max-width: 1860px){
     #arrow{

@@ -100,7 +100,7 @@ const Hero = () => {
                             !loading && <form onSubmit={(e) => connectWallet(e)}>
                                 <div class="miner-input-box">
                                     <h3>
-                                        <span onClick={minusFunction} class="minus"><b>-</b></span>
+                                        <button type="button" onClick={minusFunction} class="minus">-</button>
                                         <input 
                                             required 
                                             onChange={(e) => setMiners(e.target.value)}
@@ -108,7 +108,7 @@ const Hero = () => {
                                             value={miners} 
                                             max="20" 
                                         />
-                                        <span onClick={plusFunction} class="plus"><b>+</b></span></h3>
+                                        <button type="button" onClick={plusFunction} class="plus">+</button></h3>
                                     <div id="miners-container"></div>
                                 </div>                      
                             </form> 
@@ -116,16 +116,16 @@ const Hero = () => {
                         
                         {
                           !isConnected  
-                            ? <div 
+                            ? <button 
                                 class="collect-btn "
                                 type="button"  
                                 onClick={() => setConnected(true)}
-                              >CONNECT WALLET</div> 
-                            : <div 
+                              >CONNECT WALLET</button> 
+                            : <button 
                                 class="collect-btn" 
                                 onClick={(e) => connectWallet(e)} 
                                 type="submit"  
-                              >MINT MINERS!</div>
+                              >MINT MINERS!</button>
                         } 
                         <p className="connected-status"><span>Wallet is{isConnected ? '' : ' not'} connected</span></p>
                     </div>
@@ -135,7 +135,7 @@ const Hero = () => {
                 </div>    
                 <div class="img-flex">  
                     <h1>9,810/11,111 MINERS LEFT</h1>
-                    <img src={process.env.PUBLIC_URL + 'assets/images/shadow.png'} alt="shadow" />
+                    <img src={process.env.PUBLIC_URL + 'assets/images/yellow-shadow.png'} alt="shadow" />
                     <p>Badass $Dust Miners ALGORITHMICALLY GENERATED from 25 RUGGED AF features.</p>
                 </div> 
             </div>
