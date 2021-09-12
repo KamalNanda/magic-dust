@@ -1,4 +1,7 @@
+import styled from 'styled-components'
 
+const Wrapper = styled.div`
+	
 .team-grid .member{
 	background: #EC12DB;
 	cursor: pointer;
@@ -23,13 +26,7 @@
     margin: 80px auto;
     /*width: 40%;*/
 }
-
-#team .pink-box{
-	padding-top: 40px;
-	padding-bottom: 40px;
-	background: #650C85;
-border: 6px solid #F36EFF !important;
-}
+ 
 .team-grid{
 	width: fit-content;
 	margin: auto;
@@ -58,10 +55,7 @@ border: 6px solid #F36EFF !important;
 @media (max-width:  1360px){ 
 	.member img{
 		width: 100% !important;
-	}
-	#team .pink-box {
-		padding: 0;
-	}
+	} 
 }
 @media (max-width:  1124px){ 
 	.team-grid{
@@ -89,3 +83,5 @@ border: 6px solid #F36EFF !important;
 		height: 275vh;
 	}
 }
+`
+export default Wrapper

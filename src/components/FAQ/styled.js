@@ -1,3 +1,6 @@
+import styled from 'styled-components'
+
+const Wrapper = styled.div`
  
 .accordion-button::after { 
     background-image: url(arrow-down.png); 
@@ -48,19 +51,9 @@
 	font-weight: 900;
 	font-size: 1.25rem;
 }
-.gemplatform{
-	position: relative; 
-	z-index: 99999;
-	top: -110vh;
-	height: 150vh;
-}
 .faq-box img{
 	border-radius: 100%;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.gemplatform img{
-	width: 100%;
-	transform: scaleX(1.0);
 }
 @media (max-width:  1780px){  
 	#faq img{
@@ -93,13 +86,12 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 .faq-box strong{
 	font-size: 40px;
-}
-.gemplatform{
-	bottom: -50px;
-}
+} 
 .faq-box li, .faq-box p{ 
 	font-size: 1.2rem; 
 	font-weight: 400;
 	margin-left: 20px; 
 }
 }
+`
+export default Wrapper

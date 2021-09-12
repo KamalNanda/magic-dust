@@ -1,3 +1,6 @@
+import styled from 'styled-components'
+
+const Wrapper = styled.div`
 #contact h1{
 	font-style: normal;
 	font-weight: 900;
@@ -97,28 +100,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
 #contact .man22{
     margin-bottom: 100px;
 }
-.message{  
-    display: block; 
-    width: 100%;
-    margin: 400px auto 100px auto;
-    /*transform: scaleX(2) scaleY(1.5); */
-}   
-  
-.message h1{
-    color: #FFF200 !important;
-    line-height: 50px;
-    margin: 100px auto 0 auto;
-    text-align: center;
-    font-weight: 900;
-    letter-spacing: 10px;
-        transform: scaleX(2.0) scaleY(1.75) !important;
-    text-shadow:
-        -2px -2px 0 #FF06D7,  
-        2px -2px 0 #FF06D7,
-        -2px 2px 0 #FF06D7,
-        2px 2px 0 #FF06D7;
-    font-size: 300px;
-}
+
 @media (max-width:  1760px){
     #contact h1{
         font-size: 120px !important;/*
@@ -149,25 +131,11 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
     #contact h1{
         font-size: 120px !important;
         transform: scale(1);
-    }
-    .message h1{ 
-        transform: scaleX(1.5) scaleY(1.5) !important;
-        line-height: 150px !important;
-    }
+    } 
     #contact .man22{
         width: 30% !important;
     } 
-}
-@media (max-width: 1024px){ 
-    .message h1{ 
-        transform: scaleX(1.25) scaleY(1) !important;
-        line-height: 200px !important;
-    } 
-    .message{
-
-    top: 200px;
-    }
-}
+} 
 @media (max-width:  786px){
     #contact h1,
     .message h1,
@@ -192,3 +160,5 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
         transform: scaleX(1) !important;
     } 
 }
+`
+export default Wrapper
