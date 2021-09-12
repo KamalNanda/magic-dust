@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';  
+import Wrapper from './styled.js'
 const SocialLinks = () => {
 	return <div class="social-holder">
 						<img onClick={() => window.open('https://discord.gg/U358VVND')} src={process.env.PUBLIC_URL + '/assets/images/discord.svg'}  alt={"discord"} />
@@ -59,10 +59,10 @@ const Header = () => {
 		setActive(id)
 	} 
   return (
-    <>
+    <Wrapper>
 		<DesktopHeader active={active} onLinkClick={(id) => onLinkClick(id)} />
 		<MobileHeader active={active} onLinkClick={(id) => onLinkClick(id)} />
-    </>
+    </Wrapper>
   );
 }
 

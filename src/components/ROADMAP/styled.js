@@ -1,4 +1,7 @@
+import styled from 'styled-components'
 
+const Wrapper = styled.div`
+	
 #roadmap {
     margin: auto;
   margin-top: 200px; 
@@ -18,32 +21,10 @@
      2px 2px 0 #FF06D7;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
 }   
-#roadmap p{
-    color: #FBF5E3;
+#roadmap p{ 
     text-align: center;
-} 
-.achievement img{
-    width: 100%; 
-    margin: 0 auto;
-}
-#roadmap > .row p{
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 80%;
-    color: #FBF5E3;
-    font-family: "Emtype Foundry Regular";
-}
-#roadmap .achievement p{
-    font-family: "Emtype Foundry Regular";
-    color: #FBF5E3;
-    margin: 0 auto;
-    font-size: 25px;
-    line-height: 37px; 
-}
-.date{
-    color: #FCCF1E !important;
-    letter-spacing: 0.03em !important;
-}
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
+}     
 @media (max-width:  1760px){ 
     #roadmap img.man2, #section-3 > img{
         width: 50%;
@@ -51,9 +32,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
     #roadmap h1, #faq > h1, #team > h1{
         font-size: 120px;
     } 
-#roadmap > .row p{
-    font-size: 28px;
-}
+     
 }
 @media (max-width:  1280px){ 
     #roadmap img.man2, #section-3 > img{
@@ -63,10 +42,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
 @media (max-width:  786px){ 
     #roadmap img.man2, #section-3 > img{
         width: 60%;
-    }  
-    .achievement img{
-        width: 50%;
-    }
+    }   
     #roadmap h2{
         font-size: 60px; 
         transform: scaleX(1) scaleY(1.01); 
@@ -76,9 +52,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
         2px -2px 0 #FF06D7,
         -2px 2px 0 #FF06D7,
          2px 2px 0 #FF06D7;
-    }   
-    .achievement p{
-        width: 70%;
-        margin: 0 auto;
-    }
+    }    
 }   
+`
+export default Wrapper

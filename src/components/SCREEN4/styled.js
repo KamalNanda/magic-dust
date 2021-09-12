@@ -1,4 +1,7 @@
+import styled from 'styled-components'
 
+const Wrapper = styled.div`
+	
 #section-3 h1{
     color: #92FF07;
     font-size: 100px;
@@ -24,35 +27,8 @@
 #section-3 > img{
     margin: 80px auto;
     /*width: 40%;*/
-}
-.green-boxes, .sec-2-flex{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-content: space-between;    
-    width: 100%;
-    justify-content: space-between;
-}
-
-.green-box{
-    background: rgba(17, 240, 12, 0.63);
-    border: 8px solid #92FF07;
-    display: flex;
-    cursor: pointer;
-    align-items: center; 
-    font-size: 36px;
-    text-align: center;
-    border-radius: 6px;
-    padding: 15px 20px;
-    width: 100%; 
-    /*width: 100%;*/
-    color: #FBF5E3;
-    margin: 0 auto; 
-}
-.green-box img{
-    width: 60px;
-    margin-right: 20px;
-}
+} 
+ 
 .social-flex{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -94,17 +70,7 @@ border: 8px solid #92FF07;
     #section-3 p span{ 
         line-height: 60px; 
         font-size:40px; 
-    }
-    .green-box{ 
-        font-size: 32px; 
-        padding: 10px 20px; 
-        width: 100%; 
-        /*margin-bottom: 40px;*/
-    }
-    .green-box img{
-        width: 40px;
-        margin-right: 20px;
-    }
+    } 
     #section-3 .gimme-btn{
         font-size: 32px;  
         padding: 10px 20px; 
@@ -114,30 +80,23 @@ border: 8px solid #92FF07;
 @media (max-width : 1280px){ 
     #section-3 h1{
         font-size: 80px;
-    }
-    .green-box{ 
-        font-size: 24px; 
-        padding: 10px ; 
-        width: fit-content; 
-        /*margin-bottom: 40px;*/
-    }
+    } 
     #section-3 .gimme-btn{
         font-size: 34px;  
         padding: 0 10px; 
         margin: 20px auto 0 auto;
-    }
-    .green-box img{
-        width: 40px;
-        margin-right: 20px;
-    }
+    } 
 }
-@media (max-width: 768px) {
-    .green-box{
-        width: 90% !important;
-        padding: 10px 10px  ;
-        margin-bottom: 40px;
-    }
+@media (max-width: 768px) { 
     #section-3 h1{
         font-size: 50px !important;
     }
+    #section-3 {
+        width: 90% !important; 
+    }
+    #section-3 > div > div.sec-2-flex.col-lg-6.col-md-6.col-sm-12{
+        margin-bottom: 40px
+    }
 }
+`
+export default Wrapper

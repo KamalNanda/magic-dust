@@ -1,4 +1,10 @@
 
+.gemplatform{
+    position: relative; 
+    z-index: 99999;
+    top: -110vh;
+    height: 150vh;
+}
 html{
     scroll-behavior: smooth;  
 }
@@ -413,3 +419,18 @@ body{
 }
  }
  
+.gemplatform{
+    position: relative; 
+    z-index: 99999;
+    top: -110vh;
+    height: 150vh;
+}
+.gemplatform img{
+    width: 100%;
+    transform: scaleX(1.0);
+}
+@media (max-width:  786px){  
+.gemplatform{
+    bottom: -50px;
+} 
+}

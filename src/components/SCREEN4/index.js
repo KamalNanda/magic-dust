@@ -1,12 +1,15 @@
 import React from 'react' 
-import './style.css'  
+import Wrapper from './styled.js'  
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'  
+import SocialButton from '../Common/CommunityButton'
 const Screen = () => {
 const socials = [{img: process.env.PUBLIC_URL + '/assets/images/discord.png', text: 'Discord'}, {img: process.env.PUBLIC_URL + '/assets/images/telegram.png', text: 'Telegram'}, {img: process.env.PUBLIC_URL + '/assets/images/twitter.png', text: 'Twitter'}, {img: process.env.PUBLIC_URL + '/assets/images/linkedin.png', text: 'Linkedin'}]
-	return(<>
+	return(<Wrapper>
 		<div id="section-3">
          	<h1>FIND YOUR DUSTY FRIENDS</h1>
-			<div class="social-flex">
-				<div className="sec-2-flex">
+			<Row className="align-content-between justify-content-between">
+				<Col lg={6} md={6} sm={12} className="sec-2-flex">
 					<p>Want to host an official <br/>
 			            <span>Magic $dust Mine</span>  in your  <br/>
 			            Discord or Telegram community?  <br/>
@@ -14,20 +17,20 @@ const socials = [{img: process.env.PUBLIC_URL + '/assets/images/discord.png', te
 						your community!
 			        </p>
 			        <a href="https://airtable.com/shryvECq1bYKXgiXI" target="_blank"><button className="gimme-btn">GIMME DUST!</button></a>
-				</div>
-				<div class="green-boxes">
+				</Col>
+				<Col lg={6} md={6} sm={12} className="green-boxes align-content-between justify-content-between d-flex flex-column">
 					{
 						socials.map((social, i) => {
-							return <a href={`https://www.${social.text}.${social.text === 'Telegram' ? 'org' : 'com'}`} target="_blank" ><button class="green-box">  
+							return <SocialButton as="a" href={`https://www.${social.text}.${social.text === 'Telegram' ? 'org' : 'com'}`} target="_blank" >
 				                <img src={social.img} alt={social.text} />
-				                Magic Dust on {`${social.text}`}
-				            </button></a>
+				                Magic Dust on {`${social.text}`} 
+					        </SocialButton>
 						})	
 					} 
-		        </div>
-			</div> 
+		        </Col>
+			</Row> 
 			<img src={process.env.PUBLIC_URL + '/assets/images/miner2.png'} style={{display:'block', margin:'auto'}}/>
 		</div>	
-	</>)  
+	</Wrapper>)  
 }
 export default Screen

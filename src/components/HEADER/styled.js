@@ -1,17 +1,19 @@
-.header{
-    position: sticky;
-    top: 0;
-    z-index: 9999999999999999;
-    background-color:#8706c8;
-    box-shadow: 2px 0px 30px black;
+import styled from 'styled-components'
+const Wrapper = styled.div`
     left: 0;
     overflow: hidden ;
     width: 100%;
-    padding: 20px 0px ;
+    position: sticky;
+    top: 0;
+    z-index: 9999999999999999;
+        box-shadow: 2px 0px 30px black;
+	.header{
+        padding: 20px 0px ;
     height: 7vh;
-    display: flex;   
-    align-items: center;
-    justify-content: space-between;
+        background-color:#8706c8;
+        display: flex;   
+        align-items: center;
+        justify-content: space-between;
 }  
 .header-logo-cont{
     width: 25%;  
@@ -187,3 +189,6 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         margin-left: 0; 
     } 
 } 
+
+`
+export default Wrapper

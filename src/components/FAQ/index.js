@@ -1,5 +1,5 @@
-import React from 'react'  
-import './style.css'  
+import React from 'react'   
+import Wrapper from './styled'
 import Accordion from 'react-bootstrap/Accordion'
 import SectionHeader from '../Common/SectionHeader'
 const FAQComponent = (props) => { 
@@ -33,6 +33,7 @@ const FAQ = () => {
 		{head: 'What can i do with $DUST?', li: ['<strong>Spend it!</strong> More digital and physical items are going on sale for the $DUST community here on our website.','<strong>Sell it!</strong> There will be trading pairs for DUST soon on sites such as SushiSwap and QuickSwap.','<strong>HODL it!</strong> Magic DU$T is only 1 year old on the WAX blockchain and brand new on the Polygon blockchain.']}
 	]
 	return(
+		<Wrapper>
 		<div id="faq">
 			<SectionHeader className="my-5">FAQ</SectionHeader>
 			<Accordion flush>
@@ -43,6 +44,7 @@ const FAQ = () => {
 			}
 			</Accordion> 
 		</div>
+		</Wrapper>
 	)
 }
 export default FAQ 

@@ -1,10 +1,10 @@
 import React from 'react' 
-import './style.css' 
+import Wrapper from './styled.js' 
 import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col' 
+import Col from 'react-bootstrap/Col'  
 const Screen = () => { 
 
-	return(<div style={{position:"relative"}}>
+	return(<Wrapper>
 		<div id="section-2">
 			{/** <img src={Man} /> **/}
 			<Row className="align-items-end">
@@ -28,6 +28,6 @@ const Screen = () => {
             </div>  
 			<img src={process.env.PUBLIC_URL +'/assets/images/miner1.png'} />
 		</div>	
-	</div>)  
+	</Wrapper>)  
 }
 export default Screen
