@@ -13,7 +13,7 @@ const socials = [{img: process.env.PUBLIC_URL + '/assets/images/discord.png', te
 						Tell us about  <br/>
 						your community!
 			        </p>
-			        <button className="gimme-btn">GIMME DUST!</button>
+			        <a href="https://airtable.com/shryvECq1bYKXgiXI" target="_blank"><button className="gimme-btn">GIMME DUST!</button></a>
 				</div>
 				<div class="green-boxes">
 					{
