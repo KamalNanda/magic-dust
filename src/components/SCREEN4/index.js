@@ -13,15 +13,15 @@ const socials = [{img: process.env.PUBLIC_URL + '/assets/images/discord.png', te
 						Tell us about  <br/>
 						your community!
 			        </p>
-			        <button>GIMME DUST!</button>
+			        <a href="https://airtable.com/shryvECq1bYKXgiXI" target="_blank"><button className="gimme-btn">GIMME DUST!</button></a>
 				</div>
 				<div class="green-boxes">
 					{
 						socials.map((social, i) => {
-							return <a href={`https://www.${social.text}.${social.text === 'Telegram' ? 'org' : 'com'}`} target="_blank" ><div class="green-box">  
+							return <a href={`https://www.${social.text}.${social.text === 'Telegram' ? 'org' : 'com'}`} target="_blank" ><button class="green-box">  
 				                <img src={social.img} alt={social.text} />
 				                Magic Dust on {`${social.text}`}
-				            </div></a>
+				            </button></a>
 						})	
 					} 
 		        </div>

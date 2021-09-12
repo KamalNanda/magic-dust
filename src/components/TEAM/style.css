@@ -15,6 +15,8 @@
 	margin: auto;
 	margin-top: 100px;
     width: 50%;
+    position: relative;
+    z-index: 999999;
     overflow: hidden !important;
 }
 #team > img{
