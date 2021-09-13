@@ -135,9 +135,17 @@ border: 8px solid #92FF07;
         padding: 10px 10px  ;
         font-size: 28px;
         margin: 20px auto 0 auto;
-    } 
+    }
+    #section-3 p,
+    #section-3 p span{ 
+        line-height: 60px; 
+        font-size:32px; 
+    }  
     #section-3 > div > div.sec-2-flex.col-lg-6.col-md-6.col-sm-12{
         margin-bottom: 40px
+    }
+    #section-3 > div.row{
+        flex-direction: column-reverse
     }
     #section-3 > img{
         width: 90%;

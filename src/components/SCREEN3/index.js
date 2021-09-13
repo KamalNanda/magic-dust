@@ -9,11 +9,13 @@ const Screen = () => {
 			{/** <img src={Man} /> **/}
 			<Row className="align-items-end">
 				<Col lg={4} md={4} sm={12}>
+				<img className="m-show miner-dialogue" src={'/assets/images/dialogue.png'} />
 					<img src={'/assets/images/Group 383.png'} />
+					
 				</Col> 
 				<Col lg={8} md={8} sm={12}>
 					<div style={{position:'relative'}}>
-						<img className="miner-dialogue" src={'/assets/images/dialogue.png'} />
+						<img className="m-hide miner-dialogue" src={'/assets/images/dialogue.png'} />
 					</div>
 			        <p>Some of the biggest NFT<br/>
 						 communities are mining $dust<br/>

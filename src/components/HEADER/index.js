@@ -30,7 +30,7 @@ const MobileHeader = ({active, onLinkClick}) => {
 	return ( 
 		<div id="mobile-nav">
 			<div style={{width:'100%'}} class="d-flex justify-content-between align-items-center">
-				<img style={{width:'160px'}} class="header-logo" src={'/assets/images/header-logo.png'} alt="logo" /> 
+				<img class="header-logo" src={'/assets/images/header-logo.png'} alt="logo" /> 
 				<img alt="ham" onClick={toggleDropDown} id="ham" src={isShown ? "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/1200px-VisualEditor_-_Icon_-_Close_-_white.svg.png" : "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png"} />
 			</div>
 			
