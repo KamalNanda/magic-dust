@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';  
+import Wrapper from './styled'
 import DIVIDER from '../DIVIDER' 
 
 const generateStars = () => {
@@ -50,7 +50,7 @@ const Hero = () => {
       document.getElementById('mario-img').src= '/assets/images/man.png'
     }, 2000)
   }
-  return (<>   
+  return (<Wrapper>   
   {
     isMinersPopupShown 
       ? <div id="minted-popup">
@@ -142,7 +142,7 @@ const Hero = () => {
         </div>
       <DIVIDER />
     </section>
-  </>);
+  </Wrapper>);
 }
  
 export default Hero;

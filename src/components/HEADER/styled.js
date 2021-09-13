@@ -36,7 +36,11 @@ const Wrapper = styled.div`
 }
 #mobile-nav .social-holder{
     display: grid;
+    grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr); 
+}
+#mobile-nav .header-logo{
+    width: 240px
 }
 .header .social-holder img,
 #mobile-nav .social-holder img{ 
@@ -92,7 +96,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 #mobile-nav{
     background-color:#8706c8;
-    padding: 10px 40px; 
+    padding: 10px 20px; 
     display: none;
     width: 100%;
     flex-direction: column;

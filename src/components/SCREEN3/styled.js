@@ -80,7 +80,7 @@ const Wrapper = styled.div`
 		font-size: 100px !important;
 	}
 	#section-2{
-		width: 80%;
+		width: 90%;
 	}
 	.games-flex{
 		margin-top:00px
@@ -93,14 +93,14 @@ const Wrapper = styled.div`
 	}
 	#section-2 p {
 		margin-top: 80px;
-		font-size: 44px;
+		font-size: 32px;
     line-height: 60px;  
 	}
 	.green-box{
 		width: 90% !important;
 	}
 	#section-2 > img{
-		width: 60%;
+		width: 100%;
 	}
 }
 @media (max-width:  600px){

@@ -12,14 +12,14 @@ const Screen = () => {
 			<img src={'/assets/images/CAVE CIELING FRONT.png'} className="cieling" /> 
 		<div id="section-1"> 
 				<Row>
-					<Col lg={12}>
+					<Col lg={12} className="mb-3">
 						<PinkBox>
 							<h1>Magic Du$t Miners are hardworking NFTs that mine Du$t Tokens for you when you chat in the Magic Dust Discord Community</h1>
 						</PinkBox>		
 					</Col>
 					{
 						list1.map((l, i) => {
-							return <Col className="my-3" lg={6} md={6} sm={12}>
+							return <Col className="mb-3" lg={6} md={6} sm={12}>
 										<PinkBox key={i} > 
 											<div className="d-flex align-items-center"><img src={'/assets/images/heart.png'} className="heart"/><p>{l}</p></div>
 										</PinkBox>

@@ -172,8 +172,11 @@ const Wrapper = styled.div`
         padding-top:100px ;
         width: 80%;
     } 
-    img.token-img{
+    #section-1 > div > div.my-3.col-lg-12.col-md-12.col-sm-12{
         display: none
+    }
+    .d-flex p{
+        font-size: 20px
     }
 } 
 @media (max-width: 475px){

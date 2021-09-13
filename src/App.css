@@ -15,6 +15,20 @@ ul{
     margin: 0 !important;
     padding: 0 !important;
 }
+.m-show{
+    display: none;
+}
+@media(max-width: 768px){
+    .m-show{
+        display: block;
+    }
+    .m-hide{
+        display: none !important;
+    }
+    .m-rev{
+        flex-direction: column-reverse;
+    }
+} 
 *{
     margin: 0;
     padding:0;

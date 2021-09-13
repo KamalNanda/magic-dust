@@ -25,6 +25,9 @@ const Wrapper = styled.div`
     z-index: 999999;
     overflow: hidden !important;
 }
+#team > img.man22, #team > img.d-block.mx-auto{ 
+	margin:auto; 
+}
 #team > img{
     margin: 80px auto;
     /*width: 40%;*/
@@ -72,14 +75,16 @@ const Wrapper = styled.div`
 		padding: 10px;
 	}
 	#team{
-		width:90%
+		width:90%;
+		margin-top: 2rem
 	}
 	.member img{
 		width: 100%;
 	}
-	#team > img.man22, #team > img.d-block.mx-auto{
+	#team > img.man22,#team > img.d-block, #team > img.d-block.mx-auto{
 		width: 100%;
-		margin:auto
+		margin:auto;
+		margin-bottom: 2rem
 	}
 	.contact-bg, .gradient-bg{
 		height: 340vh;

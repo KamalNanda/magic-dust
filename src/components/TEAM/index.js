@@ -14,7 +14,7 @@ const Team = () => {
             </SectionHeader>
             <TeamPinkBox>
 	            <div class="team-grid">
-	            	{
+	            	{ 
 	            		members.map((member, i) => {
 	            			return <div class="team-member">
 		            			<div class="member">
@@ -26,7 +26,7 @@ const Team = () => {
 	            	}
 	            </div>
             </TeamPinkBox>
-			<img class="man22 mt-5" className="d-block mx-auto" src={'/assets/images/miner0.png'} />
+			<img class="man22 mt-5" className="d-block " src={'/assets/images/miner0.png'} />
 		</div>	
 		</Wrapper>
 	)  

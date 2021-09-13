@@ -51,7 +51,9 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
         margin:auto
     }
     #roadmap{
-        width: 100%
+        width: 100%;
+        margin-top:60px;
+        margin-bottom: 60px
     }
     #roadmap h2{
         font-size: 60px; 
