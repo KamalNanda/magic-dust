@@ -35,6 +35,7 @@ const FAQ = () => {
 	return(
 		<Wrapper>
 		<div id="faq">
+			<img class="mt-5 man2" className="d-block mx-auto" src={'/assets/images/miner3.png'} />
 			<SectionHeader className="my-5">FAQ</SectionHeader>
 			<Accordion flush>
 			{

@@ -47,7 +47,7 @@ const Hero = () => {
     setTimeout(() =>{ 
       setloading(false) 
       setMinersPopupShown(true)
-      document.getElementById('mario-img').src= process.env.PUBLIC_URL + '/assets/images/man.png'
+      document.getElementById('mario-img').src= '/assets/images/man.png'
     }, 2000)
   }
   return (<>   
@@ -57,11 +57,11 @@ const Hero = () => {
           <div class="minted-popup">
               <p onClick={() => setMinersPopupShown(false)} id="close">X</p>
               <h1>CONGRATULATIONS DUSTY FRIEND!</h1> 
-              <img src={process.env.PUBLIC_URL + '/assets/images/miners.png'} alt="miners"/>
+              <img src={'/assets/images/miners.png'} alt="miners"/>
               <div class="row"> 
                 <p className="col-md-8">HODL YOUR MINER IN YOUR WALLET WHEN CHATTING ON ACTIVE $DUST COMMUNITIES 
                 ON DISCORD AND TELEGRAM TO EARN $DUST WITH EVERY CHAT!</p>  
-                <div class="col-md-4"><img src={process.env.PUBLIC_URL + '/assets/images/fomo.png'} /></div>
+                <div class="col-md-4"><img src={'/assets/images/fomo.png'} /></div>
               </div> 
           </div>
       </div> 
@@ -72,15 +72,15 @@ const Hero = () => {
     <section id="home">
        
         <div class="section-bg">
-            <img src={process.env.PUBLIC_URL + 'assets/images/mountains_front.png'} id="mountains_front"  alt={"mountainFront"}/>
-            <img src={process.env.PUBLIC_URL + 'assets/images/cave.png'} id="cave" alt={"cave"}/>
-            <img src={process.env.PUBLIC_URL + 'assets/images/mountains_behind.png'} id="mountains_behind"  alt={"mountainBack"}/>
-            <img src={process.env.PUBLIC_URL + 'assets/images/moon.png'} id="moon"  alt={"moon"}/>  
+            <img src={'assets/images/mountains_front.png'} id="mountains_front"  alt={"mountainFront"}/>
+            <img src={'assets/images/cave.png'} id="cave" alt={"cave"}/>
+            <img src={'assets/images/mountains_behind.png'} id="mountains_behind"  alt={"mountainBack"}/>
+            <img src={'assets/images/moon.png'} id="moon"  alt={"moon"}/>  
         </div> 
    
         <div class="hero-flex"> 
             <div class="magic-dust">   
-                <img src={process.env.PUBLIC_URL + 'assets/images/hero-logo.png'}  alt={"heroLogo"}/>
+                <img src={'assets/images/hero-logo.png'}  alt={"heroLogo"}/>
             </div> 
             <div id="explore-popup">  
                 <div class="miners-box">
@@ -130,12 +130,12 @@ const Hero = () => {
                         <p className="connected-status"><span>Wallet is{isConnected ? '' : ' not'} connected</span></p>
                     </div>
                     <div class="animation-box">
-                        <img id="mario-img" alt="mario" src={loading ? process.env.PUBLIC_URL + 'assets/images/mystery.gif' : process.env.PUBLIC_URL + 'assets/images/mario.png'} />
+                        <img id="mario-img" alt="mario" src={loading ? 'assets/images/mystery.gif' : 'assets/images/mario.png'} />
                     </div>
                 </div>    
                 <div class="img-flex">  
                     <h1>9,810/11,111 MINERS LEFT</h1>
-                    <img src={process.env.PUBLIC_URL + 'assets/images/yellow-shadow.png'} alt="shadow" />
+                    <img src={'assets/images/yellow-shadow.png'} alt="shadow" />
                     <p>Badass $Dust Miners ALGORITHMICALLY GENERATED from 25 RUGGED AF features.</p>
                 </div> 
             </div>

@@ -1,13 +1,13 @@
 import styled from 'styled-components'
-
+import arrow from './arrow-down.png'
 const Wrapper = styled.div`
  
 .accordion-button::after { 
-    background-image: url(arrow-down.png); 
+    background-image: url(${arrow}); 
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
 }
 .accordion-button:not(.collapsed)::after {
-    background-image: url(arrow-down.png);
+    background-image: url(${arrow});
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
     transform: rotate(
 -180deg);
@@ -77,7 +77,10 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	} 
 }
 @media (max-width:  786px){ 
- 
+ #team > img.man22{
+ 	width: 90%;
+ 	margin:auto
+ }
 #faq, #team {
 		width: 90% !important;
 	} #contact form {

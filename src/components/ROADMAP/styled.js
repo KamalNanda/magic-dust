@@ -38,11 +38,21 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
     #roadmap img.man2, #section-3 > img{
         width: 50%;
     }  
+    #roadmap h2{
+        font-size:40px
+    }
 } 
 @media (max-width:  786px){ 
     #roadmap img.man2, #section-3 > img{
         width: 60%;
     }   
+    #roadmap > img{
+        width: 90%;
+        margin:auto
+    }
+    #roadmap{
+        width: 100%
+    }
     #roadmap h2{
         font-size: 60px; 
         transform: scaleX(1) scaleY(1.01); 

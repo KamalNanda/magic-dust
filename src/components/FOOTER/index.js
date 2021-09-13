@@ -48,13 +48,13 @@ function Footer(){
 		<p>Copyright 2021 Magic Dust Inc. All Rights Reserved.</p>
 		<div className="footer-flex">
 			<a href="https://www.discord.com" target="_blank">
-				<img src={process.env.PUBLIC_URL+  'assets/images/discord.svg'}  alt={"discord"} />
+				<img src={'assets/images/discord.svg'}  alt={"discord"} />
 			</a>
 			<a href="https://www.telegram.org" target="_blank">
-				<img src={process.env.PUBLIC_URL+  'assets/images/telegram.svg'} alt={"telegram"} />
+				<img src={'assets/images/telegram.svg'} alt={"telegram"} />
 			</a>
 			<a href="https://www.twitter.com" target="_blank">
-				<img src={process.env.PUBLIC_URL+  'assets/images/twitter.svg'}  alt={"twitter"} />
+				<img src={'assets/images/twitter.svg'}  alt={"twitter"} />
 			</a>
 			
 			

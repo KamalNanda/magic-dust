@@ -26,7 +26,7 @@ ul{
 body{
     min-height: 100vh;
     overflow-x: hidden;
-    background: linear-gradient(#8806C9,#8806C9, #8806C9, #8806C9, #8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#8806C9,#fff, #fff);  
+    background: linear-gradient(#8806C9,#8806C9, #8806C9, #000, #000,#000,#8806C9,#8806C9,#8806C9,#8806C9,#fff, #fff);  
     /*background: url(./assets/images/grandbg.png');*/
     position: relative;  
 }
@@ -85,18 +85,24 @@ body{
     width: 100%;
     overflow: hidden;
 } 
+.bg-container{
+    position: relative;
+}
 #cavebg{
     position: absolute;
-    z-index: 1;  
+    z-index:-11;  
     top: -270px;
-    left: 200px; 
+    left: 000px; 
     mix-blend-mode: screen;
+    width: 100%;
 }
 #cavebig{
+    z-index:-8;  
     position: absolute;
         width: 100%; 
-    height: fit-content;
+    height: 110%;
     mix-blend-mode: multiply;
+    width: 100%;
 
 }
 #leftfull , #left, #rightfull , #right{
@@ -114,33 +120,13 @@ body{
 #leftfull , #left{
     left: -70px  ;
         transform-origin: 0% 100%;
-} 
-@media (max-width:  1860px){ 
-#rightfull , #right{ 
-    height: 1300vh;
-}
-#leftfull , #left{ 
-    height: 1300vh;
-     
-    }
-}
-@media (max-width:  1780px){ 
-#rightfull , #right{
-    right: -140px  ;  
-}
-#leftfull , #left{
-    left: -50px  ; 
-     
-    }
-}
+}  
 @media (max-width:  1440px){ 
 #rightfull , #right{
-    right: -190px  ; 
-    height: 1300vh ;
+    right: -190px  ;  
 }
 #leftfull , #left{
-    left: -60px  ; 
-    height: 1300vh ;
+    left: -60px  ;  
     }
 }
 @media (max-width:  1440px){
@@ -179,14 +165,7 @@ body{
     } 
     #light{
         height: 30% !important;
-    }
-      #left-side, #bluesideleft, #stoneleft {
-        /* width: 100px; */  
-    }
-    #left-side   {
-        /* width: 100px; */ 
-        transform-origin: 0% 50%;
-    }
+    }  
     .hero-line{
         width: unset !important;
     }
@@ -304,12 +283,10 @@ body{
         height: 90px;
      }
 #rightfull , #right{
-    right: -20px  ; 
-    height: 1400vh !important;
+    right: -20px  ;  
 }
 #leftfull , #left{
-    left: -60px  ;
-    height: 1400vh !important;
+    left: -60px  ; 
      
     } 
  }
@@ -325,13 +302,6 @@ body{
         width: 80px;
         height: 80px;
      }
-#rightfull , #right{ 
-    height: 1550vh !important;
-}
-#leftfull , #left{ 
-    height: 1500vh !important;
-     
-    } 
  }
  @media (max-width: 1440px){
     #arrow{
@@ -369,12 +339,10 @@ body{
         right: 60px;
     }
 #rightfull , #right{
-    right: -20px  ; 
-    height: 1700vh !important;
+    right: -20px  ;  
 }
 #leftfull , #left{
-    left: -60px  ;
-    height: 1700vh !important;
+    left: -60px  ; 
      
     } 
  }
@@ -410,7 +378,7 @@ body{
     #arrow{
         bottom: 60px;
         right: 20px;
-    }
+    } 
     #cavebg, #cavebig{
         display: none;
     }

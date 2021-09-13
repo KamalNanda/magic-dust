@@ -6,6 +6,9 @@ const Wrapper = styled.div`
 	background: #EC12DB;
 	cursor: pointer;
 }
+#team > img.d-block.mx-auto{
+	width: 60%;
+}
 .team-member:hover{
 	transform: scale(1.1);
 }
@@ -68,8 +71,15 @@ const Wrapper = styled.div`
 		grid-template-columns: repeat(3, 1fr); ;
 		padding: 10px;
 	}
+	#team{
+		width:90%
+	}
 	.member img{
 		width: 100%;
+	}
+	#team > img.man22, #team > img.d-block.mx-auto{
+		width: 100%;
+		margin:auto
 	}
 	.contact-bg, .gradient-bg{
 		height: 340vh;
