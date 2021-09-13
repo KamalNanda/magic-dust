@@ -20,6 +20,8 @@ const StyledTrophy = styled.div`
 	@media (max-width:  786px){ 
 	    img{
 	        width: 50%;
+	        margin:auto;
+	        display:block
 	    }
 	    p{
 	        width: 70%;

@@ -2,9 +2,9 @@ import React from 'react';
 import Wrapper from './styled.js'
 const SocialLinks = () => {
 	return <div class="social-holder">
-						<img onClick={() => window.open('https://discord.gg/U358VVND')} src={process.env.PUBLIC_URL + '/assets/images/discord.svg'}  alt={"discord"} />
-						<img onClick={() => window.open('https://t.me/joinchat/DOuJ0Mgk9rAxNDgx')} src={process.env.PUBLIC_URL + '/assets/images/telegram.svg'} alt={"telegram"} />
-						<img onClick={() => window.open('https://twitter.com/dustismagic?s=20')} src={process.env.PUBLIC_URL + '/assets/images/twitter.svg'}  alt={"twitter"} />
+						<img onClick={() => window.open('https://discord.gg/U358VVND')} src={'/assets/images/discord.svg'}  alt={"discord"} />
+						<img onClick={() => window.open('https://t.me/joinchat/DOuJ0Mgk9rAxNDgx')} src={'/assets/images/telegram.svg'} alt={"telegram"} />
+						<img onClick={() => window.open('https://twitter.com/dustismagic?s=20')} src={'/assets/images/twitter.svg'}  alt={"twitter"} />
 					</div>
 }
 const NavLinks = ({active, onLinkClick}) => {
@@ -30,7 +30,7 @@ const MobileHeader = ({active, onLinkClick}) => {
 	return ( 
 		<div id="mobile-nav">
 			<div style={{width:'100%'}} class="d-flex justify-content-between align-items-center">
-				<img style={{width:'160px'}} class="header-logo" src={process.env.PUBLIC_URL + '/assets/images/header-logo.png'} alt="logo" /> 
+				<img style={{width:'160px'}} class="header-logo" src={'/assets/images/header-logo.png'} alt="logo" /> 
 				<img alt="ham" onClick={toggleDropDown} id="ham" src={isShown ? "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/1200px-VisualEditor_-_Icon_-_Close_-_white.svg.png" : "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png"} />
 			</div>
 			
@@ -46,7 +46,7 @@ const DesktopHeader = ({active, onLinkClick}) => {
 	return ( 
 		<div class="header" id="header"> 
 			<div className="header-logo-cont">
-				<img class="header-logo" src={process.env.PUBLIC_URL + '/assets/images/header-logo.png'} alt="logo" /> 
+				<img class="header-logo" src={'/assets/images/header-logo.png'} alt="logo" /> 
 			</div>
 			 <NavLinks  active={active} onLinkClick={onLinkClick} />
 			<SocialLinks />

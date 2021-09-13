@@ -10,15 +10,20 @@ const Wrapper = styled.div`
 	text-align: center; 
     top: -100px;
     position: relative;
-    margin-top: 200px;
+    margin-top: 100px;
 	color: #92FF07; 
     text-shadow:
    -2px -2px 0 #FF06D7,  
     2px -2px 0 #FF06D7,
     -2px 2px 0 #FF06D7,
      2px 2px 0 #FF06D7;  
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
 } 
+.contact-miner{
+    display:block; 
+    width:50%; 
+    margin:100px auto 100px auto
+}
 .contact-container{
     position:relative;
     z-index:-9;
@@ -28,7 +33,8 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
 #contact{ 
 	position: relative;
     width: 100%; 
-    z-index: 1;
+    position: relative;
+    z-index: 9999999999;
     /*background-size: contain;*/
     overflow: hidden !important; 
 }
@@ -133,7 +139,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
         transform: scale(1);
     } 
     #contact .man22{
-        width: 30% !important;
+        width: 30% ;
     } 
 } 
 @media (max-width:  786px){
@@ -145,7 +151,18 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
         font-size: 80px !important;
     transform: scale(1);
     }
-    #contact img{
+    #contact{
+        width: 90%;
+        margin: auto
+    }
+    .contact-miner{
+        display:block; 
+        width:100%; 
+        margin:50px auto 50px auto
+    }
+    #contact img,
+    #contact  form, 
+    #contact > div > img{{
         width: 100%;
     }
     #contact .man22{

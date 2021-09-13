@@ -39,7 +39,7 @@ const Wrapper = styled.div`
 #section-3 p{
     color: #FBF5E3;
 
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: center;  
     line-height: 80px;
     width: 100%;
@@ -77,12 +77,47 @@ border: 8px solid #92FF07;
         margin: 20px auto 0 auto;
     }
 }
+@media (max-width : 1440px){  
+    #section-3 p,
+    #section-3 p span{ 
+        line-height: 40px; 
+        font-size:32px; 
+    } 
+    #section-3 .gimme-btn{
+        font-size: 26px;  
+        border-width: 4px;
+        padding: 0 10px; 
+        margin: 20px auto 0 auto;
+    } 
+}
 @media (max-width : 1280px){ 
     #section-3 h1{
         font-size: 80px;
     } 
+    #section-3 p,
+    #section-3 p span{ 
+        line-height: 50px; 
+        font-size:28px; 
+    } 
     #section-3 .gimme-btn{
-        font-size: 34px;  
+        font-size: 26px;  
+        border-width: 6px;
+        padding: 0 10px; 
+        margin: 20px auto 0 auto;
+    } 
+}
+@media (max-width : 1160px){ 
+    #section-3 h1{
+        font-size: 80px;
+    } 
+    #section-3 p,
+    #section-3 p span{ 
+        line-height: 40px; 
+        font-size:24px; 
+    } 
+    #section-3 .gimme-btn{
+        font-size: 23px;  
+        border-width: 4px;
         padding: 0 10px; 
         margin: 20px auto 0 auto;
     } 
@@ -94,8 +129,19 @@ border: 8px solid #92FF07;
     #section-3 {
         width: 90% !important; 
     }
+    #section-3 .gimme-btn{ 
+        border-width: 4px;
+        width:90%;
+        padding: 10px 10px  ;
+        font-size: 28px;
+        margin: 20px auto 0 auto;
+    } 
     #section-3 > div > div.sec-2-flex.col-lg-6.col-md-6.col-sm-12{
         margin-bottom: 40px
+    }
+    #section-3 > img{
+        width: 90%;
+        margin:auto
     }
 }
 `

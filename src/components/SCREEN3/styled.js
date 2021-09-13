@@ -17,10 +17,10 @@ const Wrapper = styled.div`
 		position: relative;
 	} 
 	@media (max-width:  1360px){ 
-	#section-2{
-		background-size: cover;
-		background-position: center;
-	}
+		#section-2{
+			background-size: cover;
+			background-position: center;
+		}
 	} 
 	#section-2 .row{
 		width: 100%;
@@ -29,9 +29,7 @@ const Wrapper = styled.div`
 	    margin: 80px auto;
 	    /*width: 40%;*/
 	}
-	.games-flex{
-		/*width: 60%;*/
-		/*margin: 120px auto;*/
+	.games-flex{ 
 		margin: auto; 
 		margin-top: 100px;
 		display: grid;
@@ -65,6 +63,13 @@ const Wrapper = styled.div`
     -2px 2px 0 #000,
      2px 2px 0 #000;
 } 
+@media (max-width:  1760px){  
+	#section-2 p {
+		font-size: 40px;
+    line-height: 100px;  
+	}
+
+} 
 @media (max-width:  768px){
 	.social-flex{
 		width: 90% !important;
@@ -77,8 +82,19 @@ const Wrapper = styled.div`
 	#section-2{
 		width: 80%;
 	}
+	.games-flex{
+		margin-top:00px
+	}
+	.miner-dialogue{
+		display:none
+	}
 	#section-3{
 		width: 100% !important;
+	}
+	#section-2 p {
+		margin-top: 80px;
+		font-size: 44px;
+    line-height: 60px;  
 	}
 	.green-box{
 		width: 90% !important;
@@ -87,12 +103,6 @@ const Wrapper = styled.div`
 		width: 60%;
 	}
 }
-@media (max-width:  1760px){  
-	#section-2 p {
-		font-size: 40px !important;
-	}
-
-} 
 @media (max-width:  600px){
 	.games-flex{
 		grid-template-columns: 1fr;

@@ -34,8 +34,8 @@ function App() {
     window.addEventListener('scroll', handleScroll)
     return () => {
       window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+    } 
+  }, []) 
   return (
     <div className="App">
      {/** <img src={Miner5} id="Miner5" />
@@ -45,27 +45,33 @@ function App() {
       <img src={Miner10} id="Miner10" />**/}
       <Header />
       <HERO />   
-        <img src={process.env.PUBLIC_URL + '/assets/images/left-miners.png'} id="left" />
-        <img src={process.env.PUBLIC_URL + '/assets/images/right-miners.png'} id="right" />
+        <img src={ '/assets/images/left-miners.png'} id="left" />
+        <img src={ '/assets/images/right-miners.png'} id="right" />
         <SCREEN2 /> 
         <SCREEN3 />
-        <SCREEN4 /> 
-        <ROADMAP /> 
+        <div className="bg-container">
+            <img src={ '/assets/images/CAVE BACKGROUND.png'} id="cavebg" />
+          <SCREEN4 /> 
+          <ROADMAP /> 
+        </div>
+        <div className="bg-container">
+            <img src={ '/assets/images/CAVE BACKGROUND BIG.png'} id="cavebig" />
         <FAQ /> 
-        <TEAM />  
+        <TEAM /> 
+        </div> 
         <CONTACT /> 
         <div class="gemplatform" id="gemplatform">
           <img src={process.env.PUBLIC_URL+  'assets/images/gem-only.png'}/>
         </div>
         <FOOTER /> 
         {/**<div style={{position:'relative',overflowX:'hidden'}}>
-          <img src={process.env.PUBLIC_URL + 'cavebg.png'} id="cavebg" />
+          <img src={ 'cavebg.png'} id="cavebg" />
             <div style={{position:'relative'}}>
               <div  style={{position:'relative', zIndex: 2, overflowX:'hidden'}}>
                 <SCREEN4 /> 
               </div>
               <div style={{position:'relative'}}>
-                <img src={process.env.PUBLIC_URL + 'cavebig.png'} id="cavebig" />
+                
                 <div style={{position:'relative', zIndex: 2}}>
                   <ROADMAP /> 
                   <FAQ /> 
@@ -81,7 +87,7 @@ function App() {
                 </div>
             <div className="contact-bg" ></div>
       <FOOTER /> **/} 
-      <a id="arrow"  href="#home"><img src={process.env.PUBLIC_URL +'/assets/images/arrow.png'}/></a>
+      <a id="arrow"  href="#home"><img src={'/assets/images/arrow.png'}/></a>
     </div>
   );
 }

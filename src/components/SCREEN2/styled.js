@@ -3,37 +3,41 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
 	position:relative;
 	#section-1{
-    position: relative;
-    padding-top: 200px ;
-    width: 60%;
-    z-index: 1;
+        position: relative;
+        padding-top: 200px ;
+        width: 60%;
+        z-index: 1;
 
-    margin: auto;
-    /*overflow: hidden !important;*/ 
-}
-.cieling{
-    position: absolute;
-    width: 100%; 
-    top: -10px; 
-    z-index: -1;
-    /*transform: scaleY(1.65) ;*/
-    transform-origin: 100% 0%;
-}  
-.m-show{
-    display: none;
-}
-@media(max-width: 768px){
+        margin: auto;
+        /*overflow: hidden !important;*/ 
+    }
+    img.token-img{
+
+        filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.8));
+    }
+    .cieling{
+        position: absolute;
+        width: 100%; 
+        top: -10px; 
+        z-index: -1;
+        /*transform: scaleY(1.65) ;*/
+        transform-origin: 100% 0%;
+    }  
     .m-show{
-        display: block;
+        display: none;
     }
-    .m-hide{
-        display: none !important;
-    }
-    .m-rev{
-        flex-direction: column-reverse;
-    }
-} 
-   
+    @media(max-width: 768px){
+        .m-show{
+            display: block;
+        }
+        .m-hide{
+            display: none !important;
+        }
+        .m-rev{
+            flex-direction: column-reverse;
+        }
+    } 
+       
 @media (max-width: 1660px){ 
     #group{
         right: -150px;
@@ -168,6 +172,9 @@ const Wrapper = styled.div`
         padding-top:100px ;
         width: 80%;
     } 
+    img.token-img{
+        display: none
+    }
 } 
 @media (max-width: 475px){
     #section-1{ 

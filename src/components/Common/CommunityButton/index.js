@@ -13,10 +13,7 @@ const SocialButton = styled.button`
     padding: 15px 20px;
     width: 100%;  
     color: #FBF5E3;
-    margin: 0 auto; 
-    :hover{
-    	
-    }
+    margin: 0 auto;  
     img{
 	    width: 60px;
 	    margin-right: 20px;
@@ -25,7 +22,7 @@ const SocialButton = styled.button`
         font-size: 32px; 
         padding: 10px 20px; 
         width: 100%; 
-       
+        
         img{
 	        width: 40px;
 	        margin-right: 20px;
@@ -34,17 +31,31 @@ const SocialButton = styled.button`
 	@media (max-width : 1280px){  
         font-size: 24px; 
         padding: 10px ; 
-        width: fit-content;  
-    	
+        width: 100%;  
+    	border-width: 6px;
     	img{
-	        width: 40px;
-	        margin-right: 20px;
+	        width: 30px;
+	        margin-right: 10px;
 	    } 
 	} 	
+    @media (max-width : 1160px){  
+        font-size: 20px; 
+        padding: 8px ; 
+        width: 100%;  
+        border-width: 4px;
+        img{
+            width: 25px;
+            margin-right: 10px;
+        } 
+    }   
 	@media (max-width: 768px) { 
         width: 90% !important;
         padding: 10px 10px  ;
+        font-size: 28px;
         margin-bottom: 40px; 
+        img{
+            width: 40px
+        }
 	}
 `
 export default SocialButton

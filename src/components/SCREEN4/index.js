@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'  
 import SocialButton from '../Common/CommunityButton'
 const Screen = () => {
-const socials = [{img: process.env.PUBLIC_URL + '/assets/images/discord.png', text: 'Discord'}, {img: process.env.PUBLIC_URL + '/assets/images/telegram.png', text: 'Telegram'}, {img: process.env.PUBLIC_URL + '/assets/images/twitter.png', text: 'Twitter'}, {img: process.env.PUBLIC_URL + '/assets/images/linkedin.png', text: 'Linkedin'}]
+const socials = [{img:'/assets/images/discord.png', text: 'Discord'}, {img:'/assets/images/telegram.png', text: 'Telegram'}, {img:'/assets/images/twitter.png', text: 'Twitter'}, {img:'/assets/images/linkedin.png', text: 'Linkedin'}]
 	return(<Wrapper>
 		<div id="section-3">
          	<h1>FIND YOUR DUSTY FRIENDS</h1>
